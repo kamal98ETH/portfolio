@@ -17,6 +17,7 @@
     bottom: 0;
     height: 50px;
     background-color: #245DDB;
+    display: flex;
 }
 
 #start {
@@ -43,4 +44,16 @@
     text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
     font-size: 27px;
     font-family: Roboto, Arial, Helvetica, sans-serif;
+}
+
+#time-notif {
+    position: absolute;
+    right: 0;
+    height: 50px;
+    width: 200px;
+    background-color: #1C9AEB;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
 }
