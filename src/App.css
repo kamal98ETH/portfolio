@@ -1,38 +1,46 @@
-.App {
-  text-align: center;
+/* #container {
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+} */
+
+#container img {
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    z-index: -1;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+#toolbar {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    height: 50px;
+    background-color: #245DDB;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+#start {
+    width: 180px;
+    height: 50px;
+    background: linear-gradient(90deg, #80ac80, #47AB47, #2c6d2c);
+    border-radius: 0 20px 20px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    border: 0;
+    padding-right: 25px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+#start img {
+    width: 40px;
+    height: 40px;
+    margin: 0 10px 0 0;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+#start p {
+    color: #fff;
+    text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
+    font-size: 27px;
+    font-family: Roboto, Arial, Helvetica, sans-serif;
 }
