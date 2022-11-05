@@ -2,6 +2,7 @@ import backgroundPic from "./images/xp-background.jpg";
 import ToolBar from "./toolBar";
 import './App.css';
 import DesktopIcon from "./desktopIcon";
+import Window from "./window";
 
 function Desktop() {
     return (
@@ -23,6 +24,7 @@ function Desktop() {
                     </div>
                     <div></div>
                 </div>
+                <Window />
             </div>
         </div>
     )
