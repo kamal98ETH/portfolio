@@ -1,12 +1,10 @@
 import './App.css';
-import Background from './background';
-import ToolBar from './toolBar';
+import Desktop from './desktop';
 
 function App() {
   return (
     <div className="App">
-      <Background />
-      <ToolBar />
+      <Desktop />
     </div>
   );
 }

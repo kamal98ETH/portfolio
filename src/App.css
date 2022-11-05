@@ -1,22 +1,28 @@
-/* #container {
-    height: 100vh;
-    width: 100vw;
-    overflow: hidden;
-} */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
-#container img {
+#background-img {
     height: 100vh;
     width: 100vw;
-    position: fixed;
+    position: absolute;
     z-index: -1;
+}
+
+#desktop {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column-reverse;
+    overflow: hidden;
 }
 
 #toolbar {
     width: 100%;
-    position: absolute;
-    bottom: 0;
     height: 50px;
-    background-color: #245DDB;
+    background: linear-gradient(#6287d8, #245DDB 25%, #245DDB 75%, #6287d8);
     display: flex;
 }
 
@@ -46,6 +52,27 @@
     font-family: Roboto, Arial, Helvetica, sans-serif;
 }
 
+#tabs {
+    width: calc(100% - 390px);
+    height: 50px;
+    display: flex;
+    align-items: center;
+    margin: 0 5px;
+}
+
+.tab {
+    height: 45px;
+    width: 200px;
+    background-color: #1C9AEB;
+    margin: 0 1px;
+    border: 1px solid #000;
+    border-radius: 5px;
+}
+
+.tab:hover {
+    background-color: #187fc0;
+}
+
 #time-notif {
     position: absolute;
     right: 0;
@@ -56,4 +83,24 @@
     justify-content: center;
     align-items: center;
     font-size: 25px;
+}
+
+#desktop-icons {
+    height: calc(100% - 50px);
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+#icons {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.desktop-icon {
+    height: 120px;
+    width: 120px;
+    border: 1px dotted #808080;
+    margin: 2px;
 }
