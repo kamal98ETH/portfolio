@@ -107,17 +107,17 @@
 
 .window {
     height: 80%;
-    width: 75%;
+    width: 60%;
     background-color: #000;
     position: absolute;
     border-radius: 15px;
     top: 8%;
-    left: 12%;
+    left: 20%;
 }
 
 .window-header {
     background-color: #245DDB;
-    height: 60px;
+    height: 50px;
     display: flex;
     justify-content: space-between;
     border-radius: 13px 13px 0 0;
@@ -129,15 +129,18 @@
 }
 
 .window-header button {
+    width: 40px;
+    height: 40px;
+}
+
+button {
     background-color: transparent;
     border: 0;
-    width: 50px;
-    height: 50px;
 }
 
 .min-icon-outer {
-    height: 42px;
-    width: 42px;
+    height: 32px;
+    width: 32px;
     background-color: #245DDB;
     border-radius: 5px;
     margin: auto;
@@ -145,17 +148,17 @@
 }
 
 .min-icon-inner {
-    height: 6px;
-    width: 18px;
+    height: 5px;
+    width: 12px;
     background-color: #fff;
-    position: absolute;
-    top: 35px;
-    right: 119px;
+    position: relative;
+    top: 18px;
+    left: 6px;
 }
 
 .max-icon-outer {
-    height: 42px;
-    width: 42px;
+    height: 32px;
+    width: 32px;
     background-color: #245DDB;
     border-radius: 5px;
     margin: auto;
@@ -166,11 +169,11 @@
 }
 
 .max-icon-inner {
-    height: 23px;
-    width: 23px;
+    height: 18px;
+    width: 18px;
     background-color: #245DDB;
     border-color: #fff;
-    border-width: 6px 1px 1px;
+    border-width: 5px 1px 1px;
     border-style: solid;
 }
 
@@ -185,4 +188,137 @@
 
 .max-icon-outer:hover .max-icon-inner {
     border-color: #1C9AEB;
+}
+
+.file-toolbar {
+    height: 25px;
+    background-color: #EBE8D7;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid grey;
+}
+
+.file-toolbar button {
+    padding: 4px 5px;
+    margin: 1px;
+}
+
+.window-toolbar-logo {
+    height: 24px;
+    width: 40px;
+    background-color: #FFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.window-toolbar-logo img {
+    height: 20px;
+}
+
+.folder-toolbar {
+    height: 60px;
+    background-color: #EBE8D7;
+    border-bottom: 1px solid grey;
+    display: flex;
+    font-size: 350px;
+}
+
+.folder-toolbar p {
+    font-size: 17px;
+}
+
+.folder-toolbar-back {
+    height: 60px;
+    width: 130px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-right: 1px solid grey;
+}
+
+.round-icon {
+    height: 35px;
+    width: 35px;
+    background: linear-gradient(135deg, #67fd41, #419F29 40%);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.round-icon img {
+    height: 20px;
+    width: 20px;
+}
+
+.folder-toolbar-back .round-icon {
+    margin: 0 10px 0 -10px;
+}
+
+.folder-toolbar-forward {
+    width: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-right: 1px solid grey;
+}
+
+.folder-toolbar-search,
+.folder-toolbar-folders {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 120px;
+    border-right: 1px solid grey;
+}
+
+.folder-toolbar-search img,
+.folder-toolbar-folders img {
+    height: 40px;
+    margin-right: 5px;
+}
+
+.search-toolbar {
+    width: 100%;
+    height: 25px;
+    background-color: #EBE8D7;
+    display: flex;
+    border-bottom: 1px solid grey;
+}
+
+.search-toolbar p {
+    margin: auto 10px;
+}
+
+.search-toolbar form {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.search-toolbar input {
+    width: 100%;
+}
+
+.search-toolbar button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60px;
+}
+
+.go-icon {
+    height: 20px;
+    width: 20px;
+    background-color: #419F29;
+    border-radius: 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.go-icon img {
+    height: 15px;
 }
