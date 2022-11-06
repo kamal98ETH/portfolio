@@ -3,6 +3,7 @@ import ToolBar from "./toolBar";
 import './App.css';
 import DesktopIcon from "./desktopIcon";
 import Window from "./window";
+import Cmd from "./cmd";
 
 function Desktop() {
     return (
@@ -24,7 +25,8 @@ function Desktop() {
                     </div>
                     <div></div>
                 </div>
-                <Window />
+                {/* <Window /> */}
+                <Cmd />
             </div>
         </div>
     )

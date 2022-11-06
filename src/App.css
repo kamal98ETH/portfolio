@@ -52,6 +52,15 @@
     font-family: Roboto, Arial, Helvetica, sans-serif;
 }
 
+#time {
+    width: 50%;
+    text-align: center;
+}
+
+#notifications {
+    width: 50%;
+}
+
 #tabs {
     width: calc(100% - 390px);
     height: 50px;
@@ -67,10 +76,26 @@
     margin: 0 1px;
     border: 1px solid #000;
     border-radius: 5px;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
 }
 
 .tab:hover {
     background-color: #187fc0;
+}
+
+.tab img {
+    height: 38px;
+    padding: 0 10px;
+}
+
+.tab h1 {
+    font-size: 18px;
+    color: #fff;
+    text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
+    height: 18px;
+    white-space: nowrap;
 }
 
 #time-notif {
@@ -99,13 +124,31 @@
 }
 
 .desktop-icon {
-    height: 120px;
+    min-height: 120px;
     width: 120px;
     border: 1px dotted #808080;
     margin: 2px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-.window {
+.desktop-icon img {
+    height: 70px;
+    width: 70px;
+}
+
+.desktop-icon h1 {
+    text-align: center;
+    font-size: 17px;
+    font-weight: 500;
+    padding: 5px 2px;
+    color: #fff;
+    text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
+}
+
+.window,
+.cmd {
     height: 80%;
     width: 60%;
     position: absolute;
@@ -121,6 +164,23 @@
     display: flex;
     justify-content: space-between;
     border-radius: 13px 13px 0 0;
+}
+
+.window-header-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.window-header-title img {
+    height: 40px;
+    margin: 0 5px 0 15px;
+}
+
+.window-header-title h1 {
+    font-size: 25px;
+    margin: 0 5px;
+    color: #fff;
 }
 
 .window-header-display-tools {
@@ -368,4 +428,19 @@ button {
     width: 100%;
     height: 25px;
     background-color: #EBE8D7;
+}
+
+.cmd-body {
+    height: calc(100% - 50px);
+    width: 100%;
+    background-color: #000;
+    color: #1DEE1A;
+    font-size: 25px;
+    padding: 15px 2px;
+    font-family: Terminal;
+    overflow-y: scroll;
+}
+
+.cmd-body::-webkit-scrollbar {
+    display: none;
 }

@@ -14,6 +14,7 @@ function ToolBar() {
                 <Tab />
             </div>
             <div id="time-notif">
+                <div id="notifications"></div>
                 <p id="time">18:00</p>
             </div>
         </div>
