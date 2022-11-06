@@ -2,6 +2,7 @@ import closeIcon from "./images/close_window.png"
 import windowLogo from "./images/xp-logo.png"
 import folderBack from "./images/move-back.png"
 import folderForward from "./images/move-forward.png"
+import folderUp from "./images/folder-up.png"
 import folder from "./images/folder.ico"
 import search from "./images/search.ico"
 
@@ -51,6 +52,9 @@ function Window() {
                         <img src={folderForward} alt="move forward folder icon" />
                     </div>
                 </button>
+                <button className="folder-toolbar-folderUp" >
+                    <img src={folderUp} alt="folder up icon" />
+                </button>
                 <button className="folder-toolbar-search">
                     <img src={search} alt="search icon" />
                     <p>Search</p>
@@ -73,7 +77,10 @@ function Window() {
                     </button>
                 </form>
             </div>
-            <div className="window-content"></div>
+            <div className="window-content">
+                <div className="window-content-shortcuts"></div>
+                <div className="window-content-main"></div>
+            </div>
             <div className="window-footer"></div>
         </div >
     )
