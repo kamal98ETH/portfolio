@@ -4,6 +4,7 @@ import './App.css';
 import DesktopIcon from "./desktopIcon";
 import Window from "./window";
 import Cmd from "./cmd";
+import Start from "./start";
 
 function Desktop() {
     return (
@@ -27,6 +28,7 @@ function Desktop() {
                 </div>
                 {/* <Window /> */}
                 <Cmd />
+                {/* <Start /> */}
             </div>
         </div>
     )

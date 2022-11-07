@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
 #background-img {
     height: 100vh;
     width: 100vw;
@@ -156,6 +160,7 @@
     border: 2px solid #245DDB;
     top: 8%;
     left: 20%;
+    overflow: hidden;
 }
 
 .window-header {
@@ -443,4 +448,200 @@ button {
 
 .cmd-body::-webkit-scrollbar {
     display: none;
+}
+
+#start-page {
+    position: absolute;
+    bottom: 50px;
+    width: 520px;
+    height: 600px;
+    border-radius: 10px 10px 0 0;
+    overflow: hidden;
+}
+
+#start-header {
+    height: 80px;
+    background: linear-gradient(#245DDB 60%, #6287d8);
+    border-radius: 10px 10px 0 0;
+    display: flex;
+    align-items: center;
+    color: #fff;
+    text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
+}
+
+#start-header img {
+    height: 70px;
+    background-color: #fff;
+    border: 5px solid gray;
+    border-radius: 15px;
+    margin: auto 15px;
+}
+
+#start-body {
+    width: 100%;
+    height: calc(100% - 135px);
+    background-color: #bfddf0;
+    display: flex;
+    overflow: hidden;
+}
+
+#start-body-left-programs,
+#start-body-right-programs {
+    width: 50%;
+    padding: 10px 5px;
+    overflow: hidden;
+}
+
+#start-body-left-programs button,
+#start-body-right-programs button {
+    width: 100%;
+    padding: 5px 10px;
+    display: flex;
+    align-items: center;
+}
+
+#start-body-left-programs {
+    background-color: #fff;
+}
+
+#start-body-left-programs button {
+    height: 70px;
+}
+
+#start-body-right-programs button {
+    font-size: 12px;
+    height: 40px;
+}
+
+#start-body-left-programs button:hover,
+#start-body-right-programs button:hover {
+    border: 1px solid gray;
+    padding: 4px 9px;
+}
+
+#start-body-left-programs img {
+    height: 60px;
+    margin: 0 10px 0 0;
+}
+
+#start-body-right-programs img {
+    height: 30px;
+    margin: 0 10px;
+}
+
+#start-body-left-programs button:last-child {
+    width: 171px;
+    height: 30px;
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    left: 5%;
+    bottom: 55px;
+    font-size: 17px;
+    font-weight: 900;
+    transition: width 1s;
+}
+
+#start-body-left-programs button:last-child img {
+    height: 25px;
+    margin: 0 10px;
+    transition: 1s;
+}
+
+#start-body-left-programs button:last-child:hover {
+    width: 182px;
+    border: 0;
+    margin: 0 1px;
+}
+
+#start-footer {
+    background: linear-gradient(#6287d8, #245DDB 50%);
+    height: 55px;
+    display: flex;
+    flex-direction: row-reverse;
+    padding: 5px;
+}
+
+#start-footer button {
+    padding: 5px;
+    margin: 0 5px;
+    display: flex;
+    align-items: center;
+    font-size: 11px;
+    color: #fff;
+    text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
+}
+
+#start-footer button:hover {
+    border: 1px solid rgb(99, 99, 99);
+    margin: 0 4px;
+}
+
+#start-footer img {
+    height: 40px;
+    margin: 0 15px;
+}
+
+@media (max-width: 1000px) {
+
+    .window,
+    .cmd {
+        height: calc(100% - 51px);
+        width: 100%;
+        top: 0;
+        left: 0;
+    }
+
+    #start {
+        width: 150px;
+    }
+
+    #time-notif {
+        width: 150px;
+    }
+
+    #tabs {
+        width: calc(100% - 310px);
+    }
+}
+
+@media (max-width: 550px) {
+
+    .folder-toolbar p {
+        display: none;
+    }
+
+    .folder-toolbar button {
+        width: 60px;
+        height: 100%;
+    }
+
+    .folder-toolbar-back .round-icon {
+        margin: 0;
+    }
+
+    #start-page {
+        width: 100%;
+    }
+
+    #start {
+        width: 70px;
+    }
+
+    #start img {
+        margin: 0 -15px 0 0;
+    }
+
+    #start p {
+        display: none;
+    }
+
+    #tabs {
+        width: calc(100% - 180px);
+    }
+
+    #time-notif {
+        width: 100px;
+        font-size: 20px;
+    }
 }
