@@ -1,21 +1,23 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.bd275e58.css",
-    "main.js": "/portfolio/static/js/main.031d027f.js",
+    "main.js": "/portfolio/static/js/main.3c1b8cca.js",
     "static/media/xp-logo.png": "/portfolio/static/media/xp-logo.41511b28f1a7dc826523.png",
     "static/media/xp-background.jpg": "/portfolio/static/media/xp-background.17ce657ab1362be245f5.jpg",
     "static/media/icon.ico": "/portfolio/static/media/icon.0f309eaecddc03f5b8b8.ico",
+    "static/media/profile.ico": "/portfolio/static/media/profile.03d2f4cfeab2781b094f.ico",
     "static/media/folder.ico": "/portfolio/static/media/folder.75c0cce78a8c0dace56a.ico",
     "static/media/folder-up.png": "/portfolio/static/media/folder-up.968f2df072c76a44acc3.png",
+    "static/media/freecodecamp.png": "/portfolio/static/media/freecodecamp.3d7d3fdcc7e99cd43ac6.png",
     "static/media/close_window.png": "/portfolio/static/media/close_window.ec3d48e203f6ed8ed58e.png",
     "static/media/move-forward.png": "/portfolio/static/media/move-forward.b03a7440455b586379ea.png",
     "static/media/search.ico": "/portfolio/static/media/search.49527e3a085f01a9a1cf.ico",
     "index.html": "/portfolio/index.html",
     "main.bd275e58.css.map": "/portfolio/static/css/main.bd275e58.css.map",
-    "main.031d027f.js.map": "/portfolio/static/js/main.031d027f.js.map"
+    "main.3c1b8cca.js.map": "/portfolio/static/js/main.3c1b8cca.js.map"
   },
   "entrypoints": [
     "static/css/main.bd275e58.css",
-    "static/js/main.031d027f.js"
+    "static/js/main.3c1b8cca.js"
   ]
 }
