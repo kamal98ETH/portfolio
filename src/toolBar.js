@@ -1,7 +1,13 @@
 import windowsLogo from "./images/xp-logo.png";
 import Tab from "./tab";
 
-function ToolBar() {
+function ToolBar(props) {
+    let tabs = props.active_components.map((active) => {
+        let key = props.active_components.indexOf(active);
+        return (
+            <Tab key={key} icon={active.icon} title={active.title} />
+        )
+    })
     return (
         <div id="toolbar">
             <button id="start">
@@ -9,12 +15,7 @@ function ToolBar() {
                 <p>Start</p>
             </button>
             <div id="tabs">
-                <Tab />
-                <Tab />
-                <Tab />
-                <Tab />
-                <Tab />
-                <Tab />
+                {tabs}
             </div>
             <div id="time-notif">
                 <div id="notifications"></div>

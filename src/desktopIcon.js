@@ -1,11 +1,9 @@
-import exemple from "./images/folder.ico"
-
-function DesktopIcon() {
+function DesktopIcon(props) {
     return (
-        <div className="desktop-icon">
-            <img src={exemple} alt="the desktop icon image" />
-            <h1>exemple title</h1>
-        </div>
+        <button className="desktop-icon">
+            <img src={props.icon} alt="Desktop icon image" />
+            <h1>{props.title}</h1>
+        </button>
     )
 }
 

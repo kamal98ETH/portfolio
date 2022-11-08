@@ -1,10 +1,8 @@
-import exemple from "./images/folder.ico"
-
-function Tab() {
+function Tab(props) {
     return (
         <button className="tab">
-            <img src={exemple} alt="tab icon" />
-            <h1>Exemple tab</h1>
+            <img src={props.icon} alt="tab icon" />
+            <h1>{props.title}</h1>
         </button>
     )
 }
