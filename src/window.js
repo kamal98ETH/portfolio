@@ -18,7 +18,7 @@ function Window(props) {
 
     return (
         < div className="window" >
-            <WindowHeader data={props.data} />
+            <WindowHeader data={props.data} action={props.action} />
             <div className="file-toolbar">
                 <div>
                     <button>File</button>

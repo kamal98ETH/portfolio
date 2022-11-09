@@ -8,9 +8,6 @@ import terminal from "./images/cmd-icon.jpg";
 import folders_files_data from "./folders_files_data"
 
 
-import profile from "./images/profile.ico";
-import folder from "./images/folder.ico";
-
 
 class App extends React.Component {
   constructor(props) {
@@ -31,7 +28,7 @@ class App extends React.Component {
   button_handler = (event) => {
     // console.log(event.target.id)
     let id = event.target.id;
-    console.log(this.state.active_components[this.state.active_components.length - 1].title)
+    // console.log(this.state.active_components[this.state.active_components.length - 1].title)
 
 
     // this.setState({
@@ -39,15 +36,14 @@ class App extends React.Component {
     // });
     // console.log(this.state.active_components)
 
-    // if (id == "close-button") {
-    //   console.log("close")
-    //   this.setState({
-    //     active_components: this.state.active_components.filter((data) => {
-    //       return data.title != this.state.active_components[this.state.active_components.length - 1].title
-    //     })
-    //   });
-    //   return;
-    // }
+    if (id == "close-button") {
+      this.setState({
+        active_components: this.state.active_components.filter((data) => {
+          return data.title != this.state.active_components[this.state.active_components.length - 1].title
+        })
+      });
+      return;
+    }
 
     this.setState({
       active_components: [...this.state.active_components, folders_files_data[id]]
@@ -61,16 +57,13 @@ class App extends React.Component {
     let cmd;
     let window;
     let feedData = this.state.active_components[this.state.active_components.length - 1]
-    // console.log(feedData)
-    // console.log(this.state.active_components[this.state.active_components.length - 1])
-    // console.log(feedData.type)
     if (feedData) {
       if (feedData.type == "terminal") {
         cmd = <Cmd data={feedData} action={this.button_handler} />
       }
 
       if (feedData.type == "window") {
-        window = <Window data={feedData} />
+        window = <Window data={feedData} action={this.button_handler} />
       }
 
     }
@@ -81,8 +74,6 @@ class App extends React.Component {
         <Desktop active_components={this.state.active_components} action={this.button_handler} />
         {cmd}
         {window}
-        {/* <Window /> */}
-        {/* <Cmd content={this.state.active_components[this.state.active_components.length - 2].terminal} /> */}
         {/* <Start /> */}
       </div>
     );
