@@ -1,12 +1,11 @@
 import WindowHeader from "./windowHeader";
-import cmdIcon from "./images/cmd-icon.jpg"
 
 function Cmd(props) {
     return (
         <div className="cmd">
-            <WindowHeader icon={cmdIcon} />
+            <WindowHeader data={props.data} action={props.action} />
             <div className="cmd-body">
-                {props.content}
+                {props.data.content}
             </div>
         </div>
     )

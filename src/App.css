@@ -118,7 +118,6 @@ body {
     height: calc(100% - 50px);
     width: 100%;
     display: flex;
-    justify-content: space-between;
 }
 
 #icons {
@@ -127,25 +126,26 @@ body {
     flex-wrap: wrap;
 }
 
-.desktop-icon {
-    min-height: 120px;
-    width: 120px;
+.folders-files-icon {
+    height: 150px;
+    width: 150px;
     border: 1px dotted #808080;
     margin: 2px;
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
 }
 
-.desktop-icon img {
+.folders-files-icon img {
     height: 70px;
     width: 70px;
 }
 
-.desktop-icon h1 {
+.folders-files-icon h1 {
     text-align: center;
     font-size: 17px;
-    font-weight: 500;
+    font-weight: 900;
     padding: 5px 2px;
     color: #fff;
     text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
@@ -260,7 +260,7 @@ button {
     background-color: #EBE8D7;
     display: flex;
     justify-content: space-between;
-    border-bottom: 1px solid grey;
+    border-bottom: 1px solid #808080;
 }
 
 .file-toolbar button {
@@ -269,6 +269,7 @@ button {
 }
 
 .file-toolbar button:hover {
+    margin: 0;
     border: 1px solid #000;
 }
 
@@ -288,7 +289,7 @@ button {
 .folder-toolbar {
     height: 60px;
     background-color: #EBE8D7;
-    border-bottom: 1px solid grey;
+    border-bottom: 1px solid #808080;
     display: flex;
     font-size: 350px;
 }
@@ -337,7 +338,7 @@ button {
 
 .folder-toolbar-folderUp {
     width: 60px;
-    border-right: 1px solid grey;
+    border-right: 1px solid #808080;
 }
 
 .folder-toolbar-folderUp img {
@@ -353,7 +354,7 @@ button {
 }
 
 .folder-toolbar-folders {
-    border-right: 1px solid grey;
+    border-right: 1px solid #808080;
 }
 
 .folder-toolbar-search img,
@@ -367,7 +368,7 @@ button {
     height: 25px;
     background-color: #EBE8D7;
     display: flex;
-    border-bottom: 1px solid grey;
+    border-bottom: 1px solid #808080;
 }
 
 .search-toolbar p {
@@ -413,7 +414,7 @@ button {
 .window-content {
     width: 100%;
     height: calc(100% - 186px);
-    border-bottom: 1px solid grey;
+    border-bottom: 1px solid #808080;
     display: flex;
 }
 
@@ -426,7 +427,31 @@ button {
 .window-content-main {
     height: 100%;
     width: 75%;
+    padding: 20px;
     background-color: #fff;
+    overflow-y: scroll;
+}
+
+::-webkit-scrollbar {
+    width: 15px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #59bfff;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #2b6eff;
+}
+
+.window-folders-files {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.window-folders-files h1 {
+    color: #000;
+    text-shadow: none;
 }
 
 .window-footer {

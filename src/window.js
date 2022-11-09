@@ -6,11 +6,19 @@ import folderUp from "./images/folder-up.png"
 import folder from "./images/folder.ico"
 import search from "./images/search.ico"
 import WindowHeader from "./windowHeader"
+import Folders_files from "./folders_files"
 
-function Window() {
+function Window(props) {
+    let folders_files = props.data.content.folders_files.map((folder_file) => {
+        let key = props.data.content.folders_files.indexOf(folder_file)
+        return (
+            <Folders_files key={key} icon={folder_file.icon} title={folder_file.title} />
+        )
+    })
+
     return (
-        <div className="window">
-            <WindowHeader icon={folder} />
+        < div className="window" >
+            <WindowHeader data={props.data} />
             <div className="file-toolbar">
                 <div>
                     <button>File</button>
@@ -55,7 +63,6 @@ function Window() {
                     <button type="submit">
                         <div className="go-icon">
                             <img src={folderForward} alt="forward arrow towards the right" />
-
                         </div>
                         Go
                     </button>
@@ -63,7 +70,11 @@ function Window() {
             </div>
             <div className="window-content">
                 <div className="window-content-shortcuts"></div>
-                <div className="window-content-main"></div>
+                <div className="window-content-main">
+                    <div className="window-folders-files">
+                        {folders_files}
+                    </div>
+                </div>
             </div>
             <div className="window-footer"></div>
         </div >
