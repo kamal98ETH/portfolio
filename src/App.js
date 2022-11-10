@@ -6,6 +6,7 @@ import Cmd from "./cmd";
 // import Start from "./start";
 import terminal from "./images/cmd-icon.jpg";
 import folders_files_data from "./folders_files_data"
+import arrayPop from './arrayPop';
 
 
 
@@ -15,6 +16,11 @@ class App extends React.Component {
     this.state = {
       active_components: [
         {
+          icon: terminal,
+          title: "Welcome",
+          type: "terminal",
+          content: <p>K:\&gt; Hey, it's Kamal <br /> K:\&gt; Welcome to my portfolio</p>
+        }, {
           icon: terminal,
           title: "Welcome",
           type: "terminal",
@@ -36,12 +42,15 @@ class App extends React.Component {
     // });
     // console.log(this.state.active_components)
 
+
+
+
+    //working close but deletes similar objects
     if (id == "close-button") {
       this.setState({
-        active_components: this.state.active_components.filter((data) => {
-          return data.title != this.state.active_components[this.state.active_components.length - 1].title
-        })
-      });
+        active_components: arrayPop(this.state.active_components)
+      })
+        ;
       return;
     }
 
@@ -49,31 +58,45 @@ class App extends React.Component {
       active_components: [...this.state.active_components, folders_files_data[id]]
     })
 
-
   }
 
 
   render() {
-    let cmd;
-    let window;
-    let feedData = this.state.active_components[this.state.active_components.length - 1]
-    if (feedData) {
-      if (feedData.type == "terminal") {
-        cmd = <Cmd data={feedData} action={this.button_handler} />
+
+    //rendring last item in active components
+    // let cmd;
+    // let window;
+    // let feedData = this.state.active_components[this.state.active_components.length - 1]
+    // if (feedData) {
+    //   if (feedData.type == "terminal") {
+    //     cmd = <Cmd data={feedData} action={this.button_handler} />
+    //   }
+
+    //   if (feedData.type == "window") {
+    //     window = <Window data={feedData} action={this.button_handler} />
+    //   }
+    // }
+
+    //rendering all components in active components
+    let key = -1;
+    // console.log(this.state.active_components)
+    let active_components = this.state.active_components.map((active) => {
+      key++;
+      if (active.type == "terminal") {
+        return <Cmd key={key} data={active} action={this.button_handler} />
       }
 
-      if (feedData.type == "window") {
-        window = <Window data={feedData} action={this.button_handler} />
+      if (active.type == "window") {
+        return <Window key={key} data={active} action={this.button_handler} />
       }
-
-    }
-
+    })
 
     return (
       <div className="App">
         <Desktop active_components={this.state.active_components} action={this.button_handler} />
-        {cmd}
-        {window}
+        {active_components}
+        {/* {cmd}
+        {window} */}
         {/* <Start /> */}
       </div>
     );

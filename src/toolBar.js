@@ -2,8 +2,9 @@ import windowsLogo from "./images/xp-logo.png";
 import Tab from "./tab";
 
 function ToolBar(props) {
+    let key = -1;
     let tabs = props.active_components.map((active) => {
-        let key = props.active_components.indexOf(active);
+        key++;
         return (
             <Tab key={key} icon={active.icon} title={active.title} />
         )
