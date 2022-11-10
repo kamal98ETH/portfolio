@@ -30,36 +30,6 @@ class App extends React.Component {
             }
           ]
         }
-        , {
-          render_index: 0,
-          data: [
-            {
-              icon: profile,
-              title: "About me",
-              type: "window",
-              content: {
-                address: "k:\ Web Dev projects",
-                folders_files: [
-                  {
-                    icon: folder,
-                    title: "folder1"
-                  },
-                  {
-                    icon: folder,
-                    title: "folder1"
-                  },
-                  {
-                    icon: folder,
-                    title: "folder1"
-                  },
-                  {
-                    icon: folder,
-                    title: "folder1"
-                  }
-                ]
-              }
-            }]
-        }
       ]
     };
     this.button_handler = this.button_handler.bind(this);
@@ -68,6 +38,12 @@ class App extends React.Component {
   button_handler = (event) => {
     // console.log(event.target.id)
     let id = event.target.id;
+    console.log(id)
+    // return;
+
+    if (!id) {
+      return;
+    }
 
 
     //working close but deletes similar objects
@@ -90,6 +66,8 @@ class App extends React.Component {
           }
         ]
       })
+    } else if (/^external-link/.test(id)) {
+      window.open(folders_files_data[id])
     } else {
       //folders or files that shouldnt open a new tab and just renders new data in the same window
       let lastItem = this.state.active_components[this.state.active_components.length - 1];
@@ -122,7 +100,7 @@ class App extends React.Component {
     // }
 
     //rendering all components in active components
-    console.log(this.state.active_components)
+    // console.log(this.state.active_components)
     let key = -1;
     let active_components = this.state.active_components.map((active) => {
       key++;

@@ -10,9 +10,10 @@ import Folders_files from "./folders_files"
 
 function Window(props) {
     let folders_files = props.data.content.folders_files.map((folder_file) => {
+        // console.log(folder_file)
         let key = props.data.content.folders_files.indexOf(folder_file)
         return (
-            <Folders_files key={key} icon={folder_file.icon} title={folder_file.title} />
+            <Folders_files key={key} icon={folder_file.icon} title={folder_file.title} id={folder_file.id} action={props.action} />
         )
     })
 
