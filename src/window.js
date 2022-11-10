@@ -19,7 +19,7 @@ function Window(props) {
 
     return (
         < div className="window" >
-            <WindowHeader data={props.data} action={props.action} />
+            <WindowHeader data={props.data} minimize_id={props.minimize_id} maximize_id={props.maximize_id} close_id={props.close_id} action={props.action} />
             <div className="file-toolbar">
                 <div>
                     <button>File</button>

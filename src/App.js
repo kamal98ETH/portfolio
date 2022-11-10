@@ -7,10 +7,11 @@ import Cmd from "./cmd";
 import terminal from "./images/cmd-icon.jpg";
 import folders_files_data from "./folders_files_data"
 import arrayPop from './arrayPop';
+import arrayCopy from './arrayCopy'
 
 
-import profile from "./images/profile.ico";
-import folder from "./images/folder.ico";
+// import profile from "./images/profile.ico";
+// import folder from "./images/folder.ico";
 
 
 
@@ -20,7 +21,9 @@ class App extends React.Component {
     this.state = {
       active_components: [
         {
+          render: true,
           render_index: 0,
+          z_index: 1,
           data: [
             {
               icon: terminal,
@@ -36,22 +39,16 @@ class App extends React.Component {
   }
 
   button_handler = (event) => {
-    // console.log(event.target.id)
     let id = event.target.id;
-    console.log(id)
+    // console.log(id)
     // return;
 
     if (!id) {
       return;
     }
 
-
-    //working close but deletes similar objects
-    if (id == "close-button") {
-      this.setState({
-        active_components: arrayPop(this.state.active_components)
-      })
-        ;
+    //open and close start component
+    if (id == "start") {
       return;
     }
 
@@ -61,21 +58,47 @@ class App extends React.Component {
         active_components: [
           ...this.state.active_components,
           {
+            render: true,
             render_index: 0,
+            z_index: this.state.active_components.length + 1,
             data: [folders_files_data[id]]
           }
         ]
       })
     } else if (/^external-link/.test(id)) {
+      //open new tab with the given url
       window.open(folders_files_data[id])
+    } else if (/^minimize/.test(id)) {
+      //stop rendering component using minimize button
+      this.state.active_components[id.split("-")[1]].render = false
+      this.setState({
+        active_components: this.state.active_components
+      })
+    } else if (/^maximize/.test(id)) {
+
+    } else if (/^close/.test(id)) {
+      //close the selected active component
+      let to_close = id.split("-")[1];
+      let newArray = [];
+      for (let i = 0; i < this.state.active_components.length; i++) {
+        if (i != to_close) {
+          newArray.push(this.state.active_components[i]);
+        }
+      }
+      this.setState({
+        active_components: newArray
+      })
+    } else if (/^tab/.test(id)) {
+      //render and stop rendering component using tab button
+      this.state.active_components[id.split("-")[1]].render = !this.state.active_components[id.split("-")[1]].render;
+      this.setState({
+        active_components: this.state.active_components
+      })
     } else {
       //folders or files that shouldnt open a new tab and just renders new data in the same window
       let lastItem = this.state.active_components[this.state.active_components.length - 1];
-      console.log(lastItem)
       lastItem.render_index++;
       lastItem.data.push(folders_files_data[id]);
-      console.log(lastItem)
-
       this.setState({
         active_components: [...arrayPop(this.state.active_components), lastItem]
       })
@@ -100,16 +123,18 @@ class App extends React.Component {
     // }
 
     //rendering all components in active components
-    // console.log(this.state.active_components)
+    // console.log("render state:", this.state.active_components)
     let key = -1;
     let active_components = this.state.active_components.map((active) => {
       key++;
-      if (active.data[active.render_index].type == "terminal") {
-        return <Cmd key={key} data={active.data[active.render_index]} action={this.button_handler} />
-      }
+      if (active.render) {
+        if (active.data[active.render_index].type == "terminal") {
+          return <Cmd key={key} data={active.data[active.render_index]} minimize_id={"minimize-" + key} maximize_id={"maximize-" + key} close_id={"close-" + key} action={this.button_handler} />
+        }
 
-      if (active.data[active.render_index].type == "window") {
-        return <Window key={key} data={active.data[active.render_index]} action={this.button_handler} />
+        if (active.data[active.render_index].type == "window") {
+          return <Window key={key} data={active.data[active.render_index]} minimize_id={"minimize-" + key} maximaze_id={"maximaze-" + key} close_id={"close-" + key} action={this.button_handler} />
+        }
       }
     })
 

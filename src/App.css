@@ -30,7 +30,7 @@ body {
     display: flex;
 }
 
-#start {
+.start {
     width: 180px;
     height: 50px;
     background: linear-gradient(90deg, #80ac80, #47AB47, #2c6d2c);
@@ -43,13 +43,13 @@ body {
     padding-right: 25px;
 }
 
-#start img {
+.start img {
     width: 40px;
     height: 40px;
     margin: 0 10px 0 0;
 }
 
-#start p {
+.start p {
     color: #fff;
     text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
     font-size: 27px;
@@ -215,6 +215,7 @@ button {
 .min-icon-inner {
     height: 5px;
     width: 12px;
+    display: flex;
     background-color: #fff;
     position: relative;
     top: 18px;
@@ -617,7 +618,7 @@ button {
         left: 0;
     }
 
-    #start {
+    .start {
         width: 150px;
     }
 
@@ -649,15 +650,15 @@ button {
         width: 100%;
     }
 
-    #start {
+    .start {
         width: 70px;
     }
 
-    #start img {
+    .start img {
         margin: 0 -15px 0 0;
     }
 
-    #start p {
+    .start p {
         display: none;
     }
 
