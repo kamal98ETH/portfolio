@@ -6,7 +6,7 @@ function ToolBar(props) {
     let tabs = props.active_components.map((active) => {
         key++;
         return (
-            <Tab key={key} icon={active.icon} title={active.title} />
+            <Tab key={key} icon={active.data[active.render_index].icon} title={active.data[active.render_index].title} />
         )
     })
     return (

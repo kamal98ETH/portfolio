@@ -7,22 +7,22 @@ let iconData = [
     {
         icon: terminal,
         title: "Welcome",
-        id: "welcome-page"
+        id: "new-tab-welcome-page"
     },
     {
         icon: profile,
         title: "About me",
-        id: "about-me"
+        id: "new-tab-about-me"
     },
     {
         icon: freecodecamp,
         title: "My freeCodeCamp certs",
-        id: "fcc-certs"
+        id: "new-tab-fcc-certs"
     },
     {
         icon: folder,
         title: "Web Development projects",
-        id: "web-dev-projects"
+        id: "new-tab-web-dev-projects"
     }
 ]
 

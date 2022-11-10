@@ -5,13 +5,13 @@ import fcc from "./images/freecodecamp.png"
 import folder from "./images/folder.ico";
 
 let folders_files_data = {
-    "welcome-page": {
+    "new-tab-welcome-page": {
         icon: terminal,
         title: "Welcome",
         type: "terminal",
         content: <p>K:\&gt; Hey, it's Kamal <br /> K:\&gt; Welcome to my portfolio</p>
     },
-    "about-me": {
+    "new-tab-about-me": {
         icon: profile,
         title: "About me",
         type: "window",
@@ -37,7 +37,7 @@ let folders_files_data = {
             ]
         }
     },
-    "fcc-certs": {
+    "new-tab-fcc-certs": {
         icon: fcc,
         title: "My freeCodeCamp certs",
         type: "window",
@@ -63,7 +63,7 @@ let folders_files_data = {
             ]
         }
     },
-    "web-dev-projects": {
+    "new-tab-web-dev-projects": {
         icon: folder,
         title: "Web Dev projects",
         type: "window",
