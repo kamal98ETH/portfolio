@@ -3,7 +3,7 @@ import './App.css';
 import Desktop from './desktop';
 import Window from "./window";
 import Cmd from "./cmd";
-// import Start from "./start";
+import Start from "./start";
 import terminal from "./images/cmd-icon.jpg";
 import folders_files_data from "./folders_files_data"
 import arrayPop from './arrayPop';
@@ -33,7 +33,8 @@ class App extends React.Component {
             }
           ]
         }
-      ]
+      ],
+      start: false
     };
     this.button_handler = this.button_handler.bind(this);
   }
@@ -49,6 +50,9 @@ class App extends React.Component {
 
     //open and close start component
     if (id == "start") {
+      this.setState({
+        start: !this.state.start
+      })
       return;
     }
 
@@ -89,13 +93,28 @@ class App extends React.Component {
         active_components: newArray
       })
     } else if (/^tab/.test(id)) {
+      let tab = id.split("-")[1];
       //render and stop rendering component using tab button
-      this.state.active_components[id.split("-")[1]].render = !this.state.active_components[id.split("-")[1]].render;
+      this.state.active_components[tab].render = !this.state.active_components[tab].render;
+
+      //change z-index after clicking a tab (move clicked tab forwards)
+      console.log(this.state.active_components)
+      let selected_z_index = this.state.active_components[tab].z_index;
+      console.log(typeof (selected_z_index), selected_z_index)
+      for (let i = 0; i < this.state.active_components.length; i++) {
+        if (i == tab) {
+          this.state.active_components[i].z_index = this.state.active_components.length;
+        } else if (this.state.active_components[i].z_index > selected_z_index) {
+          this.state.active_components[i].z_index = this.state.active_components[i].z_index - 1;
+        }
+      }
+
       this.setState({
         active_components: this.state.active_components
       })
     } else {
       //folders or files that shouldnt open a new tab and just renders new data in the same window
+      // needs to be fixed
       let lastItem = this.state.active_components[this.state.active_components.length - 1];
       lastItem.render_index++;
       lastItem.data.push(folders_files_data[id]);
@@ -129,22 +148,25 @@ class App extends React.Component {
       key++;
       if (active.render) {
         if (active.data[active.render_index].type == "terminal") {
-          return <Cmd key={key} data={active.data[active.render_index]} minimize_id={"minimize-" + key} maximize_id={"maximize-" + key} close_id={"close-" + key} action={this.button_handler} />
+          return <Cmd key={key} data={active.data[active.render_index]} minimize_id={"minimize-" + key} maximize_id={"maximize-" + key} close_id={"close-" + key} action={this.button_handler} z_index={active.z_index} />
         }
 
         if (active.data[active.render_index].type == "window") {
-          return <Window key={key} data={active.data[active.render_index]} minimize_id={"minimize-" + key} maximaze_id={"maximaze-" + key} close_id={"close-" + key} action={this.button_handler} />
+          return <Window key={key} data={active.data[active.render_index]} minimize_id={"minimize-" + key} maximaze_id={"maximaze-" + key} close_id={"close-" + key} action={this.button_handler} z_index={active.z_index} />
         }
       }
     })
+
+    let start;
+    if (this.state.start) {
+      start = <Start />
+    }
 
     return (
       <div className="App">
         <Desktop active_components={this.state.active_components} action={this.button_handler} />
         {active_components}
-        {/* {cmd}
-        {window} */}
-        {/* <Start /> */}
+        {start}
       </div>
     );
 

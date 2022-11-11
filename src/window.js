@@ -18,7 +18,7 @@ function Window(props) {
     })
 
     return (
-        < div className="window" >
+        < div className="window" style={{ zIndex: props.z_index }} >
             <WindowHeader data={props.data} minimize_id={props.minimize_id} maximize_id={props.maximize_id} close_id={props.close_id} action={props.action} />
             <div className="file-toolbar">
                 <div>
