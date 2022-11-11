@@ -98,9 +98,7 @@ class App extends React.Component {
       this.state.active_components[tab].render = !this.state.active_components[tab].render;
 
       //change z-index after clicking a tab (move clicked tab forwards)
-      console.log(this.state.active_components)
       let selected_z_index = this.state.active_components[tab].z_index;
-      console.log(typeof (selected_z_index), selected_z_index)
       for (let i = 0; i < this.state.active_components.length; i++) {
         if (i == tab) {
           this.state.active_components[i].z_index = this.state.active_components.length;
@@ -115,11 +113,22 @@ class App extends React.Component {
     } else {
       //folders or files that shouldnt open a new tab and just renders new data in the same window
       // needs to be fixed
-      let lastItem = this.state.active_components[this.state.active_components.length - 1];
-      lastItem.render_index++;
-      lastItem.data.push(folders_files_data[id]);
+      let newArray = [];
+      for (let i = 0; i < this.state.active_components.length; i++) {
+        if (this.state.active_components[i].z_index == this.state.active_components.length) {
+          let newObj = {
+            render: this.state.active_components[i].render,
+            render_index: this.state.active_components[i].render_index + 1,
+            z_index: this.state.active_components[i].z_index,
+            data: [...this.state.active_components[i].data, folders_files_data[id]]
+          };
+          newArray.push(newObj);
+        } else {
+          newArray.push(this.state.active_components[i]);
+        }
+      }
       this.setState({
-        active_components: [...arrayPop(this.state.active_components), lastItem]
+        active_components: newArray
       })
     }
   }
