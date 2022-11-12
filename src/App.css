@@ -556,7 +556,7 @@ button {
 }
 
 #start-body-left-programs button:last-child {
-    width: 171px;
+    width: 190px;
     height: 30px;
     display: flex;
     justify-content: space-between;
@@ -575,7 +575,7 @@ button {
 }
 
 #start-body-left-programs button:last-child:hover {
-    width: 182px;
+    width: 200px;
     border: 0;
     margin: 0 1px;
 }
