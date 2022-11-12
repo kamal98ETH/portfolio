@@ -69,9 +69,11 @@ class App extends React.Component {
           }
         ]
       })
+
     } else if (/^external-link/.test(id)) {
       //open new tab with the given url
       window.open(folders_files_data[id])
+
     } else if (/^minimize/.test(id)) {
       //stop rendering component using minimize button
       this.state.active_components[id.split("-")[1]].render = false
@@ -79,6 +81,7 @@ class App extends React.Component {
         active_components: this.state.active_components
       })
     } else if (/^maximize/.test(id)) {
+
 
     } else if (/^close/.test(id)) {
       //close the selected active component
@@ -92,10 +95,15 @@ class App extends React.Component {
       this.setState({
         active_components: newArray
       })
+
     } else if (/^tab/.test(id)) {
       let tab = id.split("-")[1];
       //render and stop rendering component using tab button
-      this.state.active_components[tab].render = !this.state.active_components[tab].render;
+      if (this.state.active_components[tab].z_index == this.state.active_components.length) {
+        this.state.active_components[tab].render = !this.state.active_components[tab].render;
+      } else {
+        this.state.active_components[tab].render = true
+      }
 
       //change z-index after clicking a tab (move clicked tab forwards)
       let selected_z_index = this.state.active_components[tab].z_index;
@@ -110,9 +118,30 @@ class App extends React.Component {
       this.setState({
         active_components: this.state.active_components
       })
+
+    } else if (/^back/.test(id)) {
+      //go backwards in folders
+      let index = id.split("-")[1];
+      if (this.state.active_components[index].render_index > 0) {
+        this.state.active_components[index].render_index--
+      };
+      this.setState({
+        active_components: this.state.active_components
+      });
+
+    } else if (/^forward/.test(id)) {
+      //go backwards in folders
+      let index = id.split("-")[1];
+      console.log()
+      if (this.state.active_components[index].render_index < this.state.active_components[index].data.length - 1) {
+        this.state.active_components[index].render_index++
+      }
+      this.setState({
+        active_components: this.state.active_components
+      })
+
     } else {
       //folders or files that shouldnt open a new tab and just renders new data in the same window
-      // needs to be fixed
       let newArray = [];
       for (let i = 0; i < this.state.active_components.length; i++) {
         if (this.state.active_components[i].z_index == this.state.active_components.length) {
@@ -120,7 +149,7 @@ class App extends React.Component {
             render: this.state.active_components[i].render,
             render_index: this.state.active_components[i].render_index + 1,
             z_index: this.state.active_components[i].z_index,
-            data: [...this.state.active_components[i].data, folders_files_data[id]]
+            data: [...this.state.active_components[i].data.slice(0, this.state.active_components[i].render_index + 1), folders_files_data[id]]
           };
           newArray.push(newObj);
         } else {
@@ -135,21 +164,6 @@ class App extends React.Component {
 
 
   render() {
-
-    //rendring last item in active components
-    // let cmd;
-    // let window;
-    // let feedData = this.state.active_components[this.state.active_components.length - 1]
-    // if (feedData) {
-    //   if (feedData.type == "terminal") {
-    //     cmd = <Cmd data={feedData} action={this.button_handler} />
-    //   }
-
-    //   if (feedData.type == "window") {
-    //     window = <Window data={feedData} action={this.button_handler} />
-    //   }
-    // }
-
     //rendering all components in active components
     // console.log("render state:", this.state.active_components)
     let key = -1;
@@ -161,7 +175,7 @@ class App extends React.Component {
         }
 
         if (active.data[active.render_index].type == "window") {
-          return <Window key={key} data={active.data[active.render_index]} minimize_id={"minimize-" + key} maximaze_id={"maximaze-" + key} close_id={"close-" + key} action={this.button_handler} z_index={active.z_index} />
+          return <Window key={key} data={active.data[active.render_index]} minimize_id={"minimize-" + key} maximaze_id={"maximaze-" + key} close_id={"close-" + key} back_id={"back-" + key} forward_id={"forward-" + key} action={this.button_handler} z_index={active.z_index} />
         }
       }
     })

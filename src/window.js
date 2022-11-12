@@ -9,6 +9,7 @@ import WindowHeader from "./windowHeader"
 import Folders_files from "./folders_files"
 
 function Window(props) {
+    // console.lo g(props)
     let folders_files = props.data.content.folders_files.map((folder_file) => {
         // console.log(folder_file)
         let key = props.data.content.folders_files.indexOf(folder_file)
@@ -34,15 +35,15 @@ function Window(props) {
                 </div>
             </div>
             <div className="folder-toolbar">
-                <button className="folder-toolbar-back">
-                    <div className="round-icon">
-                        <img src={folderBack} alt="move back folder icon" />
+                <button className="folder-toolbar-back" onClick={props.action} id={props.back_id}>
+                    <div className="round-icon" id={props.back_id}>
+                        <img src={folderBack} alt="move back folder icon" id={props.back_id} />
                     </div>
-                    <p>Back</p>
+                    <p id={props.back_id}>Back</p>
                 </button>
-                <button className="folder-toolbar-forward">
-                    <div className="round-icon">
-                        <img src={folderForward} alt="move forward folder icon" />
+                <button className="folder-toolbar-forward" onClick={props.action} id={props.forward_id}>
+                    <div className="round-icon" id={props.forward_id}>
+                        <img src={folderForward} alt="move forward folder icon" id={props.forward_id} />
                     </div>
                 </button>
                 <button className="folder-toolbar-folderUp" >
