@@ -8,12 +8,7 @@ import terminal from "./images/cmd-icon.jpg";
 import folders_files_data from "./folders_files_data"
 import arrayPop from './arrayPop';
 import arrayCopy from './arrayCopy'
-
-
-// import profile from "./images/profile.ico";
-// import folder from "./images/folder.ico";
-
-
+import PhotoViewer from './photoViewer';
 
 class App extends React.Component {
   constructor(props) {
@@ -174,6 +169,10 @@ class App extends React.Component {
           return <Cmd key={key} data={active.data[active.render_index]} minimize_id={"minimize-" + key} maximize_id={"maximize-" + key} close_id={"close-" + key} action={this.button_handler} z_index={active.z_index} />
         }
 
+        if (active.data[active.render_index].type == "photo") {
+          return <PhotoViewer key={key} data={active.data[active.render_index]} minimize_id={"minimize-" + key} maximize_id={"maximize-" + key} close_id={"close-" + key} action={this.button_handler} z_index={active.z_index} />
+        }
+
         if (active.data[active.render_index].type == "window") {
           return <Window key={key} data={active.data[active.render_index]} minimize_id={"minimize-" + key} maximaze_id={"maximaze-" + key} close_id={"close-" + key} back_id={"back-" + key} forward_id={"forward-" + key} action={this.button_handler} z_index={active.z_index} />
         }
@@ -189,7 +188,7 @@ class App extends React.Component {
       <div className="App">
         <Desktop active_components={this.state.active_components} action={this.button_handler} />
         {active_components}
-        {start}
+        {/* {start} */}
       </div>
     );
 

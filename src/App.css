@@ -127,8 +127,8 @@ body {
 }
 
 .folders-files-icon {
-    height: 150px;
-    width: 150px;
+    height: 170px;
+    width: 170px;
     border: 1px dotted #808080;
     margin: 2px;
     display: flex;
@@ -152,7 +152,8 @@ body {
 }
 
 .window,
-.cmd {
+.cmd,
+.photo {
     height: 80%;
     width: 60%;
     position: absolute;
@@ -476,6 +477,20 @@ button {
     display: none;
 }
 
+.photo-body {
+    height: calc(100% - 50px);
+    width: 100%;
+    background-color: #ecf8ff;
+    padding: 15px 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.photo-body img {
+    width: 100%;
+}
+
 #start-page {
     position: absolute;
     bottom: 50px;
@@ -611,7 +626,8 @@ button {
 @media (max-width: 1000px) {
 
     .window,
-    .cmd {
+    .cmd,
+    .photo {
         height: calc(100% - 51px);
         width: 100%;
         top: 0;

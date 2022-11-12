@@ -1,7 +1,7 @@
 import terminal from "./images/cmd-icon.jpg"
 import profile from "./images/profile.ico";
 import freecodecamp from "./images/freecodecamp.png";
-import folder from "./images/folder.ico";
+import web_design_folder from "./images/web_design_folder.png"
 
 let iconData = [
     {
@@ -20,9 +20,9 @@ let iconData = [
         id: "new-tab-fcc-certs"
     },
     {
-        icon: folder,
-        title: "Web Development projects",
-        id: "new-tab-web-dev-projects"
+        icon: web_design_folder,
+        title: "Web Design projects",
+        id: "new-tab-web-design-projects"
     }
 ]
 
