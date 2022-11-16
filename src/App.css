@@ -58,7 +58,9 @@ body {
 
 #time {
     width: 50%;
+    margin-right: 5px;
     text-align: center;
+    white-space: nowrap;
 }
 
 #notifications {

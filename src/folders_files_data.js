@@ -2,7 +2,6 @@
 import terminal from "./images/cmd-icon.jpg";
 import profile from "./images/profile.ico";
 import fcc from "./images/freecodecamp.png";
-import folder from "./images/folder.ico";
 import email from "./images/email_logo.png"
 import github from "./images/github_logo.png";
 import twitter from "./images/twitter_logo.png";
@@ -191,7 +190,7 @@ let folders_files_data = {
         content: <p>K:\&gt; About this project <br /> K:\&gt; As a part of making my portfolio inspired by microsoft windows xp <br /> K:\&gt; I decided to make the starting page with just html and css, without using any kind of logos or images <br /> K:\&gt; And also making the loading bar animation using css keyframes <br /> K:\&gt; This page is responsive to all kind of screen widths <br /> K:\&gt; Thanks for reading, any feedback is much appreciated</p>
     },
     "dev-project-windows-xp-starting-page-screenshots": {
-        icon: folder,
+        icon: photo_viewer,
         title: "Dev project 1 screenshots",
         type: "window",
         content: {
