@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.b20ff490.css",
-    "main.js": "/portfolio/static/js/main.1c3f861d.js",
+    "main.css": "/portfolio/static/css/main.c7772431.css",
+    "main.js": "/portfolio/static/js/main.c60b349b.js",
     "static/media/xp-logo.png": "/portfolio/static/media/xp-logo.41511b28f1a7dc826523.png",
     "static/media/xp-background.jpg": "/portfolio/static/media/xp-background.17ce657ab1362be245f5.jpg",
     "static/media/icon.ico": "/portfolio/static/media/icon.0f309eaecddc03f5b8b8.ico",
@@ -25,11 +25,11 @@
     "static/media/move-forward.png": "/portfolio/static/media/move-forward.b03a7440455b586379ea.png",
     "static/media/search.ico": "/portfolio/static/media/search.49527e3a085f01a9a1cf.ico",
     "index.html": "/portfolio/index.html",
-    "main.b20ff490.css.map": "/portfolio/static/css/main.b20ff490.css.map",
-    "main.1c3f861d.js.map": "/portfolio/static/js/main.1c3f861d.js.map"
+    "main.c7772431.css.map": "/portfolio/static/css/main.c7772431.css.map",
+    "main.c60b349b.js.map": "/portfolio/static/js/main.c60b349b.js.map"
   },
   "entrypoints": [
-    "static/css/main.b20ff490.css",
-    "static/js/main.1c3f861d.js"
+    "static/css/main.c7772431.css",
+    "static/js/main.c60b349b.js"
   ]
 }
