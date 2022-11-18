@@ -1,4 +1,4 @@
-import closeIcon from "./images/close_window.png"
+import closeIcon from "../images/windows_xp_icons/close_window.png"
 
 function WindowHeader(props) {
     // console.log(props)

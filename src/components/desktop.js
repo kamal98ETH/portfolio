@@ -1,8 +1,8 @@
-import backgroundPic from "./images/xp-background.jpg";
+import backgroundPic from "../images/windows_xp_icons/xp-background.jpg";
 import ToolBar from "./toolBar";
-import './App.css';
+import '../App.css';
 import Folders_files from "./folders_files";
-import iconData from "./desktopicons.js";
+import iconData from "../data/desktopicons.js";
 
 
 function Desktop(props) {

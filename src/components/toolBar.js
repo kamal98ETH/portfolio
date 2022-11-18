@@ -1,4 +1,4 @@
-import windowsLogo from "./images/xp-logo.png";
+import windowsLogo from "../images/windows_xp_icons/xp-logo.png";
 import { useEffect, useState } from 'react'
 import Tab from "./tab";
 

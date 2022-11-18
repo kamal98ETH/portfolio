@@ -1,6 +1,6 @@
-import profileLogo from "./images/icon.ico";
-import rightArrow from "./images/go-arrow.png";
-import exemple from "./images/folder.ico";
+import profileLogo from "../images/windows_xp_icons/icon.ico";
+import rightArrow from "../images/windows_xp_icons/go-arrow.png";
+import exemple from "../images/windows_xp_icons/folder.ico";
 import StartPrograms from "./startPrograms";
 
 function Start() {

@@ -1,14 +1,14 @@
 import React from 'react';
 import './App.css';
-import Desktop from './desktop';
-import Window from "./window";
-import Cmd from "./cmd";
-import Start from "./start";
-import terminal from "./images/cmd-icon.jpg";
-import folders_files_data from "./folders_files_data"
+import Desktop from './components/desktop';
+import Window from "./components/window";
+import Cmd from "./components/cmd";
+import Start from "./components/start";
+import terminal from "./images/windows_xp_icons/cmd-icon.jpg";
+import folders_files_data from "./data/folders_files_data"
 import arrayPop from './arrayPop';
 import arrayCopy from './arrayCopy'
-import PhotoViewer from './photoViewer';
+import PhotoViewer from './components/photoViewer';
 
 class App extends React.Component {
   constructor(props) {

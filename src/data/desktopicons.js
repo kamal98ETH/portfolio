@@ -1,7 +1,7 @@
-import terminal from "./images/cmd-icon.jpg"
-import profile from "./images/profile.ico";
-import freecodecamp from "./images/freecodecamp.png";
-import web_design_folder from "./images/web_design_folder.png"
+import terminal from "../images/windows_xp_icons/cmd-icon.jpg"
+import profile from "../images/windows_xp_icons/profile.ico";
+import freecodecamp from "../images/desktop/about_me/freecodecamp.png";
+import web_design_folder from "../images/desktop/web_design_projects/web_design_folder.png"
 
 let iconData = [
     {

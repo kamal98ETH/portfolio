@@ -1,10 +1,10 @@
 
-import windowLogo from "./images/xp-logo.png"
-import folderBack from "./images/move-back.png"
-import folderForward from "./images/move-forward.png"
-import folderUp from "./images/folder-up.png"
-import folder from "./images/folder.ico"
-import search from "./images/search.ico"
+import windowLogo from "../images/windows_xp_icons/xp-logo.png"
+import folderBack from "../images/windows_xp_icons/move-back.png"
+import folderForward from "../images/windows_xp_icons/move-forward.png"
+import folderUp from "../images/windows_xp_icons/folder-up.png"
+import folder from "../images/windows_xp_icons/folder.ico"
+import search from "../images/windows_xp_icons/search.ico"
 import WindowHeader from "./windowHeader"
 import Folders_files from "./folders_files"
 
