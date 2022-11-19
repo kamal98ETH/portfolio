@@ -481,10 +481,11 @@ button {
 }
 
 .photo-body {
-    height: calc(100% - 50px);
+    height: calc(100% - 100px);
     width: 100%;
     background-color: #ecf8ff;
     padding: 15px 2px;
+    overflow: hidden;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -492,6 +493,19 @@ button {
 
 .photo-body img {
     width: 100%;
+}
+
+.photo-footer {
+    height: 50px;
+    background-color: #ecf8ff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.photo-footer img {
+    height: 30px;
+    margin: 0 10px;
 }
 
 #start-page {

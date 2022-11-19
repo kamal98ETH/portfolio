@@ -135,6 +135,43 @@ class App extends React.Component {
         active_components: this.state.active_components
       })
 
+    } else if (/^new-photo-tab/.test(id)) {
+      //open new photo tab
+      let id_array = id.split("-");
+      let render_index = parseInt(id_array[id_array.length - 1]);
+      let id_body = id_array.slice(0, id_array.length - 1).join("-");
+      this.setState({
+        active_components: [
+          ...this.state.active_components,
+          {
+            render: true,
+            render_index: render_index,
+            z_index: this.state.active_components.length + 1,
+            data: folders_files_data[id_body]
+          }
+        ]
+      })
+
+    } else if (/^photo-previous/.test(id)) {
+      let tab_index = id.split("-")[2]
+      if (this.state.active_components[tab_index].render_index > 0) {
+        this.state.active_components[tab_index].render_index--;
+      } else {
+        this.state.active_components[tab_index].render_index = this.state.active_components[tab_index].data.length - 1;
+      }
+      this.setState({
+        active_components: this.state.active_components
+      })
+    } else if (/^photo/.test(id)) {
+      let tab_index = id.split("-")[2]
+      if (this.state.active_components[tab_index].render_index < this.state.active_components[tab_index].data.length - 1) {
+        this.state.active_components[tab_index].render_index++;
+      } else {
+        this.state.active_components[tab_index].render_index = 0;
+      }
+      this.setState({
+        active_components: this.state.active_components
+      })
     } else {
       //folders or files that shouldnt open a new tab and just renders new data in the same window
       let newArray = [];
@@ -170,7 +207,7 @@ class App extends React.Component {
         }
 
         if (active.data[active.render_index].type == "photo") {
-          return <PhotoViewer key={key} data={active.data[active.render_index]} minimize_id={"minimize-" + key} maximize_id={"maximize-" + key} close_id={"close-" + key} action={this.button_handler} z_index={active.z_index} />
+          return <PhotoViewer key={key} key_id={key} data={active.data[active.render_index]} minimize_id={"minimize-" + key} maximize_id={"maximize-" + key} close_id={"close-" + key} action={this.button_handler} z_index={active.z_index} />
         }
 
         if (active.data[active.render_index].type == "window") {
