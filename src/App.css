@@ -469,11 +469,31 @@ button {
     height: calc(100% - 50px);
     width: 100%;
     background-color: #000;
-    color: #1DEE1A;
-    font-size: 25px;
+    color: #00ff00;
+    font-size: 1.7rem;
+    text-shadow: 0 0 1.7rem white;
     padding: 15px 2px;
     font-family: Terminal;
     overflow-y: scroll;
+}
+
+.cmd p::after {
+    content: "_";
+    animation: blink 1s infinite;
+}
+
+@keyframes blink {
+
+    from,
+    to {
+        color: black;
+        background: black;
+    }
+
+    50% {
+        color: #00ff00;
+        background: #00ff00;
+    }
 }
 
 .cmd-body::-webkit-scrollbar {

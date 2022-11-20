@@ -1,6 +1,7 @@
 import terminal from "../../images/windows_xp_icons/cmd-icon.jpg";
 import github from "../../images/desktop/about_me/github_logo.png";
 import web_design_folder from "../../images/desktop/web_design_projects/web_design_folder.png";
+import photo_folder from "../../images/windows_xp_icons/photo_folder_logo.png"
 import photo_viewer from "../../images/windows_xp_icons/photo_viewer.ico";
 import windows_logo_screen_1 from "../../images/desktop/web_design_projects/windows_xp_starting_page/web_design_windows_logo_1.png";
 import windows_logo_screen_2 from "../../images/desktop/web_design_projects/windows_xp_starting_page/web_design_windows_logo_2.png";
@@ -37,7 +38,7 @@ let fourth_desktop_item = {
                     id: "new-tab-dev-dev-project-windows-xp-starting-page-readme"
                 },
                 {
-                    icon: photo_viewer,
+                    icon: photo_folder,
                     title: "Project screenshots",
                     id: "dev-project-windows-xp-starting-page-screenshots"
                 },
@@ -60,7 +61,7 @@ let fourth_desktop_item = {
     "external-link-dev-project-windows-xp-starting-page-source-code": "https://github.com/kamal98ETH/kamal98ETH.github.io",
     //windows XP starting page screenshots folder
     "dev-project-windows-xp-starting-page-screenshots": {
-        icon: photo_viewer,
+        icon: photo_folder,
         title: "Dev project 1 screenshots",
         type: "window",
         content: {
