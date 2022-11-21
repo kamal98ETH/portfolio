@@ -64,7 +64,7 @@ let sec_desktop_item = {
         icon: terminal,
         title: "me.exe",
         type: "terminal",
-        content: <p>K:\&gt; Hey, <br />K:\&gt; it's Kamal <br /> K:\&gt; I am a self-taught developer<br />K:\&gt; I started learning programming on my own in January 2022 and I have been loving it since <br />K:\&gt; I’ve learned a lot since then and I do have a lot more to learn <br />K:\&gt; I am glad that you found your way to my portfolio <br />K:\&gt; I will be constantly sharing my work over here as I learn more new things <br />K:\&gt; I hope you have a good time browsing around here <br />K:\&gt; M looking forward to getting to know you too, so feel free to contact me on my socials <br />K:\&gt; And also if you have any remarks, advices, mistakes you found… I would be very happy to hear from you </p>
+        content: "K:> Hey, \n K:> it's Kamal \n K:> I am a self-taught developer\n K:> I started learning programming on my own in January 2022 and I have been loving it since \n K:> I’ve learned a lot since then and I do have a lot more to learn \n K:> I am glad that you found your way to my portfolio \n K:> I will be constantly sharing my work over here as I learn more new things \n K:> I hope you have a good time browsing around here \n K:> M looking forward to getting to know you too, so feel free to contact me on my socials \n K:> And also if you have any remarks, advices, mistakes you found… I would be very happy to hear from you"
     },
     "external-link-my-email": "mailto:kamal98eth@gmail.com",
     "external-link-my-github": "https://github.com/kamal98ETH",

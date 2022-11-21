@@ -55,7 +55,7 @@ let fourth_desktop_item = {
         icon: terminal,
         title: "readme",
         type: "terminal",
-        content: <p>K:\&gt; About this project <br /> K:\&gt; As part of making my portfolio inspired by microsoft windows xp <br /> K:\&gt; I decided to make the starting page with just html and css, without using any kind of logos or images <br /> K:\&gt; And also making the loading bar animation using css keyframes <br /> K:\&gt; This page is responsive to all kind of screen widths <br /> K:\&gt; Thanks for reading, any feedback is much appreciated</p>
+        content: "K:> About this project \n K:> As part of making my portfolio inspired by microsoft windows xp \n K:> I decided to make the starting page with just html and css, without using any kind of logos or images \n K:> And also making the loading bar animation using css keyframes \n K:> This page is responsive to all kind of screen widths \n K:> Thanks for reading, any feedback is much appreciated"
     },
     //windows XP starting page source code
     "external-link-dev-project-windows-xp-starting-page-source-code": "https://github.com/kamal98ETH/kamal98ETH.github.io",

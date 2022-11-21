@@ -5,7 +5,7 @@ import Window from "./components/window";
 import Cmd from "./components/cmd";
 import Start from "./components/start";
 import terminal from "./images/windows_xp_icons/cmd-icon.jpg";
-import folders_files_data from "./data/folders_files_data"
+import folders_files_data from "./data/folders_files_data";
 import arrayPop from './arrayPop';
 import arrayCopy from './arrayCopy'
 import PhotoViewer from './components/photoViewer';
@@ -24,7 +24,7 @@ class App extends React.Component {
               icon: terminal,
               title: "Welcome",
               type: "terminal",
-              content: <p>K:\&gt; Hey, it's Kamal <br /> K:\&gt; Welcome to my portfolio</p>
+              content: "K:> Hey, it's Kamal \n K:> Welcome to my portfolio"
             }
           ]
         }

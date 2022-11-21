@@ -4,7 +4,7 @@ let first_desktop_item = {
         icon: terminal,
         title: "Welcome",
         type: "terminal",
-        content: <p>K:\&gt; Hey, it's Kamal <br /> K:\&gt; Welcome to my portfolio</p>
+        content: "K:> Hey, it's Kamal \n K:> Welcome to my portfolio"
     }
 }
 export default first_desktop_item;

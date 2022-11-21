@@ -473,6 +473,7 @@ button {
     font-size: 1.7rem;
     text-shadow: 0 0 1.7rem white;
     padding: 15px 2px;
+    white-space: pre-line;
     font-family: Terminal;
     overflow-y: scroll;
 }
