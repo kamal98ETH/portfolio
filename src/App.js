@@ -24,7 +24,19 @@ class App extends React.Component {
               icon: terminal,
               title: "Welcome",
               type: "terminal",
-              content: "K:> Hey, it's Kamal \n K:> Welcome to my portfolio"
+              content: [
+                {
+                  type: "paragraph",
+                  data: "K:> Hey, it's Kamal"
+                },
+                {
+                  type: "break"
+                },
+                {
+                  type: "paragraph",
+                  data: "K:> Welcome to my portfolio"
+                }
+              ]
             }
           ]
         }
