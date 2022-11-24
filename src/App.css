@@ -25,40 +25,40 @@ body {
 
 #toolbar {
     width: 100%;
-    height: 50px;
+    height: 3.125rem;
     background: linear-gradient(#6287d8, #245DDB 25%, #245DDB 75%, #6287d8);
     display: flex;
 }
 
 .start {
-    width: 180px;
-    height: 50px;
+    width: 11.25rem;
+    height: 3.125rem;
     background: linear-gradient(90deg, #80ac80, #47AB47, #2c6d2c);
-    border-radius: 0 20px 20px 0;
+    border-radius: 0 1.25rem 1.25rem 0;
     display: flex;
     justify-content: center;
     align-items: center;
     cursor: pointer;
     border: 0;
-    padding-right: 25px;
+    padding-right: 1.563rem;
 }
 
 .start img {
-    width: 40px;
-    height: 40px;
-    margin: 0 10px 0 0;
+    width: 2.5rem;
+    height: 2.5rem;
+    margin: 0 0.625rem 0 0;
 }
 
 .start p {
     color: #fff;
-    text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
-    font-size: 27px;
+    text-shadow: 0.063rem 0 0 #000, 0 -0.063rem 0 #000, 0 0.063rem 0 #000, -0.063rem 0 0 #000;
+    font-size: 1.688rem;
     font-family: Roboto, Arial, Helvetica, sans-serif;
 }
 
 #time {
     width: 50%;
-    margin-right: 5px;
+    margin-right: 0.313rem;
     text-align: center;
     white-space: nowrap;
 }
@@ -68,20 +68,20 @@ body {
 }
 
 #tabs {
-    width: calc(100% - 390px);
-    height: 50px;
+    width: calc(100% - 24.375rem);
+    height: 3.125rem;
     display: flex;
     align-items: center;
-    margin: 0 5px;
+    margin: 0 0.313rem;
 }
 
 .tab {
-    height: 45px;
-    width: 200px;
+    height: 2.813rem;
+    width: 12.5rem;
     background-color: #1C9AEB;
-    margin: 0 1px;
-    border: 1px solid #000;
-    border-radius: 5px;
+    margin: 0 0.063rem;
+    border: 0.063rem solid #000;
+    border-radius: 0.313rem;
     display: flex;
     align-items: center;
     overflow: hidden;
@@ -92,32 +92,32 @@ body {
 }
 
 .tab img {
-    height: 38px;
-    padding: 0 10px;
+    height: 2.375rem;
+    padding: 0 0.625rem;
 }
 
 .tab h1 {
-    font-size: 18px;
+    font-size: 1.125rem;
     color: #fff;
-    text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
-    height: 18px;
+    text-shadow: 0.063rem 0 0 #000, 0 -0.063rem 0 #000, 0 0.063rem 0 #000, -0.063rem 0 0 #000;
+    height: 1.125rem;
     white-space: nowrap;
 }
 
 #time-notif {
     position: absolute;
     right: 0;
-    height: 50px;
-    width: 200px;
+    height: 3.125rem;
+    width: 12.5rem;
     background-color: #1C9AEB;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 25px;
+    font-size: 1.563rem;
 }
 
 #desktop-icons {
-    height: calc(100% - 50px);
+    height: calc(100% - 3.125rem);
     width: 100%;
     display: flex;
 }
@@ -129,10 +129,10 @@ body {
 }
 
 .folders-files-icon {
-    height: 170px;
-    width: 170px;
-    border: 1px dotted #808080;
-    margin: 2px;
+    height: 10.625rem;
+    width: 10.625rem;
+    border: 0.063rem dotted #808080;
+    margin: 0.125rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -140,18 +140,18 @@ body {
 }
 
 .folders-files-icon img {
-    height: 70px;
-    width: 70px;
+    height: 4.375rem;
+    width: 4.375rem;
 }
 
 .folders-files-icon h1 {
     text-align: center;
-    font-size: 17px;
+    font-size: 1.063rem;
     font-weight: 900;
     font-family: Arial, Helvetica, sans-serif;
-    padding: 5px 2px;
+    padding: 0.313rem 0.125rem;
     color: #fff;
-    text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
+    text-shadow: 0.063rem 0 0 #000, 0 -0.063rem 0 #000, 0 0.063rem 0 #000, -0.063rem 0 0 #000;
 }
 
 .window,
@@ -160,8 +160,8 @@ body {
     height: 80%;
     width: 60%;
     position: absolute;
-    border-radius: 15px 15px 0 0;
-    border: 2px solid #245DDB;
+    border-radius: 0.938rem 0.938rem 0 0;
+    border: 0.125rem solid #245DDB;
     top: 8%;
     left: 20%;
     overflow: hidden;
@@ -169,10 +169,10 @@ body {
 
 .window-header {
     background-color: #245DDB;
-    height: 50px;
+    height: 3.125rem;
     display: flex;
     justify-content: space-between;
-    border-radius: 13px 13px 0 0;
+    border-radius: 0.813rem 0.813rem 0 0;
 }
 
 .window-header-title {
@@ -182,13 +182,13 @@ body {
 }
 
 .window-header-title img {
-    height: 40px;
-    margin: 0 5px 0 15px;
+    height: 2.5rem;
+    margin: 0 0.313rem 0 0.938rem;
 }
 
 .window-header-title h1 {
-    font-size: 25px;
-    margin: 0 5px;
+    font-size: 1.563rem;
+    margin: 0 0.313rem;
     color: #fff;
     white-space: nowrap;
 }
@@ -199,8 +199,8 @@ body {
 }
 
 .window-header button {
-    width: 40px;
-    height: 40px;
+    width: 2.5rem;
+    height: 2.5rem;
 }
 
 button {
@@ -209,42 +209,42 @@ button {
 }
 
 .min-icon-outer {
-    height: 32px;
-    width: 32px;
+    height: 2rem;
+    width: 2rem;
     background-color: #245DDB;
-    border-radius: 5px;
+    border-radius: 0.313rem;
     margin: auto;
-    border: 1px solid #fff;
+    border: 0.063rem solid #fff;
 }
 
 .min-icon-inner {
-    height: 5px;
-    width: 12px;
+    height: 0.313rem;
+    width: 0.75rem;
     display: flex;
     background-color: #fff;
     position: relative;
-    top: 18px;
-    left: 6px;
+    top: 1.125rem;
+    left: 0.375rem;
 }
 
 .max-icon-outer {
-    height: 32px;
-    width: 32px;
+    height: 2rem;
+    width: 2rem;
     background-color: #245DDB;
-    border-radius: 5px;
+    border-radius: 0.313rem;
     margin: auto;
-    border: 1px solid #fff;
+    border: 0.063rem solid #fff;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 .max-icon-inner {
-    height: 18px;
-    width: 18px;
+    height: 1.125rem;
+    width: 1.125rem;
     background-color: #245DDB;
     border-color: #fff;
-    border-width: 5px 1px 1px;
+    border-width: 0.313rem 0.063rem 0.063rem;
     border-style: solid;
 }
 
@@ -262,26 +262,26 @@ button {
 }
 
 .file-toolbar {
-    height: 25px;
+    height: 1.563rem;
     background-color: #EBE8D7;
     display: flex;
     justify-content: space-between;
-    border-bottom: 1px solid #808080;
+    border-bottom: 0.063rem solid #808080;
 }
 
 .file-toolbar button {
-    padding: 4px 5px;
-    margin: 1px;
+    padding: 0.25rem 0.313rem;
+    margin: 0.063rem;
 }
 
 .file-toolbar button:hover {
     margin: 0;
-    border: 1px solid #000;
+    border: 0.063rem solid #000;
 }
 
 .window-toolbar-logo {
-    height: 24px;
-    width: 40px;
+    height: 1.5rem;
+    width: 2.5rem;
     background-color: #FFF;
     display: flex;
     justify-content: center;
@@ -289,36 +289,36 @@ button {
 }
 
 .window-toolbar-logo img {
-    height: 20px;
+    height: 1.25rem;
 }
 
 .folder-toolbar {
-    height: 60px;
+    height: 3.75rem;
     background-color: #EBE8D7;
-    border-bottom: 1px solid #808080;
+    border-bottom: 0.063rem solid #808080;
     display: flex;
-    font-size: 350px;
+    font-size: 21.875rem;
 }
 
 .folder-toolbar p {
-    font-size: 17px;
+    font-size: 1.063rem;
 }
 
 .folder-toolbar button:hover {
-    border: 1px solid #000;
+    border: 0.063rem solid #000;
 }
 
 .folder-toolbar-back {
-    height: 60px;
-    width: 130px;
+    height: 3.75rem;
+    width: 8.125rem;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 .round-icon {
-    height: 35px;
-    width: 35px;
+    height: 2.188rem;
+    width: 2.188rem;
     background: linear-gradient(135deg, #67fd41, #419F29 40%);
     border-radius: 50%;
     display: flex;
@@ -327,28 +327,28 @@ button {
 }
 
 .round-icon img {
-    height: 20px;
-    width: 20px;
+    height: 1.25rem;
+    width: 1.25rem;
 }
 
 .folder-toolbar-back .round-icon {
-    margin: 0 10px 0 -10px;
+    margin: 0 0.625rem 0 -0.625rem;
 }
 
 .folder-toolbar-forward {
-    width: 70px;
+    width: 4.375rem;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 .folder-toolbar-folderUp {
-    width: 60px;
-    border-right: 1px solid #808080;
+    width: 3.75rem;
+    border-right: 0.063rem solid #808080;
 }
 
 .folder-toolbar-folderUp img {
-    height: 45px;
+    height: 2.813rem;
 }
 
 .folder-toolbar-search,
@@ -356,29 +356,29 @@ button {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 120px;
+    width: 7.5rem;
 }
 
 .folder-toolbar-folders {
-    border-right: 1px solid #808080;
+    border-right: 0.063rem solid #808080;
 }
 
 .folder-toolbar-search img,
 .folder-toolbar-folders img {
-    height: 40px;
-    margin-right: 5px;
+    height: 2.5rem;
+    margin-right: 0.313rem;
 }
 
 .search-toolbar {
     width: 100%;
-    height: 25px;
+    height: 1.563rem;
     background-color: #EBE8D7;
     display: flex;
-    border-bottom: 1px solid #808080;
+    border-bottom: 0.063rem solid #808080;
 }
 
 .search-toolbar p {
-    margin: auto 10px;
+    margin: auto 0.625rem;
 }
 
 .search-toolbar form {
@@ -396,31 +396,31 @@ button {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 60px;
+    width: 3.75rem;
 }
 
 .search-toolbar button:hover {
-    border: 1px solid #000;
+    border: 0.063rem solid #000;
 }
 
 .go-icon {
-    height: 20px;
-    width: 20px;
+    height: 1.25rem;
+    width: 1.25rem;
     background-color: #419F29;
-    border-radius: 2px;
+    border-radius: 0.125rem;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 .go-icon img {
-    height: 15px;
+    height: 0.938rem;
 }
 
 .window-content {
     width: 100%;
-    height: calc(100% - 186px);
-    border-bottom: 1px solid #808080;
+    height: calc(100% - 11.625rem);
+    border-bottom: 0.063rem solid #808080;
     display: flex;
 }
 
@@ -433,13 +433,13 @@ button {
 .window-content-main {
     height: 100%;
     width: 75%;
-    padding: 20px;
+    padding: 1.25rem;
     background-color: #fff;
     overflow-y: scroll;
 }
 
 ::-webkit-scrollbar {
-    width: 15px;
+    width: 0.938rem;
 }
 
 ::-webkit-scrollbar-thumb {
@@ -462,30 +462,30 @@ button {
 
 .window-footer {
     width: 100%;
-    height: 25px;
+    height: 1.563rem;
     background-color: #EBE8D7;
 }
 
 .cmd-body {
-    height: calc(100% - 50px);
+    height: calc(100% - 3.125rem);
     width: 100%;
     background-color: #000;
     color: #00ff00;
     font-size: 1.7rem;
     text-shadow: 0 0 1.7rem white;
-    padding: 15px 2px;
+    padding: 0.938rem 0.125rem;
     font-family: Terminal;
     overflow-y: scroll;
 }
 
 .cmd-body p {
     display: inline;
-    padding-right: 5px;
+    padding-right: 0.313rem;
 }
 
 .cmd-body a {
     text-decoration: none;
-    padding-right: 5px;
+    padding-right: 0.313rem;
     color: #00ff00;
 }
 
@@ -513,10 +513,10 @@ button {
 }
 
 .photo-body {
-    height: calc(100% - 100px);
+    height: calc(100% - 6.25rem);
     width: 100%;
     background-color: #ecf8ff;
-    padding: 15px 2px;
+    padding: 0.938rem 0.125rem;
     overflow: hidden;
     display: flex;
     justify-content: center;
@@ -528,7 +528,7 @@ button {
 }
 
 .photo-footer {
-    height: 50px;
+    height: 3.125rem;
     background-color: #ecf8ff;
     display: flex;
     justify-content: center;
@@ -536,40 +536,40 @@ button {
 }
 
 .photo-footer img {
-    height: 30px;
-    margin: 0 10px;
+    height: 1.875rem;
+    margin: 0 0.625rem;
 }
 
 #start-page {
     position: absolute;
-    bottom: 50px;
-    width: 520px;
-    height: 600px;
-    border-radius: 10px 10px 0 0;
+    bottom: 3.125rem;
+    width: 32.5rem;
+    height: 37.5rem;
+    border-radius: 0.625rem 0.625rem 0 0;
     overflow: hidden;
 }
 
 #start-header {
-    height: 80px;
+    height: 5rem;
     background: linear-gradient(#245DDB 60%, #6287d8);
-    border-radius: 10px 10px 0 0;
+    border-radius: 0.625rem 0.625rem 0 0;
     display: flex;
     align-items: center;
     color: #fff;
-    text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
+    text-shadow: 0.063rem 0 0 #000, 0 -0.063rem 0 #000, 0 0.063rem 0 #000, -0.063rem 0 0 #000;
 }
 
 #start-header img {
-    height: 70px;
+    height: 4.375rem;
     background-color: #fff;
-    border: 5px solid gray;
-    border-radius: 15px;
-    margin: auto 15px;
+    border: 0.313rem solid gray;
+    border-radius: 0.938rem;
+    margin: auto 0.938rem;
 }
 
 #start-body {
     width: 100%;
-    height: calc(100% - 135px);
+    height: calc(100% - 8.438rem);
     background-color: #bfddf0;
     display: flex;
     overflow: hidden;
@@ -578,14 +578,14 @@ button {
 #start-body-left-programs,
 #start-body-right-programs {
     width: 50%;
-    padding: 10px 5px;
+    padding: 0.625rem 0.313rem;
     overflow: hidden;
 }
 
 #start-body-left-programs button,
 #start-body-right-programs button {
     width: 100%;
-    padding: 5px 10px;
+    padding: 0.313rem 0.625rem;
     display: flex;
     align-items: center;
 }
@@ -595,146 +595,146 @@ button {
 }
 
 #start-body-left-programs button {
-    height: 70px;
+    height: 4.375rem;
 }
 
 #start-body-right-programs button {
-    font-size: 12px;
-    height: 40px;
+    font-size: 0.75rem;
+    height: 2.5rem;
 }
 
 #start-body-left-programs button:hover,
 #start-body-right-programs button:hover {
-    border: 1px solid gray;
-    padding: 4px 9px;
+    border: 0.063rem solid gray;
+    padding: 0.25rem 0.563rem;
 }
 
 #start-body-left-programs img {
-    height: 60px;
-    margin: 0 10px 0 0;
+    height: 3.75rem;
+    margin: 0 0.625rem 0 0;
 }
 
 #start-body-right-programs img {
-    height: 30px;
-    margin: 0 10px;
+    height: 1.875rem;
+    margin: 0 0.625rem;
 }
 
 #start-body-left-programs button:last-child {
-    width: 190px;
-    height: 30px;
+    width: 11.875rem;
+    height: 1.875rem;
     display: flex;
     justify-content: space-between;
     position: absolute;
     left: 5%;
-    bottom: 55px;
-    font-size: 17px;
+    bottom: 3.438rem;
+    font-size: 1.063rem;
     font-weight: 900;
     transition: width 1s;
 }
 
 #start-body-left-programs button:last-child img {
-    height: 25px;
-    margin: 0 10px;
+    height: 1.563rem;
+    margin: 0 0.625rem;
     transition: 1s;
 }
 
 #start-body-left-programs button:last-child:hover {
-    width: 200px;
+    width: 12.5rem;
     border: 0;
-    margin: 0 1px;
+    margin: 0 0.063rem;
 }
 
 #start-footer {
     background: linear-gradient(#6287d8, #245DDB 50%);
-    height: 55px;
+    height: 3.438rem;
     display: flex;
     flex-direction: row-reverse;
-    padding: 5px;
+    padding: 0.313rem;
 }
 
 #start-footer button {
-    padding: 5px;
-    margin: 0 5px;
+    padding: 0.313rem;
+    margin: 0 0.313rem;
     display: flex;
     align-items: center;
-    font-size: 11px;
+    font-size: 0.688rem;
     color: #fff;
-    text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
+    text-shadow: 0.063rem 0 0 #000, 0 -0.063rem 0 #000, 0 0.063rem 0 #000, -0.063rem 0 0 #000;
 }
 
 #start-footer button:hover {
-    border: 1px solid rgb(99, 99, 99);
-    margin: 0 4px;
+    border: 0.063rem solid rgb(99, 99, 99);
+    margin: 0 0.25rem;
 }
 
 #start-footer img {
-    height: 40px;
-    margin: 0 15px;
+    height: 2.5rem;
+    margin: 0 0.938rem;
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 62.5rem) {
 
     .window,
     .cmd,
     .photo {
-        height: calc(100% - 51px);
+        height: calc(100% - 3.188rem);
         width: 100%;
         top: 0;
         left: 0;
     }
 
     .start {
-        width: 150px;
+        width: 9.375rem;
     }
 
     #time-notif {
-        width: 150px;
+        width: 9.375rem;
     }
 
     #tabs {
-        width: calc(100% - 310px);
+        width: calc(100% - 19.375rem);
     }
 
     .folders-files-icon {
-        height: 110px;
-        width: 110px;
-        margin: 1px;
+        height: 6.875rem;
+        width: 6.875rem;
+        margin: 0.063rem;
     }
 
     .folders-files-icon img {
-        height: 45px;
-        width: 45px;
+        height: 2.813rem;
+        width: 2.813rem;
     }
 
     .folders-files-icon h1 {
-        font-size: 13px;
+        font-size: 0.813rem;
     }
 
     .window-header-title img {
-        height: 35px;
+        height: 2.188rem;
     }
 
     .window-header-title h1 {
-        font-size: 18px;
+        font-size: 1.125rem;
     }
 
     .tab {
-        width: 150px;
+        width: 9.375rem;
     }
 
     .tab img {
-        height: 32px;
+        height: 2rem;
     }
 }
 
-@media (max-width: 550px) {
+@media (max-width: 34.375rem) {
 
     .folder-toolbar p {
         display: none;
     }
 
     .folder-toolbar button {
-        width: 60px;
+        width: 3.75rem;
         height: 100%;
     }
 
@@ -747,11 +747,11 @@ button {
     }
 
     .start {
-        width: 70px;
+        width: 4.375rem;
     }
 
     .start img {
-        margin: 0 -15px 0 0;
+        margin: 0 -0.938rem 0 0;
     }
 
     .start p {
@@ -759,48 +759,48 @@ button {
     }
 
     #tabs {
-        width: calc(100% - 180px);
+        width: calc(100% - 11.25rem);
     }
 
     #time-notif {
-        width: 100px;
-        font-size: 20px;
+        width: 6.25rem;
+        font-size: 1.25rem;
     }
 
     .folders-files-icon {
-        height: 85px;
-        width: 85px;
-        margin: 1px;
+        height: 5.313rem;
+        width: 5.313rem;
+        margin: 0.063rem;
     }
 
     .folders-files-icon img {
-        height: 35px;
-        width: 35px;
+        height: 2.188rem;
+        width: 2.188rem;
     }
 
     .folders-files-icon h1 {
-        font-size: 10px;
+        font-size: 0.625rem;
     }
 
     .window-header-title img {
-        height: 30px;
+        height: 1.875rem;
     }
 
     .window-header-title h1 {
-        font-size: 15px;
+        font-size: 0.938rem;
     }
 
     .tab {
-        width: 110px;
+        width: 6.875rem;
     }
 
     .tab img {
-        height: 25px;
-        padding: 0 5px;
+        height: 1.563rem;
+        padding: 0 0.313rem;
     }
 
     .tab h1 {
-        font-size: 15px;
-        height: 15px;
+        font-size: 0.938rem;
+        height: 0.938rem;
     }
 }

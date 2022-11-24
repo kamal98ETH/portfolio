@@ -9,6 +9,7 @@ import folders_files_data from "./data/folders_files_data";
 import arrayPop from './arrayPop';
 import arrayCopy from './arrayCopy'
 import PhotoViewer from './components/photoViewer';
+import welcome from './data/Desktop_folders/cmd_body_text/welcome_text';
 
 class App extends React.Component {
   constructor(props) {
@@ -24,19 +25,7 @@ class App extends React.Component {
               icon: terminal,
               title: "Welcome",
               type: "terminal",
-              content: [
-                {
-                  type: "paragraph",
-                  data: "K:> Hey, it's Kamal"
-                },
-                {
-                  type: "break"
-                },
-                {
-                  type: "paragraph",
-                  data: "K:> Welcome to my portfolio"
-                }
-              ]
+              content: welcome
             }
           ]
         }

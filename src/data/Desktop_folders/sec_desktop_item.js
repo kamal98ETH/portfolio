@@ -7,6 +7,7 @@ import twitter from "../../images/desktop/about_me/twitter_logo.png";
 import replit from "../../images/desktop/about_me/replit_logo.png";
 import codepen from "../../images/desktop/about_me/codepen_logo.png";
 import linkedIn from "../../images/desktop/about_me/linkedin_logo.png";
+import me_exe from "./cmd_body_text/about_me/me_exe_text"
 
 let sec_desktop_item = {
     "new-tab-about-me": {
@@ -64,75 +65,7 @@ let sec_desktop_item = {
         icon: terminal,
         title: "me.exe",
         type: "terminal",
-        content: [
-            {
-                type: "paragraph",
-                data: "K:> Hey,"
-            },
-            {
-                type: "break"
-            },
-            {
-                type: "paragraph",
-                data: "K:> it's Kamal"
-            },
-            {
-                type: "break"
-            },
-            {
-                type: "paragraph",
-                data: "K:> I am a self-taught developer"
-            },
-            {
-                type: "break"
-            },
-            {
-                type: "paragraph",
-                data: "K:> I started learning programming on my own in January 2022 and I have been loving it since"
-            },
-            {
-                type: "break"
-            },
-            {
-                type: "paragraph",
-                data: "K:> I’ve learned a lot since then and I do have a lot more to learn"
-            },
-            {
-                type: "break"
-            },
-            {
-                type: "paragraph",
-                data: "K:> I am glad that you found your way to my portfolio"
-            },
-            {
-                type: "break"
-            },
-            {
-                type: "paragraph",
-                data: "K:> I will be constantly sharing my work over here as I learn more new things "
-            },
-            {
-                type: "break"
-            },
-            {
-                type: "paragraph",
-                data: "K:> I hope you have a good time browsing around here"
-            },
-            {
-                type: "break"
-            },
-            {
-                type: "paragraph",
-                data: "K:> M looking forward to getting to know you too, so feel free to contact me on my socials"
-            },
-            {
-                type: "break"
-            },
-            {
-                type: "paragraph",
-                data: "K:> And also if you have any remarks, advices, mistakes you found… I would be very happy to hear from you"
-            }
-        ]
+        content: me_exe
     },
     "external-link-my-email": "mailto:kamal98eth@gmail.com",
     "external-link-my-github": "https://github.com/kamal98ETH",

@@ -3,6 +3,7 @@ import github from "../../images/desktop/about_me/github_logo.png";
 import web_design_folder from "../../images/desktop/web_design_projects/web_design_folder.png";
 import photo_folder from "../../images/windows_xp_icons/photo_folder_logo.png"
 import photo_viewer from "../../images/windows_xp_icons/photo_viewer.ico";
+import win_xp_starting_readme from "./cmd_body_text/web_design_projects/win_xp_starting_readme";
 import windows_logo_screen_1 from "../../images/desktop/web_design_projects/windows_xp_starting_page/web_design_windows_logo_1.png";
 import windows_logo_screen_2 from "../../images/desktop/web_design_projects/windows_xp_starting_page/web_design_windows_logo_2.png";
 import windows_logo_screen_3 from "../../images/desktop/web_design_projects/windows_xp_starting_page/web_design_windows_logo_3.png";
@@ -55,47 +56,7 @@ let fourth_desktop_item = {
         icon: terminal,
         title: "readme",
         type: "terminal",
-        content: [
-            {
-                type: "paragraph",
-                data: "K:> About this project"
-            },
-            {
-                type: "break"
-            },
-            {
-                type: "paragraph",
-                data: "K:> As part of making my portfolio inspired by microsoft windows xp"
-            },
-            {
-                type: "break"
-            },
-            {
-                type: "paragraph",
-                data: "K:> I decided to make the starting page with just html and css, without using any kind of logos or images"
-            },
-            {
-                type: "break"
-            },
-            {
-                type: "paragraph",
-                data: "K:> And also making the loading bar animation using css keyframes"
-            },
-            {
-                type: "break"
-            },
-            {
-                type: "paragraph",
-                data: "K:> This page is responsive to all kind of screen widths"
-            },
-            {
-                type: "break"
-            },
-            {
-                type: "paragraph",
-                data: "K:> Thanks for reading, any feedback is much appreciated"
-            },
-        ]
+        content: win_xp_starting_readme
     },
     //windows XP starting page source code
     "external-link-dev-project-windows-xp-starting-page-source-code": "https://github.com/kamal98ETH/kamal98ETH.github.io",
