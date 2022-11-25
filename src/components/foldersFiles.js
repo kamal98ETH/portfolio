@@ -1,4 +1,4 @@
-function Folders_files(props) {
+function FoldersFiles(props) {
     return (
         <button className="folders-files-icon" id={props.id} onClick={props.action} >
             <img src={props.icon} id={props.id} alt="Desktop icon image" />
@@ -7,4 +7,4 @@ function Folders_files(props) {
     )
 }
 
-export default Folders_files;
+export default FoldersFiles;

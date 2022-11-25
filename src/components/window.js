@@ -6,7 +6,7 @@ import folderUp from "../images/windows_xp_icons/folder-up.png"
 import folder from "../images/windows_xp_icons/folder.ico"
 import search from "../images/windows_xp_icons/search.ico"
 import WindowHeader from "./windowHeader"
-import Folders_files from "./folders_files"
+import FoldersFiles from "./foldersFiles"
 
 function Window(props) {
     // console.lo g(props)
@@ -14,7 +14,7 @@ function Window(props) {
         // console.log(folder_file)
         let key = props.data.content.folders_files.indexOf(folder_file)
         return (
-            <Folders_files key={key} icon={folder_file.icon} title={folder_file.title} id={folder_file.id} action={props.action} />
+            <FoldersFiles key={key} icon={folder_file.icon} title={folder_file.title} id={folder_file.id} action={props.action} />
         )
     })
 

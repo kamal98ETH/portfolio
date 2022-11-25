@@ -52,148 +52,161 @@ class App extends React.Component {
       return;
     }
 
-    //open new tab (object with render_index and data array) when button id starts with new-tab
-    if (/^new-tab/.test(id)) {
-      this.setState({
-        active_components: [
-          ...this.state.active_components,
-          {
-            render: true,
-            render_index: 0,
-            z_index: this.state.active_components.length + 1,
-            data: [folders_files_data[id]]
-          }
-        ]
-      })
+    switch (true) {
+      //open new tab (object with render_index and data array) when button id starts with new-tab
+      case /^new-tab/.test(id):
+        this.setState({
+          active_components: [
+            ...this.state.active_components,
+            {
+              render: true,
+              render_index: 0,
+              z_index: this.state.active_components.length + 1,
+              data: [folders_files_data[id]]
+            }
+          ]
+        });
+        break;
 
-    } else if (/^external-link/.test(id)) {
       //open new tab with the given url
-      window.open(folders_files_data[id])
+      case /^external-link/.test(id):
+        window.open(folders_files_data[id]);
+        break;
 
-    } else if (/^minimize/.test(id)) {
       //stop rendering component using minimize button
-      this.state.active_components[id.split("-")[1]].render = false
-      this.setState({
-        active_components: this.state.active_components
-      })
-    } else if (/^maximize/.test(id)) {
+      case /^minimize/.test(id):
+        this.state.active_components[id.split("-")[1]].render = false
+        this.setState({
+          active_components: this.state.active_components
+        });
+        break;
 
+      case /^maximize/.test(id):
+        break;
 
-    } else if (/^close/.test(id)) {
       //close the selected active component
-      let to_close = id.split("-")[1];
-      let newArray = [];
-      for (let i = 0; i < this.state.active_components.length; i++) {
-        if (i != to_close) {
-          newArray.push(this.state.active_components[i]);
-        }
-      }
-      this.setState({
-        active_components: newArray
-      })
-
-    } else if (/^tab/.test(id)) {
-      let tab = id.split("-")[1];
-      //render and stop rendering component using tab button
-      if (this.state.active_components[tab].z_index == this.state.active_components.length) {
-        this.state.active_components[tab].render = !this.state.active_components[tab].render;
-      } else {
-        this.state.active_components[tab].render = true
-      }
-
-      //change z-index after clicking a tab (move clicked tab forwards)
-      let selected_z_index = this.state.active_components[tab].z_index;
-      for (let i = 0; i < this.state.active_components.length; i++) {
-        if (i == tab) {
-          this.state.active_components[i].z_index = this.state.active_components.length;
-        } else if (this.state.active_components[i].z_index > selected_z_index) {
-          this.state.active_components[i].z_index = this.state.active_components[i].z_index - 1;
-        }
-      }
-
-      this.setState({
-        active_components: this.state.active_components
-      })
-
-    } else if (/^back/.test(id)) {
-      //go backwards in folders
-      let index = id.split("-")[1];
-      if (this.state.active_components[index].render_index > 0) {
-        this.state.active_components[index].render_index--
-      };
-      this.setState({
-        active_components: this.state.active_components
-      });
-
-    } else if (/^forward/.test(id)) {
-      //go backwards in folders
-      let index = id.split("-")[1];
-      console.log()
-      if (this.state.active_components[index].render_index < this.state.active_components[index].data.length - 1) {
-        this.state.active_components[index].render_index++
-      }
-      this.setState({
-        active_components: this.state.active_components
-      })
-
-    } else if (/^new-photo-tab/.test(id)) {
-      //open new photo tab
-      let id_array = id.split("-");
-      let render_index = parseInt(id_array[id_array.length - 1]);
-      let id_body = id_array.slice(0, id_array.length - 1).join("-");
-      this.setState({
-        active_components: [
-          ...this.state.active_components,
-          {
-            render: true,
-            render_index: render_index,
-            z_index: this.state.active_components.length + 1,
-            data: folders_files_data[id_body]
+      case /^close/.test(id):
+        let to_close = id.split("-")[1];
+        let newArray = [];
+        for (let i = 0; i < this.state.active_components.length; i++) {
+          if (i != to_close) {
+            newArray.push(this.state.active_components[i]);
           }
-        ]
-      })
-
-    } else if (/^photo-previous/.test(id)) {
-      let tab_index = id.split("-")[2]
-      if (this.state.active_components[tab_index].render_index > 0) {
-        this.state.active_components[tab_index].render_index--;
-      } else {
-        this.state.active_components[tab_index].render_index = this.state.active_components[tab_index].data.length - 1;
-      }
-      this.setState({
-        active_components: this.state.active_components
-      })
-    } else if (/^photo/.test(id)) {
-      let tab_index = id.split("-")[2]
-      if (this.state.active_components[tab_index].render_index < this.state.active_components[tab_index].data.length - 1) {
-        this.state.active_components[tab_index].render_index++;
-      } else {
-        this.state.active_components[tab_index].render_index = 0;
-      }
-      this.setState({
-        active_components: this.state.active_components
-      })
-    } else {
-      //folders or files that shouldnt open a new tab and just renders new data in the same window
-      let newArray = [];
-      for (let i = 0; i < this.state.active_components.length; i++) {
-        if (this.state.active_components[i].z_index == this.state.active_components.length) {
-          let newObj = {
-            render: this.state.active_components[i].render,
-            render_index: this.state.active_components[i].render_index + 1,
-            z_index: this.state.active_components[i].z_index,
-            data: [...this.state.active_components[i].data.slice(0, this.state.active_components[i].render_index + 1), folders_files_data[id]]
-          };
-          newArray.push(newObj);
-        } else {
-          newArray.push(this.state.active_components[i]);
         }
-      }
-      this.setState({
-        active_components: newArray
-      })
+        this.setState({
+          active_components: newArray
+        });
+        break;
+
+      case /^tab/.test(id):
+        let tab = id.split("-")[1];
+        //render and stop rendering component using tab button
+        if (this.state.active_components[tab].z_index == this.state.active_components.length) {
+          this.state.active_components[tab].render = !this.state.active_components[tab].render;
+        } else {
+          this.state.active_components[tab].render = true
+        };
+        //change z-index after clicking a tab (move clicked tab forwards)
+        let selected_z_index = this.state.active_components[tab].z_index;
+        for (let i = 0; i < this.state.active_components.length; i++) {
+          if (i == tab) {
+            this.state.active_components[i].z_index = this.state.active_components.length;
+          } else if (this.state.active_components[i].z_index > selected_z_index) {
+            this.state.active_components[i].z_index = this.state.active_components[i].z_index - 1;
+          }
+        };
+        this.setState({
+          active_components: this.state.active_components
+        });
+        break;
+
+      //go backwards in folders
+      case /^back/.test(id):
+        let backIndex = id.split("-")[1];
+        if (this.state.active_components[backIndex].render_index > 0) {
+          this.state.active_components[backIndex].render_index--
+        };
+        this.setState({
+          active_components: this.state.active_components
+        });
+        break;
+
+      //go backwards in folders
+      case /^forward/.test(id):
+        let forwardIndex = id.split("-")[1];
+        console.log()
+        if (this.state.active_components[forwardIndex].render_index < this.state.active_components[forwardIndex].data.length - 1) {
+          this.state.active_components[forwardIndex].render_index++
+        };
+        this.setState({
+          active_components: this.state.active_components
+        });
+        break;
+
+      //open new photo tab
+      case /^new-photo-tab/.test(id):
+        let id_array = id.split("-");
+        let render_index = parseInt(id_array[id_array.length - 1]);
+        let id_body = id_array.slice(0, id_array.length - 1).join("-");
+        this.setState({
+          active_components: [
+            ...this.state.active_components,
+            {
+              render: true,
+              render_index: render_index,
+              z_index: this.state.active_components.length + 1,
+              data: folders_files_data[id_body]
+            }
+          ]
+        });
+        break;
+
+      case /^photo-previous/.test(id):
+        let preveiousPhotoIndex = id.split("-")[2]
+        if (this.state.active_components[preveiousPhotoIndex].render_index > 0) {
+          this.state.active_components[preveiousPhotoIndex].render_index--;
+        } else {
+          this.state.active_components[preveiousPhotoIndex].render_index = this.state.active_components[preveiousPhotoIndex].data.length - 1;
+        };
+        this.setState({
+          active_components: this.state.active_components
+        });
+        break;
+
+      case /^photo/.test(id):
+        let tab_index = id.split("-")[2]
+        if (this.state.active_components[tab_index].render_index < this.state.active_components[tab_index].data.length - 1) {
+          this.state.active_components[tab_index].render_index++;
+        } else {
+          this.state.active_components[tab_index].render_index = 0;
+        };
+        this.setState({
+          active_components: this.state.active_components
+        })
+        break;
+
+      default:
+        //folders or files that shouldnt open a new tab and just renders new data in the same window
+        let newActiveComponents = [];
+        for (let i = 0; i < this.state.active_components.length; i++) {
+          if (this.state.active_components[i].z_index == this.state.active_components.length) {
+            let newObj = {
+              render: this.state.active_components[i].render,
+              render_index: this.state.active_components[i].render_index + 1,
+              z_index: this.state.active_components[i].z_index,
+              data: [...this.state.active_components[i].data.slice(0, this.state.active_components[i].render_index + 1), folders_files_data[id]]
+            };
+            newActiveComponents.push(newObj);
+          } else {
+            newActiveComponents.push(this.state.active_components[i]);
+          }
+        }
+        this.setState({
+          active_components: newActiveComponents
+        })
     }
   }
+
 
 
   render() {

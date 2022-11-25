@@ -1,7 +1,7 @@
 import backgroundPic from "../images/windows_xp_icons/xp-background.jpg";
 import ToolBar from "./toolBar";
 import '../App.css';
-import Folders_files from "./folders_files";
+import Folders_files from "./foldersFiles";
 import iconData from "../data/desktopicons.js";
 
 
