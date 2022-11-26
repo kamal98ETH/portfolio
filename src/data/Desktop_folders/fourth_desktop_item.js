@@ -7,6 +7,7 @@ import win_xp_starting_readme from "./cmd_body_text/web_design_projects/win_xp_s
 import windows_logo_screen_1 from "../../images/desktop/web_design_projects/windows_xp_starting_page/web_design_windows_logo_1.png";
 import windows_logo_screen_2 from "../../images/desktop/web_design_projects/windows_xp_starting_page/web_design_windows_logo_2.png";
 import windows_logo_screen_3 from "../../images/desktop/web_design_projects/windows_xp_starting_page/web_design_windows_logo_3.png";
+import explorer_logo from "../../images/windows_xp_icons/internet_explorer_logo.png";
 
 let fourth_desktop_item = {
     //web design projects folders
@@ -47,6 +48,11 @@ let fourth_desktop_item = {
                     icon: github,
                     title: "Source code",
                     id: "external-link-dev-project-windows-xp-starting-page-source-code"
+                },
+                {
+                    icon: explorer_logo,
+                    title: "Preview",
+                    id: "new-tab-dev-dev-project-windows-xp-starting-page-preview"
                 }
             ]
         }
@@ -104,6 +110,27 @@ let fourth_desktop_item = {
         title: "Project Screenshot 3",
         type: "photo",
         content: windows_logo_screen_3
-    }]
+    }],
+    //windows xp starting page preview
+    "new-tab-dev-dev-project-windows-xp-starting-page-preview":
+    {
+        icon: explorer_logo,
+        title: "Windows Xp starting page",
+        type: "explorer",
+        content:
+
+        {
+            address: "k:// Web Dev projects",
+            explorer_page:
+                <iframe scrolling="no" title="windows xp starting page" src="https://codepen.io/kamal98eth/embed/mdKLgLJ?default-tab=result" frameBorder="no" loading="lazy" allowFullScreen={true}>
+                    See the Pen <a href="https://codepen.io/kamal98eth/pen/mdKLgLJ">
+                        windows xp starting page</a> by kamal (<a href="https://codepen.io/kamal98eth">@kamal98eth</a>)
+                    on <a href="https://codepen.io">CodePen</a>.
+                </iframe>
+
+        }
+
+
+    }
 }
 export default fourth_desktop_item;

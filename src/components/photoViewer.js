@@ -3,10 +3,10 @@ import next from "../images/windows_xp_icons/next_photo.png"
 import previous from "../images/windows_xp_icons/previous_photo.png"
 
 function PhotoViewer(props) {
-    // console.log(props)
+    console.log(props)
     return (
         <div className="photo" style={{ zIndex: props.z_index }}>
-            <WindowHeader data={props.data} minimize_id={props.minimize_id} maximize_id={props.maximize_id} close_id={props.close_id} action={props.action} />
+            <WindowHeader data={props.data} key_id={props.key_id} action={props.action} />
             <div className="photo-body">
                 <img src={props.data.content} alt="project screenshot" />
             </div>

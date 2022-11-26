@@ -9,18 +9,18 @@ function WindowHeader(props) {
                 <h1>{props.data.title}</h1>
             </div>
             <div className="window-header-display-tools">
-                <button className="minimize" title="minimize" onClick={props.action} id={props.minimize_id}>
-                    <div className="min-icon-outer" id={props.minimize_id}>
-                        <div className="min-icon-inner" id={props.minimize_id}></div>
+                <button className="minimize" title="minimize" onClick={props.action} id={"minimize-" + props.key_id}>
+                    <div className="min-icon-outer" id={"minimize-" + props.key_id}>
+                        <div className="min-icon-inner" id={"minimize-" + props.key_id}></div>
                     </div>
                 </button>
-                <button className="maximize" title="maximize" onClick={props.action} id={props.maximize_id}>
-                    <div className="max-icon-outer" id={props.maximize_id}>
-                        <div className="max-icon-inner" id={props.maximize_id}></div>
+                <button className="maximize" title="maximize" onClick={props.action} id={"maximize-" + props.key_id}>
+                    <div className="max-icon-outer" id={"maximize-" + props.key_id}>
+                        <div className="max-icon-inner" id={"maximize-" + props.key_id}></div>
                     </div>
                 </button>
                 <button className="close" title="close" onClick={props.action}>
-                    <img src={closeIcon} alt="window close button" id={props.close_id} />
+                    <img src={closeIcon} alt="window close button" id={"close-" + props.key_id} />
                 </button>
             </div>
         </div>

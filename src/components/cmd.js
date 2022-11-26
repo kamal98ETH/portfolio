@@ -12,7 +12,6 @@ function Cmd(props) {
         if (data_content[index].data) {
             number_of_letters += data_content[index].data.length
         }
-        console.log(data_content[index].data)
     }
     let interval = ANIMATION_TIME / number_of_letters;
 
@@ -66,7 +65,7 @@ function Cmd(props) {
 
     return (
         <div className="cmd" style={{ zIndex: props.z_index }}>
-            <WindowHeader data={props.data} minimize_id={props.minimize_id} maximize_id={props.maximize_id} close_id={props.close_id} action={props.action} />
+            <WindowHeader data={props.data} key_id={props.key_id} action={props.action} />
             <div className="cmd-body">
                 {text_to_display}
             </div>

@@ -342,13 +342,30 @@ button {
     align-items: center;
 }
 
-.folder-toolbar-folderUp {
+.folder-toolbar-folderUp,
+.folder-toolbar-home {
     width: 3.75rem;
     border-right: 0.063rem solid #808080;
 }
 
+.folder-toolbar-reload,
+.folder-toolbar-x {
+    width: 3.75rem;
+}
+
 .folder-toolbar-folderUp img {
     height: 2.813rem;
+}
+
+.folder-toolbar-reload img,
+.folder-toolbar-x img,
+.folder-toolbar-home img {
+    height: 2.5rem;
+}
+
+.folder-toolbar-reload img,
+.folder-toolbar-x img {
+    width: 2rem;
 }
 
 .folder-toolbar-search,
@@ -538,6 +555,16 @@ button {
 .photo-footer img {
     height: 1.875rem;
     margin: 0 0.625rem;
+}
+
+.explorer-content-main {
+    background-color: white;
+    height: calc(100% - 185px);
+}
+
+iframe {
+    height: 100%;
+    width: 100%;
 }
 
 #start-page {

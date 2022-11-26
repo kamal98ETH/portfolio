@@ -10,6 +10,9 @@ import arrayPop from './arrayPop';
 import arrayCopy from './arrayCopy'
 import PhotoViewer from './components/photoViewer';
 import welcome from './data/Desktop_folders/cmd_body_text/welcome_text';
+import Explorer from './components/explorer';
+
+import explorer_logo from "./images/windows_xp_icons/internet_explorer_logo.png"
 
 class App extends React.Component {
   constructor(props) {
@@ -29,6 +32,7 @@ class App extends React.Component {
             }
           ]
         }
+
       ],
       start: false
     };
@@ -217,15 +221,19 @@ class App extends React.Component {
       key++;
       if (active.render) {
         if (active.data[active.render_index].type == "terminal") {
-          return <Cmd key={key} data={active.data[active.render_index]} minimize_id={"minimize-" + key} maximize_id={"maximize-" + key} close_id={"close-" + key} action={this.button_handler} z_index={active.z_index} />
+          return <Cmd key={key} key_id={key} data={active.data[active.render_index]} action={this.button_handler} z_index={active.z_index} />
         }
 
         if (active.data[active.render_index].type == "photo") {
-          return <PhotoViewer key={key} key_id={key} data={active.data[active.render_index]} minimize_id={"minimize-" + key} maximize_id={"maximize-" + key} close_id={"close-" + key} action={this.button_handler} z_index={active.z_index} />
+          return <PhotoViewer key={key} key_id={key} data={active.data[active.render_index]} action={this.button_handler} z_index={active.z_index} />
         }
 
         if (active.data[active.render_index].type == "window") {
-          return <Window key={key} data={active.data[active.render_index]} minimize_id={"minimize-" + key} maximaze_id={"maximaze-" + key} close_id={"close-" + key} back_id={"back-" + key} forward_id={"forward-" + key} action={this.button_handler} z_index={active.z_index} />
+          return <Window key={key} key_id={key} data={active.data[active.render_index]} action={this.button_handler} z_index={active.z_index} />
+        }
+
+        if (active.data[active.render_index].type == "explorer") {
+          return <Explorer key={key} key_id={key} data={active.data[active.render_index]} action={this.button_handler} z_index={active.z_index} />
         }
       }
     })
