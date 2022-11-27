@@ -1,12 +1,13 @@
 
-import windowLogo from "../images/windows_xp_icons/xp-logo.png"
-import folderBack from "../images/windows_xp_icons/move-back.png"
-import folderForward from "../images/windows_xp_icons/move-forward.png"
-import folderUp from "../images/windows_xp_icons/folder-up.png"
-import folder from "../images/windows_xp_icons/folder.ico"
-import search from "../images/windows_xp_icons/search.ico"
-import WindowHeader from "./windowHeader"
-import FoldersFiles from "./foldersFiles"
+import { useEffect } from "react";
+import windowLogo from "../images/windows_xp_icons/xp-logo.png";
+import folderBack from "../images/windows_xp_icons/move-back.png";
+import folderForward from "../images/windows_xp_icons/move-forward.png";
+import folderUp from "../images/windows_xp_icons/folder-up.png";
+import folder from "../images/windows_xp_icons/folder.ico";
+import search from "../images/windows_xp_icons/search.ico";
+import WindowHeader from "./windowHeader";
+import FoldersFiles from "./foldersFiles";
 
 function Window(props) {
     // console.lo g(props)
@@ -18,8 +19,33 @@ function Window(props) {
         )
     })
 
+    useEffect(() => {
+        //set window to be fullscreen or not
+        if (window.innerWidth > 1000) {
+            if (props.fullscreen) {
+                //change the state fullscreen for selected window to be true
+                document.querySelector(".window-" + props.key_id).style.width = "100vw"
+                document.querySelector(".window-" + props.key_id).style.height = "calc(100vh - 3.188rem)"
+                document.querySelector(".window-" + props.key_id).style.left = "0"
+                document.querySelector(".window-" + props.key_id).style.top = "0"
+
+            } else {
+                //change style of selected window to be fullscreen
+                document.querySelector(".window-" + props.key_id).style.width = "60%"
+                document.querySelector(".window-" + props.key_id).style.height = "80%"
+                document.querySelector(".window-" + props.key_id).style.left = "20%"
+                document.querySelector(".window-" + props.key_id).style.top = "8%"
+            }
+        } else {
+            document.querySelector(".window-" + props.key_id).style.width = "100vw"
+            document.querySelector(".window-" + props.key_id).style.height = "calc(100vh - 3.188rem)"
+            document.querySelector(".window-" + props.key_id).style.left = "0"
+            document.querySelector(".window-" + props.key_id).style.top = "0"
+        }
+    })
+
     return (
-        < div className="window" style={{ zIndex: props.z_index }} >
+        < div className={"window window-" + props.key_id} style={{ zIndex: props.z_index }} >
             <WindowHeader data={props.data} key_id={props.key_id} action={props.action} />
             <div className="file-toolbar">
                 <div>

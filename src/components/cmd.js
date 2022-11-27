@@ -63,8 +63,34 @@ function Cmd(props) {
         }
     })
 
+    useEffect(() => {
+        //set window to be fullscreen or not
+        if (window.innerWidth > 1000) {
+            if (props.fullscreen) {
+                //change the state fullscreen for selected window to be true
+                document.querySelector(".window-" + props.key_id).style.width = "100vw"
+                document.querySelector(".window-" + props.key_id).style.height = "calc(100vh - 3.188rem)"
+                document.querySelector(".window-" + props.key_id).style.left = "0"
+                document.querySelector(".window-" + props.key_id).style.top = "0"
+
+            } else {
+                //change style of selected window to be fullscreen
+                document.querySelector(".window-" + props.key_id).style.width = "60%"
+                document.querySelector(".window-" + props.key_id).style.height = "80%"
+                document.querySelector(".window-" + props.key_id).style.left = "20%"
+                document.querySelector(".window-" + props.key_id).style.top = "8%"
+            }
+        } else {
+            document.querySelector(".window-" + props.key_id).style.width = "100vw"
+            document.querySelector(".window-" + props.key_id).style.height = "calc(100vh - 3.188rem)"
+            document.querySelector(".window-" + props.key_id).style.left = "0"
+            document.querySelector(".window-" + props.key_id).style.top = "0"
+        }
+    })
+
+
     return (
-        <div className="cmd" style={{ zIndex: props.z_index }}>
+        <div className={"window window-" + props.key_id} style={{ zIndex: props.z_index }}>
             <WindowHeader data={props.data} key_id={props.key_id} action={props.action} />
             <div className="cmd-body">
                 {text_to_display}

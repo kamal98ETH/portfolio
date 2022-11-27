@@ -21,3 +21,9 @@
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+
+#to be committed
+# src/data/
+# src/images/
+src/components/turnOf.js
+src/replaceItem.js

@@ -6,13 +6,12 @@ import Cmd from "./components/cmd";
 import Start from "./components/start";
 import terminal from "./images/windows_xp_icons/cmd-icon.jpg";
 import folders_files_data from "./data/folders_files_data";
-import arrayPop from './arrayPop';
+import replaceItem from './replaceItem';
 import arrayCopy from './arrayCopy'
 import PhotoViewer from './components/photoViewer';
 import welcome from './data/Desktop_folders/cmd_body_text/welcome_text';
 import Explorer from './components/explorer';
 
-import explorer_logo from "./images/windows_xp_icons/internet_explorer_logo.png"
 
 class App extends React.Component {
   constructor(props) {
@@ -23,6 +22,7 @@ class App extends React.Component {
           render: true,
           render_index: 0,
           z_index: 1,
+          fullscreen: false,
           data: [
             {
               icon: terminal,
@@ -66,6 +66,7 @@ class App extends React.Component {
               render: true,
               render_index: 0,
               z_index: this.state.active_components.length + 1,
+              fullscreen: false,
               data: [folders_files_data[id]]
             }
           ]
@@ -86,6 +87,26 @@ class App extends React.Component {
         break;
 
       case /^maximize/.test(id):
+        let to_maximize = id.split("-")[1];
+
+        //change styles only if if the device width is bigger than 1000px
+        if (window.innerWidth > 1000) {
+          if (this.state.active_components[to_maximize].fullscreen) {
+
+            //change the state fullscreen for selected window to be false
+            this.state.active_components[to_maximize].fullscreen = false
+            this.setState({
+              active_components: this.state.active_components
+            });
+          } else {
+
+            //change the state fullscreen for selected window to be true
+            this.state.active_components[to_maximize].fullscreen = true
+            this.setState({
+              active_components: this.state.active_components
+            });
+          }
+        }
         break;
 
       //close the selected active component
@@ -159,6 +180,7 @@ class App extends React.Component {
               render: true,
               render_index: render_index,
               z_index: this.state.active_components.length + 1,
+              fullscreen: false,
               data: folders_files_data[id_body]
             }
           ]
@@ -198,6 +220,7 @@ class App extends React.Component {
               render: this.state.active_components[i].render,
               render_index: this.state.active_components[i].render_index + 1,
               z_index: this.state.active_components[i].z_index,
+              fullscreen: this.state.active_components[i].fullscreen,
               data: [...this.state.active_components[i].data.slice(0, this.state.active_components[i].render_index + 1), folders_files_data[id]]
             };
             newActiveComponents.push(newObj);
@@ -214,6 +237,7 @@ class App extends React.Component {
 
 
   render() {
+    // console.log(replaceItem([1, 2, 3], 1, 69))
     //rendering all components in active components
     // console.log("render state:", this.state.active_components)
     let key = -1;
@@ -221,19 +245,19 @@ class App extends React.Component {
       key++;
       if (active.render) {
         if (active.data[active.render_index].type == "terminal") {
-          return <Cmd key={key} key_id={key} data={active.data[active.render_index]} action={this.button_handler} z_index={active.z_index} />
+          return <Cmd key={key} key_id={key} data={active.data[active.render_index]} action={this.button_handler} z_index={active.z_index} fullscreen={active.fullscreen} />
         }
 
         if (active.data[active.render_index].type == "photo") {
-          return <PhotoViewer key={key} key_id={key} data={active.data[active.render_index]} action={this.button_handler} z_index={active.z_index} />
+          return <PhotoViewer key={key} key_id={key} data={active.data[active.render_index]} action={this.button_handler} z_index={active.z_index} fullscreen={active.fullscreen} />
         }
 
         if (active.data[active.render_index].type == "window") {
-          return <Window key={key} key_id={key} data={active.data[active.render_index]} action={this.button_handler} z_index={active.z_index} />
+          return <Window key={key} key_id={key} data={active.data[active.render_index]} action={this.button_handler} z_index={active.z_index} fullscreen={active.fullscreen} />
         }
 
         if (active.data[active.render_index].type == "explorer") {
-          return <Explorer key={key} key_id={key} data={active.data[active.render_index]} action={this.button_handler} z_index={active.z_index} />
+          return <Explorer key={key} key_id={key} data={active.data[active.render_index]} action={this.button_handler} z_index={active.z_index} fullscreen={active.fullscreen} />
         }
       }
     })
