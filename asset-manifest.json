@@ -1,19 +1,36 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.d7312a43.css",
-    "main.js": "/portfolio/static/js/main.5b67d026.js",
+    "main.css": "/portfolio/static/css/main.0a8ddb30.css",
+    "main.js": "/portfolio/static/js/main.36443f02.js",
     "static/media/xp-logo.png": "/portfolio/static/media/xp-logo.41511b28f1a7dc826523.png",
+    "static/media/tribute-page-1.png": "/portfolio/static/media/tribute-page-1.16797933e460f34d8d83.png",
     "static/media/xp-background.jpg": "/portfolio/static/media/xp-background.17ce657ab1362be245f5.jpg",
+    "static/media/personal-portfolio-webpage-3.png": "/portfolio/static/media/personal-portfolio-webpage-3.7763ecdc3780579e57d4.png",
+    "static/media/personal-portfolio-webpage-2.png": "/portfolio/static/media/personal-portfolio-webpage-2.43cae564362caa209871.png",
+    "static/media/product-landing-page-2.png": "/portfolio/static/media/product-landing-page-2.0405e6b0e8f9b562729b.png",
     "static/media/photo_folder_logo.png": "/portfolio/static/media/photo_folder_logo.3ea0b4a6b3324ee02f31.png",
+    "static/media/personal-portfolio-webpage-5.png": "/portfolio/static/media/personal-portfolio-webpage-5.27093d78efa53841474a.png",
+    "static/media/personal-portfolio-webpage-4.png": "/portfolio/static/media/personal-portfolio-webpage-4.1ceb34c99d9d7003b76e.png",
+    "static/media/product-landing-page-1.png": "/portfolio/static/media/product-landing-page-1.f3b71059688cf6c4f56c.png",
+    "static/media/technical-documentation-page-1.png": "/portfolio/static/media/technical-documentation-page-1.ed8f6083d8ea1b523406.png",
     "static/media/internet_explorer_logo.png": "/portfolio/static/media/internet_explorer_logo.2dda666e00ccdaee550a.png",
+    "static/media/technical-documentation-page-3.png": "/portfolio/static/media/technical-documentation-page-3.06ee2f54a2631b88210f.png",
     "static/media/icon.ico": "/portfolio/static/media/icon.0f309eaecddc03f5b8b8.ico",
+    "static/media/tribute-page-2.png": "/portfolio/static/media/tribute-page-2.3e75bbea44f77fdbeebd.png",
     "static/media/profile.ico": "/portfolio/static/media/profile.03d2f4cfeab2781b094f.ico",
+    "static/media/technical-documentation-page-4.png": "/portfolio/static/media/technical-documentation-page-4.4a1ab863c9979c948bd8.png",
+    "static/media/technical-documentation-page-5.png": "/portfolio/static/media/technical-documentation-page-5.2555aec8a9faa07bab45.png",
+    "static/media/technical-documentation-page-2.png": "/portfolio/static/media/technical-documentation-page-2.a752a353937a628c5a8b.png",
+    "static/media/tribute-page-3.png": "/portfolio/static/media/tribute-page-3.90bb8a27cbfcfeb06d09.png",
+    "static/media/personal-portfolio-webpage-1.png": "/portfolio/static/media/personal-portfolio-webpage-1.d365df3e5fb773bc9f26.png",
     "static/media/nodejs_logo.png": "/portfolio/static/media/nodejs_logo.1dc6b4509b2e151be9c6.png",
     "static/media/explorer_reload.png": "/portfolio/static/media/explorer_reload.f7043c346a3eaa104ea1.png",
     "static/media/photo_viewer.ico": "/portfolio/static/media/photo_viewer.af7b0e6c927df2d24fac.ico",
     "static/media/survey-form-1.png": "/portfolio/static/media/survey-form-1.4bd677a30bf01078497c.png",
     "static/media/folder.ico": "/portfolio/static/media/folder.75c0cce78a8c0dace56a.ico",
+    "static/media/personal-portfolio-webpage-7.png": "/portfolio/static/media/personal-portfolio-webpage-7.205c26af8200109fb71a.png",
     "static/media/survey-form-2.png": "/portfolio/static/media/survey-form-2.511bf7d030abb91e47cb.png",
+    "static/media/personal-portfolio-webpage-6.png": "/portfolio/static/media/personal-portfolio-webpage-6.3144a1b41552b143ac39.png",
     "static/media/web_design_windows_logo_2.png": "/portfolio/static/media/web_design_windows_logo_2.eaefb8f288a094d4c169.png",
     "static/media/web_design_windows_logo_1.png": "/portfolio/static/media/web_design_windows_logo_1.0039431672c422a6d814.png",
     "static/media/web_design_windows_logo_3.png": "/portfolio/static/media/web_design_windows_logo_3.ef494146f18cff65db71.png",
@@ -35,11 +52,11 @@
     "static/media/move-forward.png": "/portfolio/static/media/move-forward.b03a7440455b586379ea.png",
     "static/media/search.ico": "/portfolio/static/media/search.49527e3a085f01a9a1cf.ico",
     "index.html": "/portfolio/index.html",
-    "main.d7312a43.css.map": "/portfolio/static/css/main.d7312a43.css.map",
-    "main.5b67d026.js.map": "/portfolio/static/js/main.5b67d026.js.map"
+    "main.0a8ddb30.css.map": "/portfolio/static/css/main.0a8ddb30.css.map",
+    "main.36443f02.js.map": "/portfolio/static/js/main.36443f02.js.map"
   },
   "entrypoints": [
-    "static/css/main.d7312a43.css",
-    "static/js/main.5b67d026.js"
+    "static/css/main.0a8ddb30.css",
+    "static/js/main.36443f02.js"
   ]
 }
