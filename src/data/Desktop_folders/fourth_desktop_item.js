@@ -260,7 +260,7 @@ let fourth_desktop_item = {
     "new-tab-dev-dev-project-survey-form-preview":
     {
         icon: explorer_logo,
-        title: "Survey form",
+        title: "FCC: Survey form",
         type: "explorer",
         content:
         {
