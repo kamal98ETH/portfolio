@@ -33,7 +33,7 @@ import personal_portfolio_webpage_screenshot_5 from "../../images/desktop/web_de
 import personal_portfolio_webpage_screenshot_6 from "../../images/desktop/web_design_projects/personal_portfolio_webpage/personal-portfolio-webpage-6.png";
 import personal_portfolio_webpage_screenshot_7 from "../../images/desktop/web_design_projects/personal_portfolio_webpage/personal-portfolio-webpage-7.png";
 
-let fourth_desktop_item = {
+let Web_Design_Projects_Folder = {
     //web design projects folders
     "new-tab-web-design-projects": {
         icon: web_design_folder,
@@ -745,4 +745,4 @@ let fourth_desktop_item = {
         }
     }
 }
-export default fourth_desktop_item;
+export default Web_Design_Projects_Folder;

@@ -6,7 +6,7 @@ import postgresql_bash from "../../images/desktop/my_fcc_certs/postgresql_bash_l
 import react from "../../images/desktop/my_fcc_certs/react_logo.png";
 import nodejs from "../../images/desktop/my_fcc_certs/nodejs_logo.png";
 
-let third_desktop_item = {
+let My_FCC_Certs_folder = {
     "new-tab-fcc-certs": {
         icon: fcc,
         title: "My freeCodeCamp certs",
@@ -55,4 +55,4 @@ let third_desktop_item = {
     "external-link-front-end-development-libraries": "https://www.freecodecamp.org/certification/kamalEzzoubir/front-end-development-libraries",
     "external-link-back-end-development-and-APIs": "https://www.freecodecamp.org/certification/kamalEzzoubir/back-end-development-and-apis"
 }
-export default third_desktop_item;
+export default My_FCC_Certs_folder;

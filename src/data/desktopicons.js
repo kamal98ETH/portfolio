@@ -39,7 +39,8 @@ let iconData = [
     },
     {
         icon: react_forlder,
-        title: "React Projects"
+        title: "React Projects",
+        id: "new-tab-react-projects"
     },
     {
         icon: sql_folder,

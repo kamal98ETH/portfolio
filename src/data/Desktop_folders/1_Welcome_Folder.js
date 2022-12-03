@@ -1,7 +1,7 @@
 import terminal from "../../images/windows_xp_icons/cmd-icon.jpg";
 import welcome from "./cmd_body_text/welcome_text"
 
-let first_desktop_item = {
+let Welcome_Folder = {
     "new-tab-welcome-page": {
         icon: terminal,
         title: "Welcome",
@@ -9,4 +9,4 @@ let first_desktop_item = {
         content: welcome
     }
 }
-export default first_desktop_item;
+export default Welcome_Folder;

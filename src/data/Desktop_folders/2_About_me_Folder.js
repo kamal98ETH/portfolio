@@ -9,7 +9,7 @@ import codepen from "../../images/desktop/about_me/codepen_logo.png";
 import linkedIn from "../../images/desktop/about_me/linkedin_logo.png";
 import me_exe from "./cmd_body_text/about_me/me_exe_text"
 
-let sec_desktop_item = {
+let About_me_Folder = {
     "new-tab-about-me": {
         icon: profile,
         title: "About me",
@@ -75,4 +75,4 @@ let sec_desktop_item = {
     "external-link-my-replit": "https://replit.com/@Kamal1998",
     "external-link-my-codepen": "https://codepen.io/kamal98eth"
 }
-export default sec_desktop_item;
+export default About_me_Folder;
