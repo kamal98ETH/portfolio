@@ -48,7 +48,8 @@ let iconData = [
     },
     {
         icon: nodeJS,
-        title: "BackEnd Projects"
+        title: "BackEnd Projects",
+        id: "new-tab-backend-projects"
     }
 ]
 

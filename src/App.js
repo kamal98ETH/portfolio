@@ -9,7 +9,7 @@ import folders_files_data from "./data/folders_files_data";
 import replaceItem from './replaceItem';
 import arrayCopy from './arrayCopy'
 import PhotoViewer from './components/photoViewer';
-import welcome from './data/Desktop_folders/cmd_body_text/welcome_text';
+import welcome from './data/Desktop_folders/cmd_body_text/1_welcome_text';
 import Explorer from './components/explorer';
 
 
@@ -237,7 +237,6 @@ class App extends React.Component {
 
 
   render() {
-    // console.log(replaceItem([1, 2, 3], 1, 69))
     //rendering all components in active components
     // console.log("render state:", this.state.active_components)
     let key = -1;

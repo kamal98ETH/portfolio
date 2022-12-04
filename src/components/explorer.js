@@ -96,11 +96,7 @@ function Explorer(props) {
                 </form>
             </div>
             <div className="explorer-content-main">
-
                 {props.data.content.explorer_page}
-
-                {/* <iframe frameBorder="0" src="https://replit.com/@Kamal1998/boilerplate-project-timestamp?embed=true"></iframe> */}
-
             </div>
             <div className="window-footer"></div>
         </div >

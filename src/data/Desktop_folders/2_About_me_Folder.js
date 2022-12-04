@@ -7,7 +7,7 @@ import twitter from "../../images/desktop/about_me/twitter_logo.png";
 import replit from "../../images/desktop/about_me/replit_logo.png";
 import codepen from "../../images/desktop/about_me/codepen_logo.png";
 import linkedIn from "../../images/desktop/about_me/linkedin_logo.png";
-import me_exe from "./cmd_body_text/about_me/me_exe_text"
+import me_exe from "./cmd_body_text/2_about_me/me_exe_text"
 
 let About_me_Folder = {
     "new-tab-about-me": {
