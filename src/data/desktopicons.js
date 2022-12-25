@@ -44,7 +44,8 @@ let iconData = [
     },
     {
         icon: sql_folder,
-        title: "Relational DataBase Projects"
+        title: "Relational DataBase Projects",
+        id: "new-tab-relatinal-database-projects"
     },
     {
         icon: nodeJS,
