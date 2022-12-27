@@ -31,7 +31,8 @@ let iconData = [
     },
     {
         icon: js_folder,
-        title: "JavaScript Projects"
+        title: "JavaScript Projects",
+        id: "new-tab-js-projects"
     },
     {
         icon: python_folder,
