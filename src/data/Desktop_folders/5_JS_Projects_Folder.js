@@ -46,10 +46,10 @@ import cash_register_screenshot_4 from "../../images/desktop/js_projects/cash_re
 
 
 let JS_Projects_Folder = {
-    //web design projects folders
+    //js projects folders
     "new-tab-js-projects": {
         icon: js_folder,
-        title: "Web Design projects",
+        title: "JS projects",
         type: "window",
         content: {
             address: "k:// Web Dev projects",

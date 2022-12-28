@@ -60,6 +60,9 @@ const world_cup_database_readme = [
         data: "K~$ U can find the two executable and the database sql dump on the source code section"
     },
     {
+        type: "break"
+    },
+    {
         type: "paragraph",
         data: "K~$ For more more info about this project please refer to the"
     },

@@ -494,6 +494,7 @@ button {
     padding: 0.938rem 0.125rem;
     font-family: Terminal;
     overflow-y: scroll;
+    white-space: pre-wrap;
 }
 
 .cmd-body p {

@@ -46,7 +46,7 @@ let React_Projects = {
     //react projects folders
     "new-tab-react-projects": {
         icon: react_folder,
-        title: "Web Design projects",
+        title: "React projects",
         type: "window",
         content: {
             address: "k:// Web Dev projects",

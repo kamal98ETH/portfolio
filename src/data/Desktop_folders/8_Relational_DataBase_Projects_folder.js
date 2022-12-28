@@ -32,10 +32,10 @@ import number_guessing_game_screenshot_6 from "../../images/desktop/relational_d
 
 
 let Relational_Database_Projects = {
-    //react projects folders
+    //relational database projects folders
     "new-tab-relatinal-database-projects": {
         icon: sql_folder,
-        title: "Web Design projects",
+        title: "Relational database projects",
         type: "window",
         content: {
             address: "k:// Web Dev projects",

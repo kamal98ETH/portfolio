@@ -39,10 +39,10 @@ import file_metadata_microservice_screenshot_3 from "../../images/desktop/backen
 
 
 let BackEnd_Projects = {
-    //react projects folders
+    //backend projects folders
     "new-tab-backend-projects": {
         icon: nodeJS_folder,
-        title: "Web Design projects",
+        title: "Backend projects",
         type: "window",
         content: {
             address: "k:// Web Dev projects",

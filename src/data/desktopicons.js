@@ -36,7 +36,8 @@ let iconData = [
     },
     {
         icon: python_folder,
-        title: "Python Projects"
+        title: "Python Projects",
+        id: "new-tab-python-projects"
     },
     {
         icon: react_forlder,
