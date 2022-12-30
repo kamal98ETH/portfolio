@@ -1,7 +1,7 @@
 import backgroundPic from "../images/windows_xp_icons/xp-background.jpg";
 import ToolBar from "./toolBar";
 import '../App.css';
-import Folders_files from "./foldersFiles";
+import FoldersFiles from "./foldersFiles";
 import iconData from "../data/desktopicons.js";
 
 
@@ -9,7 +9,7 @@ function Desktop(props) {
     let desktopicons = iconData.map((icon) => {
         let key = iconData.indexOf(icon);
         return (
-            <Folders_files key={key} icon={icon.icon} title={icon.title} id={icon.id} action={props.action} />
+            <FoldersFiles key={key} icon={icon.icon} title={icon.title} id={icon.id} action={props.action} />
         )
     })
 

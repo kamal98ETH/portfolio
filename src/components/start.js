@@ -8,7 +8,7 @@ function Start() {
         <div id="start-page">
             <div id="start-header">
                 <img src={profileLogo} alt="profile logo" />
-                <h1>Admin</h1>
+                <h1>Kamal</h1>
             </div>
             <div id="start-body">
                 <div id="start-body-left-programs">

@@ -37,7 +37,7 @@ function Cmd(props) {
                             setParagraphContent([...paragraph_content.slice(0, data_content_array_index), data_content[data_content_array_index]["data"][data_content_str_index]])
                         }
                         //check if we copied the whole string we are currently on
-                        if (data_content[data_content_array_index]["data"].length == data_content_str_index + 1) {
+                        if (data_content[data_content_array_index]["data"].length === data_content_str_index + 1) {
                             setDataContentArrayIndex(data_content_array_index + 1)
                             setDataContentStrIndex(0)
                         }
@@ -49,18 +49,19 @@ function Cmd(props) {
                 setDataContentStrIndex(-1)
             }
         }
-    }, [data_content_str_index])
+    }, [data_content_str_index, data_content, interval, paragraph_content, data_content_array_index])
 
     let key = -1
     let text_to_display = paragraph_content.map((line) => {
         key++
-        if (data_content[key].type == "paragraph") {
+        if (data_content[key].type === "paragraph") {
             return <p key={key}>{line}</p>
-        } else if (data_content[key].type == "link") {
-            return <a key={key} href={data_content[key].href} target="_blank">{line}</a>
-        } else if (data_content[key].type == "break") {
+        } else if (data_content[key].type === "link") {
+            return <a key={key} href={data_content[key].href} target="_blank" rel="noreferrer">{line}</a>
+        } else if (data_content[key].type === "break") {
             return <br key={key} />
         }
+        return null;
     })
 
     useEffect(() => {

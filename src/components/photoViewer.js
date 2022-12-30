@@ -38,8 +38,8 @@ function PhotoViewer(props) {
                 <img src={props.data.content} alt="project screenshot" />
             </div>
             <div className="photo-footer">
-                <button onClick={props.action} ><img src={previous} alt="windows xp photo viewer previous photo button" id={"photo-previous-" + props.key_id} /></button>
-                <button onClick={props.action} ><img src={next} alt="windows xp photo viewer next photo button" id={"photo-next-" + props.key_id} /></button>
+                <button onClick={props.action} ><img src={previous} alt="windows xp photoviewer previous  button" id={"photo-previous-" + props.key_id} /></button>
+                <button onClick={props.action} ><img src={next} alt="windows xp photoviewer next button" id={"photo-next-" + props.key_id} /></button>
             </div>
         </div>
     )

@@ -214,7 +214,7 @@ let Python_Projects = {
         {
             address: "k:// Web Dev projects",
             explorer_page:
-                <iframe frameBorder="0" src="https://replit.com/@Kamal1998/boilerplate-arithmetic-formatter?embed=true"></iframe>
+                <iframe frameBorder="0" title="FCC: Arithmetic Formatter" src="https://replit.com/@Kamal1998/boilerplate-arithmetic-formatter?embed=true"></iframe>
         }
     },
 
@@ -347,7 +347,7 @@ let Python_Projects = {
         {
             address: "k:// Web Dev projects",
             explorer_page:
-                <iframe frameBorder="0" src="https://replit.com/@Kamal1998/boilerplate-time-calculator?embed=true"></iframe>
+                <iframe frameBorder="0" title="FCC: Time Calculator" src="https://replit.com/@Kamal1998/boilerplate-time-calculator?embed=true"></iframe>
         }
     },
 
@@ -447,7 +447,7 @@ let Python_Projects = {
         {
             address: "k:// Web Dev projects",
             explorer_page:
-                <iframe frameBorder="0" src="https://replit.com/@Kamal1998/boilerplate-budget-app?embed=true"></iframe>
+                <iframe frameBorder="0" title="FCC: Budget App" src="https://replit.com/@Kamal1998/boilerplate-budget-app?embed=true"></iframe>
         }
     },
 
@@ -591,7 +591,7 @@ let Python_Projects = {
         {
             address: "k:// Web Dev projects",
             explorer_page:
-                <iframe frameBorder="0" src="https://replit.com/@Kamal1998/boilerplate-polygon-area-calculator?embed=true"></iframe>
+                <iframe frameBorder="0" title="FCC: Polygon Area Calculator" src="https://replit.com/@Kamal1998/boilerplate-polygon-area-calculator?embed=true"></iframe>
         }
     },
 
@@ -680,7 +680,7 @@ let Python_Projects = {
         {
             address: "k:// Web Dev projects",
             explorer_page:
-                <iframe frameBorder="0" src="https://replit.com/@Kamal1998/boilerplate-probability-calculator?embed=true"></iframe>
+                <iframe frameBorder="0" title="FCC: Probability Calculator" src="https://replit.com/@Kamal1998/boilerplate-probability-calculator?embed=true"></iframe>
         }
     }
 }

@@ -194,7 +194,7 @@ let BackEnd_Projects = {
         {
             address: "k:// Web Dev projects",
             explorer_page:
-                <iframe frameBorder="0" src="https://replit.com/@Kamal1998/boilerplate-project-timestamp?embed=true"></iframe>
+                <iframe frameBorder="0" title="FCC: Timestamp Microservice" src="https://replit.com/@Kamal1998/boilerplate-project-timestamp?embed=true"></iframe>
         }
     },
 
@@ -283,7 +283,7 @@ let BackEnd_Projects = {
         {
             address: "k:// Web Dev projects",
             explorer_page:
-                <iframe frameBorder="0" src="https://replit.com/@Kamal1998/boilerplate-project-headerparser?embed=true"></iframe>
+                <iframe frameBorder="0" title="FCC: Request Header Parser Microservice" src="https://replit.com/@Kamal1998/boilerplate-project-headerparser?embed=true"></iframe>
         }
     },
 
@@ -427,7 +427,7 @@ let BackEnd_Projects = {
         {
             address: "k:// Web Dev projects",
             explorer_page:
-                <iframe frameBorder="0" src="https://replit.com/@Kamal1998/boilerplate-project-urlshortener?embed=true"></iframe>
+                <iframe frameBorder="0" title="FCC: URL Shortener Microservice" src="https://replit.com/@Kamal1998/boilerplate-project-urlshortener?embed=true"></iframe>
         }
     },
 
@@ -604,7 +604,7 @@ let BackEnd_Projects = {
         {
             address: "k:// Web Dev projects",
             explorer_page:
-                <iframe frameBorder="0" src="https://replit.com/@Kamal1998/boilerplate-project-exercisetracker?embed=true"></iframe>
+                <iframe frameBorder="0" title="FCC: Exercise Tracker" src="https://replit.com/@Kamal1998/boilerplate-project-exercisetracker?embed=true"></iframe>
         }
     },
 
@@ -704,7 +704,7 @@ let BackEnd_Projects = {
         {
             address: "k:// Web Dev projects",
             explorer_page:
-                <iframe frameBorder="0" src="https://replit.com/@Kamal1998/boilerplate-project-filemetadata?embed=true"></iframe>
+                <iframe frameBorder="0" title="FCC: File Metadata Microservice" src="https://replit.com/@Kamal1998/boilerplate-project-filemetadata?embed=true"></iframe>
         }
     }
 }
