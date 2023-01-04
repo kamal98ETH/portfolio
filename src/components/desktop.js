@@ -17,7 +17,7 @@ function Desktop(props) {
         <div id="container">
             <img src={backgroundPic} alt="windows xp background wallpaper" id="background-img" />
             <div id="desktop">
-                <ToolBar active_components={props.active_components} action={props.action} />
+                <ToolBar active_components={props.active_components} action={props.action} notifications={props.notifications} />
                 <div id="desktop-icons">
                     <div id="icons">
                         {desktopicons}

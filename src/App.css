@@ -702,6 +702,136 @@ iframe {
     margin: 0 0.938rem;
 }
 
+#notifications {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+}
+
+#notifications button {
+    display: flex;
+}
+
+#notifications img {
+    height: 25px;
+}
+
+#notification {
+    width: 618px;
+    position: absolute;
+    bottom: 25px;
+    display: flex;
+    flex-direction: column-reverse;
+    z-index: 10;
+}
+
+#notif-body {
+    padding: 12px;
+    border: 2px solid black;
+    border-radius: 15px;
+    background-color: #F7F7DA;
+    position: relative;
+}
+
+#notif-body-header {
+    display: flex;
+    align-items: center;
+}
+
+#notif-body-header-icon {
+    height: 35px;
+    margin: 0 10px;
+}
+
+#notif-body-header-title {
+    width: 500px;
+}
+
+#notif-body-header-title h3 {
+    font-size: 20px;
+}
+
+#notif-body-header-close {
+    width: 35px;
+    height: 35px;
+    border: 1px solid rgb(160, 160, 160);
+    border-radius: 5px;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#notif-body-header-close:hover {
+    background-color: red;
+}
+
+#notif-body-header-close:hover:after {
+    color: white;
+}
+
+#notif-body-header-close:after {
+    content: '\2716';
+    color: rgb(160, 160, 160);
+    font-size: 25px;
+}
+
+#notif-body-text {
+    padding: 10px 5px 5px 28px;
+    font-size: 20px;
+}
+
+/* #fullscreen-notification-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+} */
+
+#fullscreen-notification-body p {
+    margin-bottom: 10px;
+}
+
+#fullscreen-notification-body button {
+    font-size: 20px;
+    font-weight: 900;
+    background-color: #fff;
+    cursor: pointer;
+    display: block;
+    margin: auto;
+    padding: 5px 10px;
+    border-radius: 15px;
+    border: 2px solid #000;
+}
+
+#notif-body-line {
+    width: 46px;
+    height: 2px;
+    background-color: #F7F7DA;
+    position: absolute;
+    bottom: -2px;
+    right: 30px;
+}
+
+#notif-tip {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+#notif-tip-border {
+    position: relative;
+    right: 30px;
+    border-left: 50px solid transparent;
+    border-top: 50px solid black;
+}
+
+#notif-tip-inner {
+    position: relative;
+    bottom: 4px;
+    right: -18px;
+    border-left: 50px solid transparent;
+    border-top: 50px solid #F7F7DA;
+}
+
 @media (max-width: 62.5rem) {
 
     .window {
@@ -752,6 +882,12 @@ iframe {
 
     .tab img {
         height: 2rem;
+    }
+}
+
+@media (max-width: 700px) {
+    #notification {
+        width: calc(100% - 100px);
     }
 }
 

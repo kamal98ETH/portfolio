@@ -9,6 +9,7 @@ import folders_files_data from "./data/folders_files_data";
 import PhotoViewer from './components/photoViewer';
 import welcome from './data/Desktop_folders/cmd_body_text/1_welcome_text';
 import Explorer from './components/explorer';
+import notif_icon from './images/windows_xp_icons/i-icon.ico'
 
 
 class App extends React.Component {
@@ -32,9 +33,38 @@ class App extends React.Component {
         }
 
       ],
-      start: false
+      start: false,
+      notifications: [
+        {
+          icon: notif_icon,
+          title: <h3>Fullscreen mode</h3>,
+          position: [83, 59, 37],
+          body:
+            <div id="fullscreen-notification-body">
+              <p>For better experience fullscreen mode is recommended. Do you want to enter fullscreen mode?</p>
+              <button onClick={this.openFullscreen}>enter</button>
+            </div>
+        }
+      ]
     };
     this.button_handler = this.button_handler.bind(this);
+    this.openFullscreen = this.openFullscreen.bind(this);
+  }
+
+  openFullscreen = () => {
+    let elem = document.documentElement;
+    console.log('full')
+    if (elem.requestFullscreen) {
+      elem.requestFullscreen();
+    } else if (elem.webkitRequestFullscreen) {
+      elem.webkitRequestFullscreen();
+    } else if (elem.msRequestFullscreen) {
+      elem.msRequestFullscreen();
+    }
+    let new_notif_array = this.state.notifications.slice(1);
+    this.setState({
+      notifications: new_notif_array
+    })
   }
 
   button_handler = (event) => {
@@ -50,6 +80,16 @@ class App extends React.Component {
     if (id === "start") {
       this.setState({
         start: !this.state.start
+      })
+      return;
+    }
+
+    if (id === "notif-body-header-close") {
+      // console.log(id)
+      // console.log(this.state.notifications.slice(1))
+      let new_notif_array = this.state.notifications.slice(1);
+      this.setState({
+        notifications: new_notif_array
       })
       return;
     }
@@ -408,6 +448,22 @@ class App extends React.Component {
     }
   }
 
+  // componentDidMount() {
+  //   console.log(document.getElementById('fullscreen-button'))
+  //   document.getElementById('fullscreen-button').addEventListener("click", () => {
+  //     console.log('here')
+  //     let elem = document.documentElement;
+  //     console.log('full')
+  //     if (elem.requestFullscreen) {
+  //       elem.requestFullscreen();
+  //     } else if (elem.webkitRequestFullscreen) { /* Safari */
+  //       elem.webkitRequestFullscreen();
+  //     } else if (elem.msRequestFullscreen) { /* IE11 */
+  //       elem.msRequestFullscreen();
+  //     }
+
+  //   })
+  // }
 
 
   render() {
@@ -443,7 +499,7 @@ class App extends React.Component {
 
     return (
       <div className="App">
-        <Desktop active_components={this.state.active_components} action={this.button_handler} />
+        <Desktop active_components={this.state.active_components} action={this.button_handler} notifications={this.state.notifications} />
         {active_components}
         {/* {start} */}
       </div>
