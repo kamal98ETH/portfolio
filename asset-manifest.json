@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.402f07dc.css",
-    "main.js": "/portfolio/static/js/main.1563e209.js",
+    "main.css": "/portfolio/static/css/main.9ad0efb4.css",
+    "main.js": "/portfolio/static/js/main.04deef52.js",
     "static/media/xp-logo.png": "/portfolio/static/media/xp-logo.41511b28f1a7dc826523.png",
     "static/media/tribute-page-1.png": "/portfolio/static/media/tribute-page-1.16797933e460f34d8d83.png",
     "static/media/xp-background.jpg": "/portfolio/static/media/xp-background.17ce657ab1362be245f5.jpg",
@@ -192,13 +192,14 @@
     "static/media/js-calculator-2.png": "/portfolio/static/media/js-calculator-2.c48197f17b577444938a.png",
     "static/media/explorer_x.png": "/portfolio/static/media/explorer_x.05b287c0699844552e91.png",
     "static/media/move-forward.png": "/portfolio/static/media/move-forward.b03a7440455b586379ea.png",
+    "static/media/i-icon.ico": "/portfolio/static/media/i-icon.6a40f112615f77fbb52d.ico",
     "static/media/search.ico": "/portfolio/static/media/search.49527e3a085f01a9a1cf.ico",
     "index.html": "/portfolio/index.html",
-    "main.402f07dc.css.map": "/portfolio/static/css/main.402f07dc.css.map",
-    "main.1563e209.js.map": "/portfolio/static/js/main.1563e209.js.map"
+    "main.9ad0efb4.css.map": "/portfolio/static/css/main.9ad0efb4.css.map",
+    "main.04deef52.js.map": "/portfolio/static/js/main.04deef52.js.map"
   },
   "entrypoints": [
-    "static/css/main.402f07dc.css",
-    "static/js/main.1563e209.js"
+    "static/css/main.9ad0efb4.css",
+    "static/js/main.04deef52.js"
   ]
 }
