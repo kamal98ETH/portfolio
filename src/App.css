@@ -562,7 +562,7 @@ button {
 
 .explorer-content-main {
     background-color: white;
-    height: calc(100% - 185px);
+    height: calc(100% - 11.563rem);
 }
 
 iframe {
@@ -713,22 +713,22 @@ iframe {
 }
 
 #notifications img {
-    height: 25px;
+    height: 1.563rem;
 }
 
 #notification {
-    width: 618px;
+    width: 38.625rem;
     position: absolute;
-    bottom: 25px;
+    bottom: 1.563rem;
     display: flex;
     flex-direction: column-reverse;
     z-index: 10;
 }
 
 #notif-body {
-    padding: 12px;
+    padding: 0.75rem;
     border: 2px solid black;
-    border-radius: 15px;
+    border-radius: 0.938rem;
     background-color: #F7F7DA;
     position: relative;
 }
@@ -739,8 +739,8 @@ iframe {
 }
 
 #notif-body-header-icon {
-    height: 35px;
-    margin: 0 10px;
+    height: 2.188rem;
+    margin: 0 0.625rem;
 }
 
 #notif-body-header-title {
@@ -748,14 +748,14 @@ iframe {
 }
 
 #notif-body-header-title h3 {
-    font-size: 20px;
+    font-size: 1.25rem;
 }
 
 #notif-body-header-close {
-    width: 35px;
-    height: 35px;
+    width: 2.188rem;
+    height: 2.188rem;
     border: 1px solid rgb(160, 160, 160);
-    border-radius: 5px;
+    border-radius: 0.313rem;
     background-color: #fff;
     display: flex;
     justify-content: center;
@@ -773,12 +773,12 @@ iframe {
 #notif-body-header-close:after {
     content: '\2716';
     color: rgb(160, 160, 160);
-    font-size: 25px;
+    font-size: 1.563rem;
 }
 
 #notif-body-text {
-    padding: 10px 5px 5px 28px;
-    font-size: 20px;
+    padding: 0.625rem 0.313rem 0.313rem 1.75rem;
+    font-size: 1.25rem;
 }
 
 /* #fullscreen-notification-body {
@@ -788,28 +788,28 @@ iframe {
 } */
 
 #fullscreen-notification-body p {
-    margin-bottom: 10px;
+    margin-bottom: 0.625rem;
 }
 
 #fullscreen-notification-body button {
-    font-size: 20px;
+    font-size: 1.25rem;
     font-weight: 900;
     background-color: #fff;
     cursor: pointer;
     display: block;
     margin: auto;
-    padding: 5px 10px;
-    border-radius: 15px;
+    padding: 0.313rem 0.625rem;
+    border-radius: 0.938rem;
     border: 2px solid #000;
 }
 
 #notif-body-line {
-    width: 46px;
-    height: 2px;
+    width: 2.875rem;
+    height: 0.125rem;
     background-color: #F7F7DA;
     position: absolute;
-    bottom: -2px;
-    right: 30px;
+    bottom: -0.125rem;
+    right: 1.875rem;
 }
 
 #notif-tip {
@@ -819,17 +819,17 @@ iframe {
 
 #notif-tip-border {
     position: relative;
-    right: 30px;
-    border-left: 50px solid transparent;
-    border-top: 50px solid black;
+    right: 1.875rem;
+    border-left: 3.125rem solid transparent;
+    border-top: 3.125rem solid black;
 }
 
 #notif-tip-inner {
     position: relative;
-    bottom: 4px;
-    right: -18px;
-    border-left: 50px solid transparent;
-    border-top: 50px solid #F7F7DA;
+    bottom: 0.25rem;
+    right: -1.125rem;
+    border-left: 3.125rem solid transparent;
+    border-top: 3.125rem solid #F7F7DA;
 }
 
 @media (max-width: 62.5rem) {
@@ -885,9 +885,9 @@ iframe {
     }
 }
 
-@media (max-width: 700px) {
+@media (max-width: 43.75rem) {
     #notification {
-        width: calc(100% - 100px);
+        width: calc(100% - 6.25rem);
     }
 }
 

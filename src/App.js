@@ -448,22 +448,6 @@ class App extends React.Component {
     }
   }
 
-  // componentDidMount() {
-  //   console.log(document.getElementById('fullscreen-button'))
-  //   document.getElementById('fullscreen-button').addEventListener("click", () => {
-  //     console.log('here')
-  //     let elem = document.documentElement;
-  //     console.log('full')
-  //     if (elem.requestFullscreen) {
-  //       elem.requestFullscreen();
-  //     } else if (elem.webkitRequestFullscreen) { /* Safari */
-  //       elem.webkitRequestFullscreen();
-  //     } else if (elem.msRequestFullscreen) { /* IE11 */
-  //       elem.msRequestFullscreen();
-  //     }
-
-  //   })
-  // }
 
 
   render() {

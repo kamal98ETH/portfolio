@@ -1,6 +1,5 @@
 import windowsLogo from "../images/windows_xp_icons/xp-logo.png";
 import Tab from "./tab";
-import Notification from "./notification";
 import fullscreen_icon from "../images/windows_xp_icons/full-screen.png"
 import Time from "./time";
 
@@ -41,10 +40,6 @@ function ToolBar(props) {
         )
     })
 
-    let notification;
-    if (props.notifications.length) {
-        notification = <Notification notification={props.notifications} action={props.action} />
-    }
 
     return (
         <div id="toolbar">
@@ -64,7 +59,6 @@ function ToolBar(props) {
                 <Time />
                 {/* <p id="time">{values.time}</p> */}
             </div>
-            {notification}
         </div>
     )
 }
