@@ -9,7 +9,8 @@ import folders_files_data from "./data/folders_files_data";
 import PhotoViewer from './components/photoViewer';
 import welcome from './data/Desktop_folders/cmd_body_text/1_welcome_text';
 import Explorer from './components/explorer';
-import notif_icon from './images/windows_xp_icons/i-icon.ico'
+import notif_icon from './images/windows_xp_icons/i-icon.ico';
+import notifications from './data/notifications';
 
 
 class App extends React.Component {
@@ -34,7 +35,8 @@ class App extends React.Component {
 
       ],
       start: false,
-      notifications: [
+      notification: null,
+      popups: [
         {
           icon: notif_icon,
           title: <h3>Fullscreen mode</h3>,
@@ -42,7 +44,24 @@ class App extends React.Component {
           body:
             <div id="fullscreen-notification-body">
               <p>For better experience fullscreen mode is recommended. Do you want to enter fullscreen mode?</p>
-              <button onClick={this.openFullscreen}>enter</button>
+              <button
+                onClick={
+                  // this.openFullscreen
+                  () => {
+                    let elem = document.documentElement;
+                    if (elem.requestFullscreen) {
+                      elem.requestFullscreen();
+                    } else if (elem.webkitRequestFullscreen) {
+                      elem.webkitRequestFullscreen();
+                    } else if (elem.msRequestFullscreen) {
+                      elem.msRequestFullscreen();
+                    }
+                    let new_notif_array = this.state.popups.slice(1);
+                    this.setState({
+                      popups: new_notif_array
+                    })
+                  }
+                }>enter</button>
             </div>
         }
       ]
@@ -53,7 +72,6 @@ class App extends React.Component {
 
   openFullscreen = () => {
     let elem = document.documentElement;
-    console.log('full')
     if (elem.requestFullscreen) {
       elem.requestFullscreen();
     } else if (elem.webkitRequestFullscreen) {
@@ -61,9 +79,9 @@ class App extends React.Component {
     } else if (elem.msRequestFullscreen) {
       elem.msRequestFullscreen();
     }
-    let new_notif_array = this.state.notifications.slice(1);
+    let new_notif_array = this.state.popups.slice(1);
     this.setState({
-      notifications: new_notif_array
+      popups: new_notif_array
     })
   }
 
@@ -84,12 +102,20 @@ class App extends React.Component {
       return;
     }
 
-    if (id === "notif-body-header-close") {
+    if (id === "popup-body-header-close") {
       // console.log(id)
-      // console.log(this.state.notifications.slice(1))
-      let new_notif_array = this.state.notifications.slice(1);
+      // console.log(this.state.popups.slice(1))
+      let new_notif_array = this.state.popups.slice(1);
       this.setState({
-        notifications: new_notif_array
+        popups: new_notif_array
+      })
+      return;
+    }
+
+    if (id === "notification-header-close") {
+      // console.log(id)
+      this.setState({
+        notification: null
       })
       return;
     }
@@ -425,6 +451,13 @@ class App extends React.Component {
         // })
         break;
 
+      case /^notification/.test(id):
+        // console.log(id)
+        this.setState({
+          notification: notifications[id]
+        })
+        break;
+
       default:
         //folders or files that shouldnt open a new tab and just renders new data in the same window
         let newActiveComponents = [];
@@ -483,7 +516,7 @@ class App extends React.Component {
 
     return (
       <div className="App">
-        <Desktop active_components={this.state.active_components} action={this.button_handler} notifications={this.state.notifications} />
+        <Desktop active_components={this.state.active_components} action={this.button_handler} popups={this.state.popups} notification={this.state.notification} />
         {active_components}
         {/* {start} */}
       </div>

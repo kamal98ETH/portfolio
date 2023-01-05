@@ -1,29 +1,16 @@
+
+import notif_icon from '../images/windows_xp_icons/i-icon.ico';
+
 function Notification(props) {
-    console.log(props.notification)
-    let right;
-    if (window.innerWidth > 1000) {
-        right = props.notification[0].position[0];
-    } else if (window.innerWidth <= 550) {
-        right = props.notification[0].position[2];
-    } else if (window.innerWidth <= 1000) {
-        right = props.notification[0].position[1];
-    }
-
-
     return (
-        <div id="notification" style={{ right: right }}>
-            <div id="notif-tip">
-                <div id="notif-tip-border"></div>
-                <div id="notif-tip-inner"></div>
+        <div id="notification-window">
+            <div id="popup-body-header">
+                <img src={props.notification.icon} id="popup-body-header-icon" alt="notification icon" />
+                <div id="notif-window-header-title"><h3>{props.notification.title}</h3></div>
+                <button id="notification-header-close" onClick={props.action} ></button>
             </div>
-            <div id="notif-body">
-                <div id="notif-body-header">
-                    <img src={props.notification[0].icon} id="notif-body-header-icon" alt="notification icon" />
-                    <div id="notif-body-header-title">{props.notification[0].title}</div>
-                    <button id="notif-body-header-close" onClick={props.action}></button>
-                </div>
-                <div id="notif-body-text">{props.notification[0].body}</div>
-                <div id="notif-body-line"></div>
+            <div id='notif-window-body'>
+                {props.notification.noti_body}
             </div>
         </div>
     )

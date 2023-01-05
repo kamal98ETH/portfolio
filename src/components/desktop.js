@@ -3,7 +3,7 @@ import ToolBar from "./toolBar";
 import '../App.css';
 import FoldersFiles from "./foldersFiles";
 import iconData from "../data/desktopicons.js";
-import Notification from "./notification";
+
 
 
 function Desktop(props) {
@@ -14,17 +14,13 @@ function Desktop(props) {
         )
     })
 
-    let notification;
-    if (props.notifications.length) {
-        notification = <Notification notification={props.notifications} action={props.action} />
-    }
 
     return (
         <div id="container">
             <img src={backgroundPic} alt="windows xp background wallpaper" id="background-img" />
             <div id="desktop">
-                {notification}
-                <ToolBar active_components={props.active_components} action={props.action} notifications={props.notifications} />
+
+                <ToolBar active_components={props.active_components} action={props.action} popups={props.popups} notification={props.notification} />
                 <div id="desktop-icons">
                     <div id="icons">
                         {desktopicons}

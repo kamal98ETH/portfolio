@@ -716,7 +716,7 @@ iframe {
     height: 1.563rem;
 }
 
-#notification {
+#popup {
     width: 38.625rem;
     position: absolute;
     bottom: 1.563rem;
@@ -725,7 +725,7 @@ iframe {
     z-index: 10;
 }
 
-#notif-body {
+#popup-body {
     padding: 0.75rem;
     border: 2px solid black;
     border-radius: 0.938rem;
@@ -733,25 +733,26 @@ iframe {
     position: relative;
 }
 
-#notif-body-header {
+#popup-body-header {
     display: flex;
     align-items: center;
 }
 
-#notif-body-header-icon {
+#popup-body-header-icon {
     height: 2.188rem;
     margin: 0 0.625rem;
 }
 
-#notif-body-header-title {
-    width: 500px;
+#popup-body-header-title {
+    width: 100%;
 }
 
-#notif-body-header-title h3 {
+#popup-body-header-title h3 {
     font-size: 1.25rem;
 }
 
-#notif-body-header-close {
+#popup-body-header-close,
+#notification-header-close {
     width: 2.188rem;
     height: 2.188rem;
     border: 1px solid rgb(160, 160, 160);
@@ -762,21 +763,24 @@ iframe {
     align-items: center;
 }
 
-#notif-body-header-close:hover {
+#popup-body-header-close:hover,
+#notification-header-close:hover {
     background-color: red;
 }
 
-#notif-body-header-close:hover:after {
+#popup-body-header-close:hover:after,
+#notification-header-close:hover:after {
     color: white;
 }
 
-#notif-body-header-close:after {
+#popup-body-header-close:after,
+#notification-header-close:after {
     content: '\2716';
     color: rgb(160, 160, 160);
     font-size: 1.563rem;
 }
 
-#notif-body-text {
+#popup-body-text {
     padding: 0.625rem 0.313rem 0.313rem 1.75rem;
     font-size: 1.25rem;
 }
@@ -803,7 +807,7 @@ iframe {
     border: 2px solid #000;
 }
 
-#notif-body-line {
+#popup-body-line {
     width: 2.875rem;
     height: 0.125rem;
     background-color: #F7F7DA;
@@ -812,24 +816,62 @@ iframe {
     right: 1.875rem;
 }
 
-#notif-tip {
+#popup-tip {
     display: flex;
     flex-direction: row-reverse;
 }
 
-#notif-tip-border {
+#popup-tip-border {
     position: relative;
     right: 1.875rem;
     border-left: 3.125rem solid transparent;
     border-top: 3.125rem solid black;
 }
 
-#notif-tip-inner {
+#popup-tip-inner {
     position: relative;
     bottom: 0.25rem;
     right: -1.125rem;
     border-left: 3.125rem solid transparent;
     border-top: 3.125rem solid #F7F7DA;
+}
+
+#notification-window {
+    width: 310px;
+    position: absolute;
+    right: 0;
+    bottom: 50px;
+    background-color: #F7F7DA;
+    padding: 10px;
+    border-radius: 10px;
+    z-index: 1000;
+}
+
+#notif-window-header-title {
+    width: 200px;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+#notif-window-body {
+    padding: 10px;
+}
+
+#notification-fullscreen-mode-buttons {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+#notif-window-body button {
+    font-size: 18px;
+    font-weight: 900;
+    padding: 5px;
+    margin: 0 10px;
+    background-color: #fff;
+    border: 2px solid #000;
+    border-radius: 10px;
+    cursor: pointer;
 }
 
 @media (max-width: 62.5rem) {
@@ -887,7 +929,7 @@ iframe {
 
 @media (max-width: 43.75rem) {
     #notification {
-        width: calc(100% - 6.25rem);
+        width: calc(100vw - 6.25rem);
     }
 }
 

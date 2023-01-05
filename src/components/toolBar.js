@@ -2,6 +2,8 @@ import windowsLogo from "../images/windows_xp_icons/xp-logo.png";
 import Tab from "./tab";
 import fullscreen_icon from "../images/windows_xp_icons/full-screen.png"
 import Time from "./time";
+import Popup from "./popup";
+import Notification from "./notification";
 
 function ToolBar(props) {
     // let current_time = new Date().toTimeString().slice(0, 5);
@@ -41,6 +43,16 @@ function ToolBar(props) {
     })
 
 
+    let popup;
+    if (props.popups.length) {
+        popup = <Popup popup={props.popups} action={props.action} />
+    }
+
+    let notification;
+    if (props.notification) {
+        notification = <Notification action={props.action} notification={props.notification} />
+    }
+
     return (
         <div id="toolbar">
             <button className="start" id="start" onClick={props.action}>
@@ -52,13 +64,15 @@ function ToolBar(props) {
             </div>
             <div id="time-notif">
                 <div id="notifications">
-                    <button>
-                        <img src={fullscreen_icon} alt="fullscreen icon" />
+                    <button onClick={props.action} id="notification-fullscreen-mode">
+                        <img src={fullscreen_icon} alt="fullscreen icon" id="notification-fullscreen-mode" />
                     </button>
                 </div>
                 <Time />
                 {/* <p id="time">{values.time}</p> */}
             </div>
+            {popup}
+            {notification}
         </div>
     )
 }
