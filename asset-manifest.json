@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.61f2b21b.css",
-    "main.js": "/portfolio/static/js/main.15135d93.js",
+    "main.css": "/portfolio/static/css/main.3cf95380.css",
+    "main.js": "/portfolio/static/js/main.e7dd1ac5.js",
     "static/media/xp-logo.png": "/portfolio/static/media/xp-logo.41511b28f1a7dc826523.png",
     "static/media/tribute-page-1.png": "/portfolio/static/media/tribute-page-1.16797933e460f34d8d83.png",
     "static/media/xp-background.jpg": "/portfolio/static/media/xp-background.17ce657ab1362be245f5.jpg",
@@ -193,13 +193,15 @@
     "static/media/explorer_x.png": "/portfolio/static/media/explorer_x.05b287c0699844552e91.png",
     "static/media/move-forward.png": "/portfolio/static/media/move-forward.b03a7440455b586379ea.png",
     "static/media/i-icon.ico": "/portfolio/static/media/i-icon.6a40f112615f77fbb52d.ico",
+    "static/media/turn-off.ico": "/portfolio/static/media/turn-off.b3ac03eaf2f8da7c9ad3.ico",
+    "static/media/log-off.ico": "/portfolio/static/media/log-off.69880bd3a7db48c3bbc1.ico",
     "static/media/search.ico": "/portfolio/static/media/search.49527e3a085f01a9a1cf.ico",
     "index.html": "/portfolio/index.html",
-    "main.61f2b21b.css.map": "/portfolio/static/css/main.61f2b21b.css.map",
-    "main.15135d93.js.map": "/portfolio/static/js/main.15135d93.js.map"
+    "main.3cf95380.css.map": "/portfolio/static/css/main.3cf95380.css.map",
+    "main.e7dd1ac5.js.map": "/portfolio/static/js/main.e7dd1ac5.js.map"
   },
   "entrypoints": [
-    "static/css/main.61f2b21b.css",
-    "static/js/main.15135d93.js"
+    "static/css/main.3cf95380.css",
+    "static/js/main.e7dd1ac5.js"
   ]
 }
