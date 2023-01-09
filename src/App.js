@@ -123,6 +123,7 @@ class App extends React.Component {
     switch (true) {
       //open new tab (object with render_index and data array) when button id starts with new-tab
       case /^new-tab/.test(id):
+        let new_tab_id_data = id.split("-").slice(2).join("-");
         this.setState({
           active_components: [
             ...this.state.active_components,
@@ -131,9 +132,10 @@ class App extends React.Component {
               render_index: 0,
               z_index: this.state.active_components.length + 1,
               fullscreen: false,
-              data: [folders_files_data[id]]
+              data: [folders_files_data[new_tab_id_data]]
             }
-          ]
+          ],
+          start: false
         });
         break;
 
@@ -511,14 +513,14 @@ class App extends React.Component {
 
     let start;
     if (this.state.start) {
-      start = <Start />
+      start = <Start action={this.button_handler} />
     }
 
     return (
       <div className="App">
         <Desktop active_components={this.state.active_components} action={this.button_handler} popups={this.state.popups} notification={this.state.notification} />
         {active_components}
-        {/* {start} */}
+        {start}
       </div>
     );
 

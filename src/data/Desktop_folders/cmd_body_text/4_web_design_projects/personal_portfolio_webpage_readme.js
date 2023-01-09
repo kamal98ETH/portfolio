@@ -27,7 +27,7 @@ const personal_portfolio_webpage = [
     },
     {
         type: "paragraph",
-        data: "You can check the whole assignment"
+        data: "K~$ You can check the whole assignment"
     },
     {
         type: "link",

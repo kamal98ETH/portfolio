@@ -44,7 +44,7 @@ import _25_5_clock_screenshot_7 from "../../images/desktop/react_projects/25 + 5
 
 let React_Projects = {
     //react projects folders
-    "new-tab-react-projects": {
+    "react-projects": {
         icon: react_folder,
         title: "React projects",
         type: "window",
@@ -113,7 +113,7 @@ let React_Projects = {
         }
     },
     //Random Quote Machine readme
-    "new-tab-dev-project-random-quote-machine-readme": {
+    "dev-project-random-quote-machine-readme": {
         icon: terminal,
         title: "readme",
         type: "terminal",
@@ -189,7 +189,7 @@ let React_Projects = {
     //Random Quote Machine source code link
     "external-link-dev-project-random-quote-machine-source-code": "https://github.com/kamal98ETH/fcc-random-quote-machine",
     //Random Quote Machine preview
-    "new-tab-dev-dev-project-random-quote-machine-preview":
+    "dev-dev-project-random-quote-machine-preview":
     {
         icon: explorer_logo,
         title: "FCC: Random Quote Machine",
@@ -239,7 +239,7 @@ let React_Projects = {
         }
     },
     //Markdown Previewer readme
-    "new-tab-dev-project-markdown-previewer-readme": {
+    "dev-project-markdown-previewer-readme": {
         icon: terminal,
         title: "readme",
         type: "terminal",
@@ -337,7 +337,7 @@ let React_Projects = {
     //Markdown Previewer source code link
     "external-link-dev-project-markdown-previewer-source-code": "https://github.com/kamal98ETH/fcc-simple-react-markdown-previewer",
     //Markdown Previewer preview
-    "new-tab-dev-dev-project-markdown-previewer-preview":
+    "dev-dev-project-markdown-previewer-preview":
     {
         icon: explorer_logo,
         title: "FCC: Markdown Previewer",
@@ -387,7 +387,7 @@ let React_Projects = {
         }
     },
     //Drum Machine readme
-    "new-tab-dev-project-drum-machine-readme": {
+    "dev-project-drum-machine-readme": {
         icon: terminal,
         title: "readme",
         type: "terminal",
@@ -463,7 +463,7 @@ let React_Projects = {
     //Drum Machine source code link
     "external-link-dev-project-drum-machine-source-code": "https://github.com/kamal98ETH/fcc-drum-machine",
     //Drum Machine preview
-    "new-tab-dev-dev-project-drum-machine-preview":
+    "dev-dev-project-drum-machine-preview":
     {
         icon: explorer_logo,
         title: "FCC: Drum Machine",
@@ -513,7 +513,7 @@ let React_Projects = {
         }
     },
     //JavaScript Calculator readme
-    "new-tab-dev-project-js-calculator-readme": {
+    "dev-project-js-calculator-readme": {
         icon: terminal,
         title: "readme",
         type: "terminal",
@@ -611,7 +611,7 @@ let React_Projects = {
     //JavaScript Calculator source code link
     "external-link-dev-project-js-calculator-source-code": "https://github.com/kamal98ETH/fcc-javascript-calculator",
     //JavaScript Calculator preview
-    "new-tab-dev-dev-project-js-calculator-preview":
+    "dev-dev-project-js-calculator-preview":
     {
         icon: explorer_logo,
         title: "FCC: JavaScript Calculator",
@@ -627,11 +627,6 @@ let React_Projects = {
                 </iframe>
         }
     },
-
-
-
-
-
 
 
     //25 + 5 Clock folder
@@ -660,13 +655,13 @@ let React_Projects = {
                 {
                     icon: explorer_logo,
                     title: "Preview",
-                    id: "new-tab-dev-dev-project-25-5-clock-preview"
+                    id: "new-tab-dev-project-25-5-clock-preview"
                 }
             ]
         }
     },
     //25 + 5 Clock readme
-    "new-tab-dev-project-25-5-clock-readme": {
+    "dev-project-25-5-clock-readme": {
         icon: terminal,
         title: "readme",
         type: "terminal",
@@ -764,7 +759,7 @@ let React_Projects = {
     //25 + 5 Clock source code link
     "external-link-dev-project-25-5-clock-source-code": "https://github.com/kamal98ETH/fcc-25-5-Clock",
     //25 + 5 Clock preview
-    "new-tab-dev-dev-project-25-5-clock-preview":
+    "dev-project-25-5-clock-preview":
     {
         icon: explorer_logo,
         title: "FCC: 25 + 5 Clock",

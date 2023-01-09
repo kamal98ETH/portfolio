@@ -38,7 +38,7 @@ import probability_calculator_screenshot_2 from "../../images/desktop/python_pro
 
 let Python_Projects = {
     //python projects folders
-    "new-tab-python-projects": {
+    "python-projects": {
         icon: python_folder,
         title: "Python projects",
         type: "window",
@@ -107,7 +107,7 @@ let Python_Projects = {
         }
     },
     //Arithmetic Formatter readme
-    "new-tab-dev-project-arithmetic-formatter-readme": {
+    "dev-project-arithmetic-formatter-readme": {
         icon: terminal,
         title: "readme",
         type: "terminal",
@@ -205,7 +205,7 @@ let Python_Projects = {
     //Arithmetic Formatter source code link
     "external-link-dev-project-arithmetic-formatter-source-code": "https://github.com/kamal98ETH/FCC-arithmetic-arranger",
     //Arithmetic Formatter preview
-    "new-tab-dev-dev-project-arithmetic-formatter-preview":
+    "dev-dev-project-arithmetic-formatter-preview":
     {
         icon: explorer_logo,
         title: "FCC: Arithmetic Formatter",
@@ -251,7 +251,7 @@ let Python_Projects = {
         }
     },
     //Time Calculator readme
-    "new-tab-dev-project-time-calculator-readme": {
+    "dev-project-time-calculator-readme": {
         icon: terminal,
         title: "readme",
         type: "terminal",
@@ -338,7 +338,7 @@ let Python_Projects = {
     //Time Calculator source code link
     "external-link-dev-project-time-calculator-source-code": "https://github.com/kamal98ETH/FCC-time-calculator",
     //Time Calculator preview
-    "new-tab-dev-dev-project-time-calculator-preview":
+    "dev-dev-project-time-calculator-preview":
     {
         icon: explorer_logo,
         title: "FCC: Time Calculator",
@@ -384,7 +384,7 @@ let Python_Projects = {
         }
     },
     //Budget App readme
-    "new-tab-dev-project-budget-app-readme": {
+    "dev-project-budget-app-readme": {
         icon: terminal,
         title: "readme",
         type: "terminal",
@@ -438,7 +438,7 @@ let Python_Projects = {
     //Budget App source code link
     "external-link-dev-project-budget-app-source-code": "https://github.com/kamal98ETH/FCC-budget-app",
     //Budget App preview
-    "new-tab-dev-dev-project-budget-app-preview":
+    "dev-dev-project-budget-app-preview":
     {
         icon: explorer_logo,
         title: "FCC: Budget App",
@@ -484,7 +484,7 @@ let Python_Projects = {
         }
     },
     //Polygon Area Calculator readme
-    "new-tab-dev-project-polygon-area-calculator-readme": {
+    "dev-project-polygon-area-calculator-readme": {
         icon: terminal,
         title: "readme",
         type: "terminal",
@@ -582,7 +582,7 @@ let Python_Projects = {
     //Polygon Area Calculator source code link
     "external-link-dev-project-polygon-area-calculator-source-code": "https://github.com/kamal98ETH/FCC-polygon-area-calculator",
     //Polygon Area Calculator preview
-    "new-tab-dev-dev-project-polygon-area-calculator-preview":
+    "dev-dev-project-polygon-area-calculator-preview":
     {
         icon: explorer_logo,
         title: "FCC: Polygon Area Calculator",
@@ -628,7 +628,7 @@ let Python_Projects = {
         }
     },
     //Probability Calculator readme
-    "new-tab-dev-project-probability-calculator-readme": {
+    "dev-project-probability-calculator-readme": {
         icon: terminal,
         title: "readme",
         type: "terminal",
@@ -671,7 +671,7 @@ let Python_Projects = {
     //Probability Calculator source code link
     "external-link-dev-project-probability-calculator-source-code": "https://github.com/kamal98ETH/FCC-probability-calculator",
     //Probability Calculator preview
-    "new-tab-dev-dev-project-probability-calculator-preview":
+    "dev-dev-project-probability-calculator-preview":
     {
         icon: explorer_logo,
         title: "FCC: Probability Calculator",

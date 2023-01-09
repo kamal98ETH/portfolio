@@ -27,7 +27,7 @@ const tribute_page_readme = [
     },
     {
         type: "paragraph",
-        data: "You can check the whole assignment"
+        data: "K~$ You can check the whole assignment"
     },
     {
         type: "link",

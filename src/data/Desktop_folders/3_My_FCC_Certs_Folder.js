@@ -7,7 +7,7 @@ import react from "../../images/desktop/my_fcc_certs/react_logo.png";
 import nodejs from "../../images/desktop/my_fcc_certs/nodejs_logo.png";
 
 let My_FCC_Certs_folder = {
-    "new-tab-fcc-certs": {
+    "fcc-certs": {
         icon: fcc,
         title: "My freeCodeCamp certs",
         type: "window",

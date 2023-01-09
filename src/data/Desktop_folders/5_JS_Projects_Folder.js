@@ -47,7 +47,7 @@ import cash_register_screenshot_4 from "../../images/desktop/js_projects/cash_re
 
 let JS_Projects_Folder = {
     //js projects folders
-    "new-tab-js-projects": {
+    "js-projects": {
         icon: js_folder,
         title: "JS projects",
         type: "window",
@@ -111,7 +111,7 @@ let JS_Projects_Folder = {
         }
     },
     //Palindrome Checker readme
-    "new-tab-dev-project-palindrome-checker-readme": {
+    "dev-project-palindrome-checker-readme": {
         icon: terminal,
         title: "readme",
         type: "terminal",
@@ -289,7 +289,7 @@ let JS_Projects_Folder = {
         }
     },
     //Roman Numeral Converter readme
-    "new-tab-dev-project-roman-numeral-converter-readme": {
+    "dev-project-roman-numeral-converter-readme": {
         icon: terminal,
         title: "readme",
         type: "terminal",
@@ -445,7 +445,7 @@ let JS_Projects_Folder = {
         }
     },
     //Caesars Cipher readme
-    "new-tab-dev-project-caesars-cipher-readme": {
+    "dev-project-caesars-cipher-readme": {
         icon: terminal,
         title: "readme",
         type: "terminal",
@@ -538,7 +538,7 @@ let JS_Projects_Folder = {
         }
     },
     //Telephone Number Validator readme
-    "new-tab-dev-project-telephone-number-validator-readme": {
+    "dev-project-telephone-number-validator-readme": {
         icon: terminal,
         title: "readme",
         type: "terminal",
@@ -642,7 +642,7 @@ let JS_Projects_Folder = {
         }
     },
     //Cash Register readme
-    "new-tab-dev-project-cash-register-readme": {
+    "dev-project-cash-register-readme": {
         icon: terminal,
         title: "readme",
         type: "terminal",

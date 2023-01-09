@@ -10,7 +10,7 @@ import linkedIn from "../../images/desktop/about_me/linkedin_logo.png";
 import me_exe from "./cmd_body_text/2_about_me/me_exe_text"
 
 let About_me_Folder = {
-    "new-tab-about-me": {
+    "about-me": {
         icon: profile,
         title: "About me",
         type: "window",
@@ -61,7 +61,7 @@ let About_me_Folder = {
         }
     },
     //about me's files
-    "new-tab-me": {
+    "me": {
         icon: terminal,
         title: "me.exe",
         type: "terminal",

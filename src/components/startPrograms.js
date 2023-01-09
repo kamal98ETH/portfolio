@@ -1,8 +1,8 @@
 function StartPrograms(props) {
     return (
-        <button className="Start-program">
-            <img src={props.icon} alt="program icon" />
-            <h2>Program</h2>
+        <button className="start-program" onClick={props.action} id={props.id}>
+            <img src={props.icon} alt="program icon" id={props.id} />
+            <h2 id={props.id}>{props.title}</h2>
         </button>
     )
 }

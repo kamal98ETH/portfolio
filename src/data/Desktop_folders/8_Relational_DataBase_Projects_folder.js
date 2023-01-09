@@ -33,7 +33,7 @@ import number_guessing_game_screenshot_6 from "../../images/desktop/relational_d
 
 let Relational_Database_Projects = {
     //relational database projects folders
-    "new-tab-relatinal-database-projects": {
+    "relatinal-database-projects": {
         icon: sql_folder,
         title: "Relational database projects",
         type: "window",
@@ -92,7 +92,7 @@ let Relational_Database_Projects = {
         }
     },
     //Celestial Bodies Database readme
-    "new-tab-dev-project-celestial-bodies-database-readme": {
+    "dev-project-celestial-bodies-database-readme": {
         icon: terminal,
         title: "readme",
         type: "terminal",
@@ -124,7 +124,7 @@ let Relational_Database_Projects = {
         }
     },
     //World Cup Database readme
-    "new-tab-dev-project-world-cup-database-readme": {
+    "dev-project-world-cup-database-readme": {
         icon: terminal,
         title: "readme",
         type: "terminal",
@@ -162,7 +162,7 @@ let Relational_Database_Projects = {
         }
     },
     //Salon Appointment Scheduler readme
-    "new-tab-dev-project-salon-appointment-scheduler-readme": {
+    "dev-project-salon-appointment-scheduler-readme": {
         icon: terminal,
         title: "readme",
         type: "terminal",
@@ -289,7 +289,7 @@ let Relational_Database_Projects = {
         }
     },
     //Periodic Table Database readme
-    "new-tab-dev-project-periodic-table-database-readme": {
+    "dev-project-periodic-table-database-readme": {
         icon: terminal,
         title: "readme",
         type: "terminal",
@@ -427,7 +427,7 @@ let Relational_Database_Projects = {
         }
     },
     //Number Guessing Game readme
-    "new-tab-dev-project-number-guessing-game-readme": {
+    "dev-project-number-guessing-game-readme": {
         icon: terminal,
         title: "readme",
         type: "terminal",

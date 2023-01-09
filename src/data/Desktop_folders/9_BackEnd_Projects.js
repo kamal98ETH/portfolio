@@ -40,7 +40,7 @@ import file_metadata_microservice_screenshot_3 from "../../images/desktop/backen
 
 let BackEnd_Projects = {
     //backend projects folders
-    "new-tab-backend-projects": {
+    "backend-projects": {
         icon: nodeJS_folder,
         title: "Backend projects",
         type: "window",
@@ -103,13 +103,13 @@ let BackEnd_Projects = {
                 {
                     icon: explorer_logo,
                     title: "Preview",
-                    id: "new-tab-dev-dev-project-timestamp-microservice-preview"
+                    id: "new-tab-dev-project-timestamp-microservice-preview"
                 }
             ]
         }
     },
     //Timestamp Microservice readme
-    "new-tab-dev-project-timestamp-microservice-readme": {
+    "dev-project-timestamp-microservice-readme": {
         icon: terminal,
         title: "readme",
         type: "terminal",
@@ -185,7 +185,7 @@ let BackEnd_Projects = {
     //Timestamp Microservice source code link
     "external-link-dev-project-timestamp-microservice-source-code": "https://github.com/kamal98ETH/boilerplate-project-timestamp",
     //Timestamp Microservice preview
-    "new-tab-dev-dev-project-timestamp-microservice-preview":
+    "dev-project-timestamp-microservice-preview":
     {
         icon: explorer_logo,
         title: "FCC: Timestamp Microservice",
@@ -225,13 +225,13 @@ let BackEnd_Projects = {
                 {
                     icon: explorer_logo,
                     title: "Preview",
-                    id: "new-tab-dev-dev-project-request-header-parser-microservice-preview"
+                    id: "new-tab-dev-project-request-header-parser-microservice-preview"
                 }
             ]
         }
     },
     //Request Header Parser Microservice readme
-    "new-tab-dev-project-request-header-parser-microservice-readme": {
+    "dev-project-request-header-parser-microservice-readme": {
         icon: terminal,
         title: "readme",
         type: "terminal",
@@ -274,7 +274,7 @@ let BackEnd_Projects = {
     //Request Header Parser Microservice source code link
     "external-link-dev-project-request-header-parser-microservice-source-code": "https://github.com/kamal98ETH/boilerplate-project-headerparser",
     //Request Header Parser Microservice preview
-    "new-tab-dev-dev-project-request-header-parser-microservice-preview":
+    "dev-project-request-header-parser-microservice-preview":
     {
         icon: explorer_logo,
         title: "FCC: Request Header Parser Microservice",
@@ -314,13 +314,13 @@ let BackEnd_Projects = {
                 {
                     icon: explorer_logo,
                     title: "Preview",
-                    id: "new-tab-dev-dev-project-url-shortener-microservice-preview"
+                    id: "new-tab-dev-project-url-shortener-microservice-preview"
                 }
             ]
         }
     },
     //URL Shortener Microservice readme
-    "new-tab-dev-project-url-shortener-microservice-readme": {
+    "dev-project-url-shortener-microservice-readme": {
         icon: terminal,
         title: "readme",
         type: "terminal",
@@ -418,7 +418,7 @@ let BackEnd_Projects = {
     //URL Shortener Microservice source code link
     "external-link-dev-project-url-shortener-microservice-source-code": "https://github.com/kamal98ETH/boilerplate-project-urlshortener",
     //URL Shortener Microservice preview
-    "new-tab-dev-dev-project-url-shortener-microservice-preview":
+    "dev-project-url-shortener-microservice-preview":
     {
         icon: explorer_logo,
         title: "FCC: URL Shortener Microservice",
@@ -458,13 +458,13 @@ let BackEnd_Projects = {
                 {
                     icon: explorer_logo,
                     title: "Preview",
-                    id: "new-tab-dev-dev-project-url-exercise-tracker-preview"
+                    id: "new-tab-dev-project-url-exercise-tracker-preview"
                 }
             ]
         }
     },
     //Exercise Tracker readme
-    "new-tab-dev-project-url-exercise-tracker-readme": {
+    "dev-project-url-exercise-tracker-readme": {
         icon: terminal,
         title: "readme",
         type: "terminal",
@@ -595,7 +595,7 @@ let BackEnd_Projects = {
     //Exercise Tracker source code link
     "external-link-dev-project-url-exercise-tracker-source-code": "https://github.com/kamal98ETH/boilerplate-project-exercisetracker",
     //Exercise Tracker preview
-    "new-tab-dev-dev-project-url-exercise-tracker-preview":
+    "dev-project-url-exercise-tracker-preview":
     {
         icon: explorer_logo,
         title: "FCC: Exercise Tracker",
@@ -635,13 +635,13 @@ let BackEnd_Projects = {
                 {
                     icon: explorer_logo,
                     title: "Preview",
-                    id: "new-tab-dev-dev-project-file-metadata-microservice-preview"
+                    id: "new-tab-dev-project-file-metadata-microservice-preview"
                 }
             ]
         }
     },
     //File Metadata Microservice readme
-    "new-tab-dev-project-file-metadata-microservice-readme": {
+    "dev-project-file-metadata-microservice-readme": {
         icon: terminal,
         title: "readme",
         type: "terminal",
@@ -695,7 +695,7 @@ let BackEnd_Projects = {
     //File Metadata Microservice source code link
     "external-link-dev-project-file-metadata-microservice-source-code": "https://github.com/kamal98ETH/boilerplate-project-filemetadata",
     //File Metadata Microservice preview
-    "new-tab-dev-dev-project-file-metadata-microservice-preview":
+    "dev-project-file-metadata-microservice-preview":
     {
         icon: explorer_logo,
         title: "FCC: File Metadata Microservice",

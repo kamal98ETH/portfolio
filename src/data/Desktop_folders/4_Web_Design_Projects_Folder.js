@@ -35,7 +35,7 @@ import personal_portfolio_webpage_screenshot_7 from "../../images/desktop/web_de
 
 let Web_Design_Projects_Folder = {
     //web design projects folders
-    "new-tab-web-design-projects": {
+    "web-design-projects": {
         icon: web_design_folder,
         title: "Web Design projects",
         type: "window",
@@ -109,7 +109,7 @@ let Web_Design_Projects_Folder = {
         }
     },
     //windows XP starting page readme page
-    "new-tab-dev-project-windows-xp-starting-page-readme": {
+    "dev-project-windows-xp-starting-page-readme": {
         icon: terminal,
         title: "readme",
         type: "terminal",
@@ -163,7 +163,7 @@ let Web_Design_Projects_Folder = {
         content: windows_logo_screen_3
     }],
     //windows xp starting page preview
-    "new-tab-dev-project-windows-xp-starting-page-preview":
+    "dev-project-windows-xp-starting-page-preview":
     {
         icon: explorer_logo,
         title: "Windows Xp starting page",
@@ -214,7 +214,7 @@ let Web_Design_Projects_Folder = {
         }
     },
     //survey form readme
-    "new-tab-dev-project-survey-form-readme": {
+    "dev-project-survey-form-readme": {
         icon: terminal,
         title: "readme",
         type: "terminal",
@@ -257,7 +257,7 @@ let Web_Design_Projects_Folder = {
     //survey form source code link
     "external-link-dev-project-survey-form-source-code": "https://github.com/kamal98ETH/Survey-Form",
     //survey form preview
-    "new-tab-dev-dev-project-survey-form-preview":
+    "dev-dev-project-survey-form-preview":
     {
         icon: explorer_logo,
         title: "FCC: Survey form",
@@ -307,7 +307,7 @@ let Web_Design_Projects_Folder = {
         }
     },
     //tribute page readme
-    "new-tab-dev-project-tribute-page-readme": {
+    "dev-project-tribute-page-readme": {
         icon: terminal,
         title: "readme",
         type: "terminal",
@@ -361,7 +361,7 @@ let Web_Design_Projects_Folder = {
     //tribute page source code link
     "external-link-dev-project-tribute-page-source-code": "https://github.com/kamal98ETH/Tribute-Page",
     //tribute page preview
-    "new-tab-dev-dev-project-tribute-page-preview":
+    "dev-dev-project-tribute-page-preview":
     {
         icon: explorer_logo,
         title: "FCC: Tribute Page",
@@ -411,7 +411,7 @@ let Web_Design_Projects_Folder = {
         }
     },
     //Technical Documentation Page readme
-    "new-tab-dev-project-technical-documentation-page-readme": {
+    "dev-project-technical-documentation-page-readme": {
         icon: terminal,
         title: "readme",
         type: "terminal",
@@ -487,7 +487,7 @@ let Web_Design_Projects_Folder = {
     //Technical Documentation Page source code link
     "external-link-dev-project-technical-documentation-page-source-code": "https://github.com/kamal98ETH/Technical-Documentation-Page",
     //Technical Documentation Page preview
-    "new-tab-dev-dev-project-technical-documentation-page-preview":
+    "dev-dev-project-technical-documentation-page-preview":
     {
         icon: explorer_logo,
         title: "FCC: Technical Documentation Page",
@@ -537,7 +537,7 @@ let Web_Design_Projects_Folder = {
         }
     },
     //Product Landing Page readme
-    "new-tab-dev-project-product-landing-page-readme": {
+    "dev-project-product-landing-page-readme": {
         icon: terminal,
         title: "readme",
         type: "terminal",
@@ -580,7 +580,7 @@ let Web_Design_Projects_Folder = {
     //Product Landing Page source code link
     "external-link-dev-project-product-landing-page-source-code": "https://github.com/kamal98ETH/Product-Landing-Page",
     //Product Landing Page preview
-    "new-tab-dev-dev-project-product-landing-page-preview":
+    "dev-dev-project-product-landing-page-preview":
     {
         icon: explorer_logo,
         title: "FCC: Product Landing Page",
@@ -630,7 +630,7 @@ let Web_Design_Projects_Folder = {
         }
     },
     //Personal Portfolio Webpage readme
-    "new-tab-dev-project-personal-portfolio-webpage-readme": {
+    "dev-project-personal-portfolio-webpage-readme": {
         icon: terminal,
         title: "readme",
         type: "terminal",
@@ -728,7 +728,7 @@ let Web_Design_Projects_Folder = {
     //Personal Portfolio Webpage source code link
     "external-link-dev-project-personal-portfolio-webpage-source-code": "https://github.com/kamal98ETH/Personal-Portfolio-Webpage",
     //Personal Portfolio Webpage preview
-    "new-tab-dev-dev-project-personal-portfolio-webpage-preview":
+    "dev-dev-project-personal-portfolio-webpage-preview":
     {
         icon: explorer_logo,
         title: "FCC: Personal Portfolio Webpage",

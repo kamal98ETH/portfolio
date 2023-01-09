@@ -27,7 +27,7 @@ const technical_documentation_page = [
     },
     {
         type: "paragraph",
-        data: "You can check the whole assignment"
+        data: "K~$ You can check the whole assignment"
     },
     {
         type: "link",
