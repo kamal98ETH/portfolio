@@ -71,7 +71,7 @@ const celestial_bodies_database_readme = [
     },
     {
         type: "paragraph",
-        data: "K~$ For more more info about this project please refer to the"
+        data: "K~$ For more info about this project please refer to the"
     },
     {
         type: "link",

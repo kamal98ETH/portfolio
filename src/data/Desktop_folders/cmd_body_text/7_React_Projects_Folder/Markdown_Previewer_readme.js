@@ -39,7 +39,7 @@ const Markdown_Previewer = [
     },
     {
         type: "paragraph",
-        data: "K~$ For more more info about this project please refer to the"
+        data: "K~$ For more info about this project please refer to the"
     },
     {
         type: "link",
