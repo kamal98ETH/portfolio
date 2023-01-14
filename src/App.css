@@ -29,6 +29,7 @@ body {
     width: 100vw;
     /* display: flex;
     flex-direction: column-reverse; */
+    padding-bottom: 3.125rem;
     overflow: hidden;
 }
 
