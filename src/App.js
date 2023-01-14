@@ -229,13 +229,14 @@ class App extends React.Component {
         });
         break;
 
-      case /^tab/.test(id):
+      case /^tab|^drag/.test(id):
         let tab = id.split("-")[1];
+        // console.log(tab)
         let tab_array = [];
         let new_tab;
         let selected_z_index = this.state.active_components[tab].z_index;
 
-        if (this.state.active_components[tab].z_index === this.state.active_components.length) {
+        if (this.state.active_components[tab].z_index === this.state.active_components.length && id.split("-")[0] === "tab") {
           new_tab = !this.state.active_components[tab].render;
         } else {
           new_tab = true

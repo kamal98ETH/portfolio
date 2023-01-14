@@ -1,10 +1,18 @@
-import { useEffect } from "react";
+import { useEffect, useRef, useState } from "react";
 import WindowHeader from "./windowHeader";
 import next from "../images/windows_xp_icons/next_photo.png";
 import previous from "../images/windows_xp_icons/previous_photo.png";
 
 function PhotoViewer(props) {
     // console.log(props)
+
+    const [position, setPosition] = useState({ top: "8%", left: "20%" })
+
+    const myRef = useRef(null);
+
+    function moveWindow(newPosition) {
+        setPosition(newPosition)
+    }
 
     useEffect(() => {
         //set window to be fullscreen or not
@@ -20,8 +28,8 @@ function PhotoViewer(props) {
                 //change style of selected window to be fullscreen
                 document.querySelector(".window-" + props.key_id).style.width = "60%"
                 document.querySelector(".window-" + props.key_id).style.height = "80%"
-                document.querySelector(".window-" + props.key_id).style.left = "20%"
-                document.querySelector(".window-" + props.key_id).style.top = "8%"
+                document.querySelector(".window-" + props.key_id).style.left = position.left
+                document.querySelector(".window-" + props.key_id).style.top = position.top
             }
         } else {
             document.querySelector(".window-" + props.key_id).style.width = "100vw"
@@ -32,8 +40,8 @@ function PhotoViewer(props) {
     })
 
     return (
-        <div className={"window window-" + props.key_id} style={{ zIndex: props.z_index }}>
-            <WindowHeader data={props.data} key_id={props.key_id} action={props.action} />
+        <div className={"window window-" + props.key_id} style={{ zIndex: props.z_index }} ref={myRef}>
+            <WindowHeader data={props.data} key_id={props.key_id} action={props.action} moveWindow={moveWindow} />
             <div className="photo-body">
                 <img src={props.data.content} alt="project screenshot" />
             </div>

@@ -1,4 +1,4 @@
-import { useEffect } from "react";
+import { useEffect, useRef, useState } from "react";
 import windowLogo from "../images/windows_xp_icons/xp-logo.png";
 import folderBack from "../images/windows_xp_icons/move-back.png";
 import folderForward from "../images/windows_xp_icons/move-forward.png";
@@ -11,6 +11,14 @@ import WindowHeader from "./windowHeader";
 
 function Explorer(props) {
     // console.log(props)
+
+    const [position, setPosition] = useState({ top: "8%", left: "20%" })
+
+    const myRef = useRef(null);
+
+    function moveWindow(newPosition) {
+        setPosition(newPosition)
+    }
 
     useEffect(() => {
         //set window to be fullscreen or not
@@ -26,8 +34,8 @@ function Explorer(props) {
                 //change style of selected window to be fullscreen
                 document.querySelector(".window-" + props.key_id).style.width = "60%"
                 document.querySelector(".window-" + props.key_id).style.height = "80%"
-                document.querySelector(".window-" + props.key_id).style.left = "20%"
-                document.querySelector(".window-" + props.key_id).style.top = "8%"
+                document.querySelector(".window-" + props.key_id).style.left = position.left
+                document.querySelector(".window-" + props.key_id).style.top = position.top
             }
         } else {
             document.querySelector(".window-" + props.key_id).style.width = "100vw"
@@ -38,8 +46,8 @@ function Explorer(props) {
     })
 
     return (
-        < div className={"window window-" + props.key_id} style={{ zIndex: props.z_index }} >
-            <WindowHeader data={props.data} key_id={props.key_id} action={props.action} />
+        < div className={"window window-" + props.key_id} style={{ zIndex: props.z_index }} ref={myRef} >
+            <WindowHeader data={props.data} key_id={props.key_id} action={props.action} moveWindow={moveWindow} />
             <div className="file-toolbar">
                 <div>
                     <button>File</button>

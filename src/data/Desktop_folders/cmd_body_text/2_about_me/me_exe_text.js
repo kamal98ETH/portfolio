@@ -8,7 +8,7 @@ const me_exe = [
     },
     {
         type: "paragraph",
-        data: "K~$ it's Kamal"
+        data: "K~$ It's Kamal"
     },
     {
         type: "break"
