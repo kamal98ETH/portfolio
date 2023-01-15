@@ -11,11 +11,11 @@ body {
     overflow: hidden;
 }
 
-#root {
+/* #root {
     height: 100vh;
     width: 100vw;
     overflow: hidden;
-}
+} */
 
 #background-img {
     height: 100vh;
@@ -29,7 +29,7 @@ body {
     width: 100vw;
     /* display: flex;
     flex-direction: column-reverse; */
-    padding-bottom: 3.125rem;
+    /* padding-bottom: 3.125rem; */
     overflow: hidden;
 }
 
@@ -897,7 +897,7 @@ iframe {
 @media (max-width: 62.5rem) {
 
     .window {
-        height: calc(100vh - 3.188rem);
+        height: calc(100% - 3.188rem);
         width: 100%;
         top: 0;
         left: 0;

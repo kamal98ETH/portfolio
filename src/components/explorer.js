@@ -25,8 +25,8 @@ function Explorer(props) {
         if (window.innerWidth > 1000) {
             if (props.fullscreen) {
                 //change the state fullscreen for selected window to be true
-                document.querySelector(".window-" + props.key_id).style.width = "100vw"
-                document.querySelector(".window-" + props.key_id).style.height = "calc(100vh - 3.188rem)"
+                document.querySelector(".window-" + props.key_id).style.width = "100%"
+                document.querySelector(".window-" + props.key_id).style.height = "calc(100% - 3.188rem)"
                 document.querySelector(".window-" + props.key_id).style.left = "0"
                 document.querySelector(".window-" + props.key_id).style.top = "0"
 
@@ -38,8 +38,8 @@ function Explorer(props) {
                 document.querySelector(".window-" + props.key_id).style.top = position.top
             }
         } else {
-            document.querySelector(".window-" + props.key_id).style.width = "100vw"
-            document.querySelector(".window-" + props.key_id).style.height = "calc(100vh - 3.188rem)"
+            document.querySelector(".window-" + props.key_id).style.width = "100%"
+            document.querySelector(".window-" + props.key_id).style.height = "calc(100% - 3.188rem)"
             document.querySelector(".window-" + props.key_id).style.left = "0"
             document.querySelector(".window-" + props.key_id).style.top = "0"
         }

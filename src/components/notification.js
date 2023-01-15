@@ -1,6 +1,3 @@
-
-import notif_icon from '../images/windows_xp_icons/i-icon.ico';
-
 function Notification(props) {
     return (
         <div id="notification-window">
