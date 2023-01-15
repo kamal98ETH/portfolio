@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.649a78c5.css",
-    "main.js": "/portfolio/static/js/main.5916ef00.js",
+    "main.css": "/portfolio/static/css/main.0f572259.css",
+    "main.js": "/portfolio/static/js/main.0f49847b.js",
     "static/media/xp-logo.png": "/portfolio/static/media/xp-logo.41511b28f1a7dc826523.png",
     "static/media/tribute-page-1.png": "/portfolio/static/media/tribute-page-1.16797933e460f34d8d83.png",
     "static/media/xp-background.jpg": "/portfolio/static/media/xp-background.17ce657ab1362be245f5.jpg",
@@ -197,11 +197,11 @@
     "static/media/log-off.ico": "/portfolio/static/media/log-off.69880bd3a7db48c3bbc1.ico",
     "static/media/search.ico": "/portfolio/static/media/search.49527e3a085f01a9a1cf.ico",
     "index.html": "/portfolio/index.html",
-    "main.649a78c5.css.map": "/portfolio/static/css/main.649a78c5.css.map",
-    "main.5916ef00.js.map": "/portfolio/static/js/main.5916ef00.js.map"
+    "main.0f572259.css.map": "/portfolio/static/css/main.0f572259.css.map",
+    "main.0f49847b.js.map": "/portfolio/static/js/main.0f49847b.js.map"
   },
   "entrypoints": [
-    "static/css/main.649a78c5.css",
-    "static/js/main.5916ef00.js"
+    "static/css/main.0f572259.css",
+    "static/js/main.0f49847b.js"
   ]
 }
